@@ -7,5 +7,5 @@
 @include('frontend.sections.hero')
 
 @include('frontend.sections.features')
-
+ 
 @endsection
