@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+// Route::view('/', 'welcome')->name('home');
+
+Route::view('/', 'frontend.home')->name('home');
+
+Route::view('/about', 'frontend.about')->name('about');
+
+Route::view('/services', 'frontend.services')->name('services');
+
+Route::view('/faq', 'frontend.faq')->name('faq');
+
+Route::view('/contact', 'frontend.contact')->name('contact');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::view('dashboard', 'dashboard')->name('dashboard');
+});
+
+require __DIR__.'/settings.php';
