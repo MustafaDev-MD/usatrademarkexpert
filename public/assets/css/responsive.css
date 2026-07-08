@@ -53,7 +53,7 @@
         font-size: var(--fs-42);
     }
 
-    .hero-content p{
+    .hero-content p {
         font-size: var(--fs-18);
         width: 100%;
     }
@@ -68,6 +68,30 @@
 
     .features-wrapper {
         gap: 30px;
+    }
+
+    /*=========================================
+                PRICING
+    =========================================*/
+
+    .pricing {
+        padding: 80px 0;
+    }
+
+    .pricing-wrapper {
+        gap: 24px;
+    }
+
+    .pricing-card {
+        padding: 24px;
+    }
+
+    .price {
+        font-size: var(--fs-42);
+    }
+
+    .pricing-card h3 {
+        font-size: var(--fs-32);
     }
 
 }
@@ -186,7 +210,7 @@
         text-align: center;
     }
 
-    .hero-badge{
+    .hero-badge {
         font-size: var(--fs-10);
     }
 
@@ -225,11 +249,36 @@
 
     .section-heading p {
         font-size: var(--fs-16);
+        width: 100%;
     }
 
     .features-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /*=========================================
+                PRICING
+    =========================================*/
+
+    .pricing {
+        padding: 70px 0;
+    }
+
+    .pricing-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .pricing-card {
+        padding: 30px;
+    }
+
+    .pricing-badge {
+        top: -14px;
+    }
+
 
 }
 
@@ -287,7 +336,7 @@
     =========================================*/
 
     .section-heading h2 {
-        font-size: 36px;
+        font-size: var(--fs-36);
     }
 
     .features-wrapper {
@@ -296,6 +345,45 @@
 
     .feature-card {
         padding: 30px;
+    }
+
+    /*=========================================
+                PRICING
+    =========================================*/
+
+    .pricing {
+        padding: 60px 0;
+    }
+
+    .pricing-card {
+        padding: 24px;
+    }
+
+    .pricing-card h3 {
+        font-size: var(--fs-28);
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .fees {
+        font-size: var(--fs-12);
+    }
+
+    .pricing-desc,
+    .pricing-label,
+    .pricing-card li span {
+        font-size: var(--fs-16);
+    }
+
+    .pricing-card ul {
+        gap: 16px;
+    }
+
+    .pricing-btn {
+        height: 46px;
+        font-size: var(--fs-16);
     }
 
 }
@@ -353,24 +441,67 @@
                 FEATURES
     =========================================*/
 
-    .features{
-        padding:60px 0;
+    .features {
+        padding: 60px 0;
     }
 
-    .section-heading h2{
+    .section-heading h2 {
         font-size: var(--fs-32);
     }
 
-    .section-heading p{
+    .section-heading p {
         font-size: var(--fs-16);
     }
 
-    .feature-card h3{
+    .feature-card h3 {
         font-size: var(--fs-24);
     }
 
-    .feature-card p{
+    .feature-card p {
         font-size: var(--fs-16);
+    }
+
+    /*=========================================
+                PRICING
+    =========================================*/
+
+    .pricing {
+        padding: 50px 0;
+    }
+
+    .pricing-card {
+        padding: 20px;
+    }
+
+    .pricing-card h3 {
+        font-size: var(--fs-24);
+    }
+
+    .pricing-price {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .price {
+        font-size: var(--fs-36);
+    }
+
+    .pricing-desc,
+    .pricing-card li span {
+        font-size: var(--fs-14);
+        line-height: 1.7;
+    }
+
+    .pricing-btn {
+        width: 100%;
+        height: 44px;
+        font-size: var(--fs-16);
+    }
+
+    .pricing-badge {
+        font-size: var(--fs-9);
+        letter-spacing: 1px;
+        padding: 4px 10px;
     }
 
 }
@@ -383,6 +514,30 @@
 
     .logo {
         font-size: var(--fs-16);
+    }
+
+    /*=========================================
+                PRICING
+    =========================================*/
+
+    .pricing-card {
+        padding: 18px;
+    }
+
+    .pricing-card h3 {
+        font-size: var(--fs-22);
+    }
+
+    .price {
+        font-size: var(--fs-32);
+    }
+
+    .pricing-card li {
+        gap: 8px;
+    }
+
+    .pricing-card li i {
+        font-size: var(--fs-14);
     }
 
 }

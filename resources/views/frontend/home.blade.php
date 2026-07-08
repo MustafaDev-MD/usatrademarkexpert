@@ -7,5 +7,7 @@
 @include('frontend.sections.hero')
 
 @include('frontend.sections.features')
+
+@include('frontend.sections.pricing')
  
 @endsection

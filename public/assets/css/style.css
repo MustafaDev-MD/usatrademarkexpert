@@ -99,7 +99,7 @@ button {
     justify-content: center;
     /* width: 180px;
     height: 48px; */
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-xs);
     background: var(--primary);
     color: var(--white);
     font-size: var(--fs-16);
@@ -194,7 +194,7 @@ button {
     display: inline-block;
     font-size: var(--fs-18);
     font-weight: 500;
-    color: var(--text);
+    color: var(--text-light);
     transition: color var(--transition);
 }
 
@@ -226,8 +226,8 @@ button {
     /* width: 180px;
     height: 42px; */
     padding: 10px 48px;
-    border-radius: 4px;
-    background: var(--primary);
+    border-radius: var(--radius-xs);
+    background: var(--btn-background);
     color: var(--white);
 }
 
@@ -239,7 +239,7 @@ button {
     /* height: 48px; */
     padding: 10px 48px;
     border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-xs);
     background: var(--white);
     color: var(--heading);
     transition: var(--transition);
@@ -370,9 +370,9 @@ button {
     gap: 10px;
     padding: 4px 10px;
     margin-bottom: 18px;
-    background: var(--secondary);
-    border: 1px solid var(--primary);
-    border-radius: var(--radius-sm);
+    background: var(--badge-background);
+    border: 1px solid var(--navbar-menu);
+    border-radius: var(--radius-xs);
     font-size: var(--fs-12);
     font-weight: var(--fw-medium);
     letter-spacing: 2px;
@@ -381,7 +381,7 @@ button {
 }
 
 .hero-badge i {
-    font-size: 10px;
+    font-size: var(--fs-10);
     color: #000;
 }
 
@@ -407,13 +407,19 @@ button {
     gap: 16px;
 }
 
+.hero-buttons .btn-primary {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    color: var(--heading);
+}
+
 .hero-image {
     position: relative;
 }
 
 .hero-image img {
     width: 100%;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xs);
     object-fit: cover;
 }
 
@@ -430,7 +436,7 @@ button {
     background: rgba(255,255,255,.95);
     backdrop-filter: blur(12px);
     border: 1px solid var(--primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xs);
     box-shadow: var(--shadow-md);
     opacity: 0.77;
 }
@@ -439,7 +445,7 @@ button {
     width: 52px;
     height: 52px;
     background: var(--primary);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-xs);
     flex-shrink: 0;
 }
 
@@ -460,7 +466,7 @@ button {
 =========================================*/
 
 .features {
-    padding: var(--space-100) 0;
+    padding: var(--space-60) 0;
     background-color: var(--body);
     border-bottom: 1px solid var(--text);
     border-top: 1px solid var(--text);
@@ -470,17 +476,22 @@ button {
     max-width: 800px;
     margin: 0 auto var(--space-60);
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-heading h2 {
-    margin-bottom: var(--space-20);
-    font-size: var(--fs-48);
+    margin-bottom: var(--space-10);
+    font-size: var(--fs-42);
     font-weight: var(--fw-medium);
     color: var(--heading);
     line-height: 1.2;
 }
 
 .section-heading p {
+    width: 80%;
     font-size: var(--fs-20);
     line-height: 1.8;
     color: var(--text);
@@ -496,7 +507,7 @@ button {
     padding: 26px;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xs);
     transition: var(--transition);
 }
 
@@ -509,7 +520,7 @@ button {
     width: 58px;
     height: 48px;
     margin-bottom: 30px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
     border: 1px solid var(--primary);
     background: var(--secondary);
     display: flex;
@@ -518,7 +529,7 @@ button {
 }
 
 .feature-icon i {
-    font-size: 24px;
+    font-size: var(--fs-24);
     color: var(--primary);
 }
 
@@ -535,4 +546,165 @@ button {
     font-size: var(--fs-18);
     color: var(--text);
     line-height: 1.8;
+}
+
+/*=========================================
+                PRICING
+=========================================*/
+
+.pricing{
+    padding:var(--space-60) 0;
+    background-color: var(--white);
+}
+
+.pricing-wrapper{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:var(--space-30);
+    align-items:stretch;
+}
+
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    padding:var(--space-30);
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    transition:var(--transition);
+}
+
+.pricing-card:hover{
+    background:var(--card-hover);
+    transform:translateY(-6px);
+}
+
+.pricing-card.active{
+    border-color:var(--card-border-active);
+}
+
+.pricing-badge{
+    position:absolute;
+    left:50%;
+    top:-14px;
+    transform:translateX(-50%);
+    display:inline-flex;
+    align-items:center;
+    gap:var(--space-5);
+    padding:4px 12px;
+    background:var(--badge-background);
+    border:1px solid var(--card-border-active);
+    border-radius:var(--radius-xs);
+    font-size:var(--fs-10);
+    color:var(--text);
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.pricing-badge i{
+    color:#000;
+    font-size:var(--fs-8);
+}
+
+.pricing-card h3{
+    margin-bottom:var(--space-15);
+    font-family:var(--font-body);
+    font-size:var(--fs-20);
+    font-weight:var(--fw-semibold);
+    color:var(--heading);
+}
+
+.pricing-price{
+    display:flex;
+    align-items:flex-end;
+    gap:var(--space-5);
+    margin-bottom:var(--space-20);
+}
+
+.price{
+    font-size:var(--fs-48);
+    font-family: var(--font-heading);
+    font-weight:var(--fw-medium);
+    color:var(--heading);
+    line-height:1;
+}
+
+.fees{
+    margin-bottom:6px;
+    font-size:var(--fs-14);
+    color:var(--text-light);
+}
+
+.pricing-desc{
+    margin-bottom:var(--space-20);
+    font-size:var(--fs-16);
+    color:var(--text);
+}
+
+.pricing-label{
+    display:block;
+    margin-bottom:var(--space-15);
+    font-size:var(--fs-16);
+    color:var(--text-light);
+}
+
+.pricing-card ul{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-20);
+    margin-bottom: var(--space-30);
+}
+
+.pricing-card li{
+    display:flex;
+    gap:var(--space-10);
+    align-items:flex-start;
+}
+
+.pricing-card li i{
+    margin-top:4px;
+    color:var(--primary-hover);
+    font-size:var(--fs-16);
+}
+
+.pricing-card li span{
+    font-size:var(--fs-16);
+    line-height:1.6;
+    color:var(--text-light);
+}
+
+.pricing-btn-active{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:48px;
+    border:1px solid var(--primary);
+    border-radius:var(--radius-sm);
+    background:var(--secondary);
+    color:var(--primary);
+    font-size:var(--fs-18);
+    font-weight:var(--fw-medium);
+    transition:var(--transition);
+}
+
+.pricing-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:48px;
+    border:1px solid var(--primary);
+    border-radius:var(--radius-sm);
+    color:var(--primary);
+    font-size:var(--fs-18);
+    font-weight:var(--fw-medium);
+    transition:var(--transition);
+    margin-top: auto;
+}
+
+.pricing-btn:hover{
+    background:var(--primary);
+    color:var(--white);
 }
