@@ -588,6 +588,7 @@ button {
     position: absolute;
     left: 50%;
     top: -14px;
+    width: max-content;
     transform: translateX(-50%);
     display: inline-flex;
     align-items: center;
