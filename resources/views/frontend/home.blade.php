@@ -9,5 +9,7 @@
 @include('frontend.sections.features')
 
 @include('frontend.sections.pricing')
+
+@include('frontend.sections.services')
  
 @endsection
