@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Vite;
 use Tests\TestCase;
 
 /*
@@ -15,7 +16,10 @@ use Tests\TestCase;
 */
 
 pest()->extend(TestCase::class)
- // ->use(RefreshDatabase::class)
+    ->beforeEach(function () {
+        Vite::spy(); 
+    })
+    // ->use(RefreshDatabase::class)
     ->in('Feature');
 
 /*
