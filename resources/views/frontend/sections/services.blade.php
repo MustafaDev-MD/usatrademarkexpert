@@ -76,9 +76,7 @@
                 <p>
                     Customer Trademark Classification:
                     Using the USPTO's ID manual, our attorneys
-                    will devise a class and description of goods
-                    and services that best matches what you seek
-                    to protect.
+                    will devise a class and description.
                 </p>
 
             </div>

@@ -732,6 +732,7 @@ button {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: 0.9fr 1.15fr 1.15fr;
     gap: var(--space-30);
 
     grid-template-areas:
@@ -855,17 +856,36 @@ button {
     color: var(--primary);
 }
 
-.service-link {
+.service-link{
+    position: relative;
+    display: inline-block;
     align-self: end;
     white-space: nowrap;
+
     font-size: var(--fs-18);
     font-weight: var(--fw-medium);
     color: var(--primary-hover);
-    border-bottom: 2px solid var(--primary-hover);
-    padding-bottom: 2px;
+
     transition: var(--transition);
 }
 
-.service-link:hover {
-    opacity: .8;
+.service-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary-hover);
+    transition: var(--transition);
+}
+
+.service-link:hover::after{
+    width: 100%;
+}
+
+.service-link:hover{
+    color: var(--primary);
 }
