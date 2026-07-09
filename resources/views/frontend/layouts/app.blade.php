@@ -9,7 +9,7 @@
         @yield('title', config('app.name'))
     </title>
 
-    <meta name="description" content="@yield('description')">
+    <meta name="description" content="@yield('description', 'USA Trademark Expert provides trademark registration, filing, search, monitoring, and brand protection services across the United States.')">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     {{-- Font Awesome --}}
