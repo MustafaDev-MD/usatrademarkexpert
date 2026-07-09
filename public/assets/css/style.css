@@ -831,6 +831,7 @@ button {
 
 .service-column h4 {
     margin-bottom: var(--space-15);
+    font-family: var(--font-body);
     font-size: var(--fs-20);
     font-weight: var(--fw-medium);
     color: var(--text);
