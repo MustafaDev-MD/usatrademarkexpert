@@ -433,12 +433,11 @@ button {
     gap: 18px;
     width: 86%;
     padding: 10px;
-    background: rgba(255, 255, 255, .95);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, .65);
+    backdrop-filter: blur(4px);
     border: 1px solid var(--primary);
     border-radius: var(--radius-xs);
     box-shadow: var(--shadow-md);
-    opacity: 0.77;
 }
 
 .hero-card-icon {
