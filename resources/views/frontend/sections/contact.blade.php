@@ -58,7 +58,8 @@
 
                 <span class="contact-badge">
 
-                    <i class="fa-solid fa-link"></i>
+                    <!-- <i class="fa-solid fa-link"></i> -->
+                    <i class="fa-solid fa-comments-dollar"></i>
 
                     BEST AND FAIR PRICING
 

@@ -70,7 +70,8 @@
 
                 <span class="pricing-badge">
 
-                    <i class="fa-solid fa-square-full"></i>
+                    <!-- <i class="fa-solid fa-square-full"></i> -->
+                    <i class="fa-solid fa-comments-dollar"></i>
                     Continuous Protection
 
                 </span>

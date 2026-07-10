@@ -8,7 +8,8 @@
 
                 <span class="hero-badge">
 
-                    <i class="fa-solid fa-square-full"></i>
+                    <!-- <i class="fa-solid fa-square-full"></i> -->
+                    <i class="fa-solid fa-shield-halved"></i>
 
                     Continuous Protection
 

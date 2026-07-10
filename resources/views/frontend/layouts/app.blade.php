@@ -25,17 +25,23 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    {{-- Swiper --}}
+    @if (request()->routeIs(['services']))
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.0.5/swiper-bundle.css" integrity="sha512-HzzVyHjdSqlQozYsyluJuVB46RSGoA0nMAGVSUHvArn6n9AIIh5UNYAYvkMVwGw1aCm9sfuX/fIreUw735hyAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @endif
+
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/css/variables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-    
+
     @vite(['resources/css/app.css', 'resources/ts/app.ts'])
     @livewireStyles
 </head>
 
-<body class="bg-[#F9F8F5] text-gray-900 antialiased">    
-    
+<body class="bg-[#F9F8F5] text-gray-900 antialiased">
+
     {{-- Header --}}
     @include('frontend.partials.header')
 
@@ -47,8 +53,41 @@
     {{-- Footer --}}
     @include('frontend.partials.footer')
 
+
     @livewireScripts
 
+    {{-- Swiper --}}
+    @if (request()->routeIs(['services']))
+    <!-- Swiper Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.0.5/swiper-bundle.min.js" integrity="sha512-qTRdxsJPjpD3fghHhsoPvh3jkC9v/2Se/V+rq0hHoQYTw2IXcjdphRapfLMsgKnBw95kkazAH2ERMPYxtwMJUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        new Swiper(".testimonialSwiper", {
+
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            // autoplay: {
+            //     delay: 4000,
+            //     disableOnInteraction: false,
+            // },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 25,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    </script>
+    @endif
 </body>
 
 </html>

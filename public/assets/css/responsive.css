@@ -978,3 +978,709 @@
     }
 
 }
+
+
+/*=========================================
+        SERVICE PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {
+
+    /*=========================================
+        SERVICE HERO RESPONSIVE
+    =========================================*/
+
+    .service-hero-card {
+        width: 40%;
+        max-width: 460px;
+        left: var(--space-30);
+    }
+
+    /*=========================================
+            PROCESS RESPONSIVE
+    =========================================*/
+
+    .process-cards {
+        gap: var(--space-30);
+    }
+
+    .process-heading h2 {
+        font-size: var(--fs-36);
+    }
+
+    .process-heading p {
+        width: 90%;
+        font-size: var(--fs-18);
+    }
+
+    .process-card p {
+        width: 90%;
+    }
+
+    /*=========================================
+            EXTENSION RESPONSIVE
+    =========================================*/
+
+    .extension-wrapper {
+        gap: var(--space-50);
+    }
+
+    .extension-content h2 {
+        font-size: var(--fs-36);
+    }
+
+    .extension-text {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+    /*=========================================
+        TESTIMONIAL RESPONSIVE
+    =========================================*/
+
+    .testimonial {
+        padding: var(--space-60) 0;
+    }
+
+    .testimonial .section-heading h2 {
+        font-size: var(--fs-36);
+    }
+
+    .testimonial-card p {
+        min-height: 190px;
+        font-size: var(--fs-18);
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {
+
+    /*=========================================
+        SERVICE HERO RESPONSIVE
+    =========================================*/
+
+    .service-hero {
+        padding: var(--space-30) 0;
+    }
+
+    .service-hero-wrapper {
+        min-height: 460px;
+    }
+
+    .service-hero-card {
+        width: 45%;
+        max-width: none;
+        left: var(--space-25);
+        padding: var(--space-25);
+    }
+
+    .service-hero-card h2 {
+        font-size: var(--fs-32);
+    }
+
+    .service-hero-desc,
+    .service-hero-card li span {
+        font-size: var(--fs-16);
+    }
+
+    .service-hero-card .btn {
+        width: 190px;
+    }
+
+    /*=========================================
+            PROCESS RESPONSIVE
+    =========================================*/
+
+    .process {
+        padding: var(--space-20) 0 var(--space-60);
+    }
+
+    .process-heading {
+        margin-bottom: var(--space-30);
+    }
+
+    .process-heading h2 {
+        font-size: var(--fs-36);
+    }
+
+    .process-heading p {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+    .process-cards {
+        grid-template-columns: 1fr;
+        gap: var(--space-25);
+    }
+
+    .process-cards::before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        bottom: 40px;
+        left: 30px;
+        width: 1px;
+        height: auto;
+        background: var(--border);
+        transform: none;
+        z-index: 0;
+    }
+
+    .process-card {
+        position: relative;
+        z-index: 2;
+        min-height: auto;
+    }
+
+    .process-number {
+        position: relative;
+        z-index: 3;
+    }
+
+    .process-card p {
+        width: 100%;
+    }
+
+    /*=========================================
+            EXTENSION RESPONSIVE
+    =========================================*/
+
+    .extension {
+        padding: var(--space-60) 0;
+    }
+
+    .extension-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-40);
+    }
+
+    .extension-content {
+        order: 2;
+        text-align: center;
+    }
+
+    .extension-image {
+        order: 1;
+    }
+
+    .extension-content h2 {
+        font-size: var(--fs-36);
+    }
+
+    .extension-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .extension-insight {
+        text-align: left;
+    }
+
+    .extension-buttons {
+        justify-content: center;
+    }
+
+    /*=========================================
+        AUTHORITY SECTION
+    =========================================*/
+
+    .authority-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .authority-card {
+        padding: var(--space-20);
+    }
+
+    .authority-right p {
+        width: 100%;
+    }
+
+    /*=========================================
+        TESTIMONIAL RESPONSIVE
+    =========================================*/
+
+    .testimonial {
+        padding: var(--space-60) 0;
+    }
+
+    .testimonial .section-heading {
+        margin-bottom: var(--space-30);
+    }
+
+    .testimonial .section-heading h2 {
+        font-size: var(--fs-32);
+    }
+
+    .testimonial-card {
+        padding: var(--space-20);
+    }
+
+    .testimonial-card p {
+        min-height: auto;
+        font-size: var(--fs-18);
+    }
+
+    .testimonial-stars {
+        margin-bottom: var(--space-15);
+        font-size: var(--fs-18);
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {
+
+    /*=========================================
+        SERVICE HERO RESPONSIVE
+    =========================================*/
+
+    .service-hero {
+        padding: var(--space-25) 0;
+    }
+
+    .service-hero-wrapper {
+        min-height: 650px;
+    }
+
+    .service-hero-image {
+        height: 650px;
+    }
+
+    .service-hero-image::before {
+        background: linear-gradient(180deg,
+                rgba(255, 248, 227, .90) 0%,
+                rgba(255, 248, 227, .70) 45%,
+                rgba(255, 248, 227, .25) 100%);
+    }
+
+    .service-hero-card {
+        width: 88%;
+        max-width: none;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    /*=========================================
+            PROCESS RESPONSIVE
+    =========================================*/
+
+    .process {
+        padding: var(--space-20) 0 var(--space-50);
+    }
+
+    .process-heading {
+        margin-bottom: var(--space-25);
+    }
+
+    .process-heading h2 {
+        font-size: var(--fs-32);
+    }
+
+    .process-heading p {
+        width: 100%;
+        font-size: var(--fs-16);
+        line-height: 1.7;
+    }
+
+    .process-card {
+        padding: var(--space-20);
+    }
+
+    .process-number {
+        width: 55px;
+        height: 46px;
+        margin-bottom: var(--space-20);
+        font-size: var(--fs-28);
+    }
+
+    .process-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .process-card p {
+        width: 100%;
+        font-size: var(--fs-16);
+        line-height: 1.7;
+    }
+
+    /*=========================================
+            EXTENSION RESPONSIVE
+    =========================================*/
+
+    .extension {
+        padding: var(--space-50) 0;
+    }
+
+    .extension-wrapper {
+        gap: var(--space-30);
+    }
+
+    .extension-content h2 {
+        margin-bottom: var(--space-15);
+        font-size: var(--fs-32);
+    }
+
+    .extension-text {
+        margin-bottom: var(--space-20);
+        font-size: var(--fs-16);
+    }
+
+    .extension-insight {
+        margin-bottom: var(--space-25);
+        padding: var(--space-15);
+    }
+
+    .extension-buttons {
+        gap: var(--space-15);
+    }
+
+    .extension .btn-primary,
+    .extension .btn-outline {
+        width: 220px;
+    }
+
+    /*=========================================
+        AUTHORITY SECTION
+    =========================================*/
+
+    .authority {
+        padding: var(--space-40) 0;
+    }
+
+    .authority .section-heading {
+        margin-bottom: var(--space-30);
+    }
+
+    .authority .section-heading h2 {
+        font-size: var(--fs-32);
+    }
+
+    .authority-card h3 {
+        font-size: var(--fs-20);
+    }
+
+    .authority-left li,
+    .authority-right p {
+        font-size: var(--fs-16);
+    }
+
+    /*=========================================
+        TESTIMONIAL RESPONSIVE
+    =========================================*/
+
+    .testimonial {
+        padding: var(--space-50) 0;
+    }
+
+    .testimonial .section-heading h2 {
+        font-size: var(--fs-28);
+    }
+
+    .testimonial-card {
+        padding: var(--space-20);
+    }
+
+    .testimonial-card p {
+        font-size: var(--fs-16);
+        line-height: 1.8;
+    }
+
+    .testimonial-user h4 {
+        font-size: var(--fs-18);
+    }
+
+    .testimonial-user span {
+        font-size: var(--fs-14);
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {
+
+    /*=========================================
+        SERVICE HERO RESPONSIVE
+    =========================================*/
+
+    .service-hero {
+        padding: var(--space-20) 0;
+    }
+
+    .service-hero-wrapper {
+        min-height: 600px;
+    }
+
+    .service-hero-image {
+        height: 600px;
+    }
+
+    .service-hero-card {
+        width: 92%;
+        padding: var(--space-20);
+    }
+
+    .service-hero-card h2 {
+        font-size: var(--fs-28);
+    }
+
+    .service-hero-desc {
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    .service-hero-card ul {
+        gap: var(--space-15);
+        margin-bottom: var(--space-25);
+    }
+
+    .service-hero-card li {
+        gap: var(--space-10);
+    }
+
+    .service-hero-card li i {
+        font-size: var(--fs-18);
+    }
+
+    .service-hero-card li span {
+        font-size: var(--fs-14);
+        line-height: 1.6;
+    }
+
+    .service-hero-card .btn {
+        width: 100%;
+    }
+
+    /*=========================================
+            PROCESS RESPONSIVE
+    =========================================*/
+
+    .process {
+        padding: var(--space-20) 0 var(--space-40);
+    }
+
+    .process-heading h2 {
+        font-size: var(--fs-28);
+    }
+
+    .process-heading p {
+        font-size: var(--fs-16);
+    }
+
+    .process-card {
+        padding: var(--space-20);
+        border-radius: var(--radius-md);
+    }
+
+    .process-number {
+        width: 50px;
+        height: 42px;
+        font-size: var(--fs-24);
+    }
+
+    .process-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .process-card p {
+        font-size: var(--fs-16);
+        width: 100%;
+    }
+
+    /*=========================================
+            EXTENSION RESPONSIVE
+    =========================================*/
+
+    .extension {
+        padding: var(--space-40) 0;
+    }
+
+    .extension-content {
+        text-align: left;
+    }
+
+    .extension-content h2 {
+        font-size: var(--fs-28);
+    }
+
+    .extension-text {
+        font-size: var(--fs-16);
+    }
+
+    .extension-insight {
+        padding: var(--space-15);
+    }
+
+    .extension-buttons {
+        flex-direction: column;
+        gap: var(--space-15);
+    }
+
+    .extension .btn-primary,
+    .extension .btn-outline {
+        width: 100%;
+    }
+
+    /*=========================================
+        AUTHORITY SECTION
+    =========================================*/
+
+    .authority-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .authority-icon i {
+        font-size: var(--fs-20);
+    }
+
+    /*=========================================
+        TESTIMONIAL RESPONSIVE
+    =========================================*/
+
+    .testimonial {
+        padding: var(--space-40) 0;
+    }
+
+    .testimonial .section-heading {
+        margin-bottom: var(--space-25);
+    }
+
+    .testimonial .section-heading h2 {
+        font-size: var(--fs-24);
+    }
+
+    .testimonial-card {
+        padding: var(--space-15);
+    }
+
+    .testimonial-stars {
+        font-size: var(--fs-16);
+        gap: var(--space-5);
+    }
+
+    .testimonial-card p {
+        font-size: var(--fs-16);
+        line-height: 1.7;
+    }
+
+    .testimonial-divider {
+        margin: var(--space-15) 0;
+    }
+
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {
+
+    /*=========================================
+        SERVICE HERO RESPONSIVE
+    =========================================*/
+
+    .service-hero-wrapper {
+        min-height: 560px;
+    }
+
+    .service-hero-image {
+        height: 560px;
+    }
+
+    .service-hero-card {
+        width: 94%;
+        padding: var(--space-15);
+    }
+
+    .service-hero-card h2 {
+        font-size: var(--fs-24);
+    }
+
+    .service-hero-desc {
+        font-size: var(--fs-14);
+    }
+
+    .service-hero-card li span {
+        font-size: var(--fs-14);
+    }
+
+    /*=========================================
+            EXTENSION RESPONSIVE
+    =========================================*/
+
+    .extension {
+        padding: var(--space-30) 0;
+    }
+
+    .extension-content h2 {
+        font-size: var(--fs-24);
+    }
+
+    .extension-text {
+        font-size: var(--fs-14);
+    }
+
+    .extension-insight span {
+        font-size: var(--fs-12);
+    }
+
+    .extension-insight p {
+        font-size: var(--fs-12);
+    }
+
+    /*=========================================
+        TESTIMONIAL RESPONSIVE
+    =========================================*/
+
+    .testimonial {
+        padding: var(--space-30) 0;
+    }
+
+    .testimonial .section-heading h2 {
+        font-size: var(--fs-20);
+    }
+
+    .testimonial-card {
+        padding: var(--space-15);
+    }
+
+    .testimonial-card p {
+        font-size: var(--fs-14);
+    }
+
+    .testimonial-user h4 {
+        font-size: var(--fs-16);
+    }
+
+    .testimonial-user span {
+        font-size: var(--fs-12);
+    }
+
+
+}
