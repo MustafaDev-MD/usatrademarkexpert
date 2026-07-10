@@ -99,6 +99,7 @@ button {
     justify-content: center;
     /* width: 180px;
     height: 48px; */
+    border: 1px solid var(--primary);
     border-radius: var(--radius-xs);
     background: var(--primary);
     color: var(--white);
@@ -108,7 +109,9 @@ button {
 }
 
 .btn-primary:hover {
-    background: var(--primary-hover);
+    background: var(--white);
+    border: 1px solid var(--primary-hover);
+    color: var(--primary-hover);
 }
 
 /*=========================================
@@ -246,8 +249,9 @@ button {
 }
 
 .btn-outline:hover {
-    border-color: var(--primary);
-    color: var(--primary-hover);
+    background: var(--btn-background);
+    border-color: var(--btn-background);
+    color: var(--white);
 }
 
 /*=========================================
@@ -411,6 +415,12 @@ button {
     background: var(--secondary);
     border: 1px solid var(--border);
     color: var(--heading);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
 }
 
 .hero-image {
@@ -912,11 +922,9 @@ button {
     display: inline-block;
     align-self: end;
     white-space: nowrap;
-
     font-size: var(--fs-18);
     font-weight: var(--fw-medium);
     color: var(--primary-hover);
-
     transition: var(--transition);
 }
 
@@ -925,10 +933,8 @@ button {
     position: absolute;
     left: 0;
     bottom: -4px;
-
     width: 0;
     height: 2px;
-
     background: var(--primary-hover);
     transition: var(--transition);
 }
@@ -1199,6 +1205,36 @@ button {
 .footer-help a{
     color:var(--primary-hover);
     font-weight:var(--fw-semibold);
+}
+
+.footer-help a {
+    position: relative;
+    display: inline-block;
+    align-self: end;
+    white-space: nowrap;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-medium);
+    color: var(--primary-hover);
+    transition: var(--transition);
+}
+
+.footer-help a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background: var(--primary-hover);
+    transition: var(--transition);
+}
+
+.footer-help a:hover::after {
+    width: 100%;
+}
+
+.footer-help a:hover {
+    color: var(--primary);
 }
 
 .footer-bottom{
