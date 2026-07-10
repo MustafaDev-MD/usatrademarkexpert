@@ -12,6 +12,15 @@
         gap: 32px;
     }
 
+    /*=========================================
+            CONTACT FORM
+    =========================================*/
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 /*=========================================
@@ -92,6 +101,50 @@
 
     .pricing-card h3 {
         font-size: var(--fs-32);
+    }
+
+    /*=========================================
+            TRUSTPILOT
+    =========================================*/
+
+    .trustpilot-card {
+        max-width: 100%;
+        padding: var(--space-30);
+    }
+
+    /*=========================================
+            CONTACT FORM
+    =========================================*/
+
+    .contact-wrapper {
+        gap: var(--space-30);
+    }
+
+    .contact-info,
+    .contact-card {
+        padding: var(--space-25);
+    }
+
+    .contact-row {
+        gap: var(--space-15);
+    }
+
+    /*=========================================
+            FOOTER RESPONSIVE
+    =========================================*/
+
+    .footer-top {
+        grid-template-columns: 72% 28%;
+        gap: var(--space-40);
+    }
+
+    .footer-divider,
+    .footer-disclaimer p {
+        width: 100%;
+    }
+
+    .footer-right {
+        padding-top: 66px;
     }
 
 }
@@ -280,6 +333,32 @@
     }
 
     /*=========================================
+            TRUSTPILOT
+    =========================================*/
+
+    .trustpilot {
+        padding: var(--space-50) 0;
+    }
+
+    .trustpilot .section-heading {
+        margin-bottom: var(--space-40);
+    }
+
+    .trustpilot-card {
+        padding: var(--space-30);
+    }
+
+    .trustpilot-badge {
+        margin-bottom: var(--space-25);
+        font-size: var(--fs-18);
+    }
+
+    .trustpilot-text {
+        font-size: var(--fs-18);
+        line-height: 1.6;
+    }
+
+    /*=========================================
                 SERVICES
     =========================================*/
 
@@ -299,6 +378,81 @@
 
     .service-link {
         justify-self: start;
+    }
+
+    /*=========================================
+            CONTACT FORM
+    =========================================*/
+
+    .contact-form {
+        padding: var(--space-50) 0;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-30);
+    }
+
+    .contact-info,
+    .contact-card {
+        padding: var(--space-25);
+    }
+
+    .contact-card {
+        order: 2;
+    }
+
+    .contact-info {
+        order: 1;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-20);
+    }
+
+    .contact-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-20);
+    }
+
+    .contact-footer .btn-primary {
+        width: 100%;
+    }
+
+    /*=========================================
+            FOOTER RESPONSIVE
+    =========================================*/
+
+    .footer {
+        padding: var(--space-30) 0;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: var(--space-40);
+    }
+
+    .footer-right {
+        padding-top: 0;
+    }
+
+    .footer-divider {
+        width: 100%;
+    }
+
+    .footer-disclaimer p {
+        width: 100%;
+    }
+
+    .footer-contact {
+        gap: var(--space-40);
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        margin-bottom: var(--space-25);
     }
 
 }
@@ -408,6 +562,35 @@
     }
 
     /*=========================================
+            TRUSTPILOT
+    =========================================*/
+
+    .trustpilot {
+        padding: var(--space-40) 0;
+    }
+
+    .trustpilot-card {
+        padding: var(--space-25);
+        border-radius: var(--radius-lg);
+    }
+
+    .trustpilot-badge {
+        padding: 8px 14px;
+        gap: var(--space-5);
+        margin-bottom: var(--space-20);
+        font-size: var(--fs-16);
+    }
+
+    .trustpilot-badge i {
+        font-size: var(--fs-16);
+    }
+
+    .trustpilot-text {
+        font-size: var(--fs-16);
+        line-height: 1.7;
+    }
+
+    /*=========================================
                 SERVICES
     =========================================*/
 
@@ -425,6 +608,83 @@
 
     .service-column h4 {
         font-size: var(--fs-18);
+    }
+
+    /*=========================================
+            CONTACT FORM
+    =========================================*/
+
+    .contact-form {
+        padding: var(--space-40) 0;
+    }
+
+    .contact-info,
+    .contact-card {
+        padding: var(--space-20);
+    }
+
+    .contact-info h3,
+    .contact-card h3 {
+        font-size: var(--fs-24);
+    }
+
+    .contact-info p,
+    .contact-card p {
+        font-size: var(--fs-16);
+    }
+
+    .contact-info ul {
+        gap: var(--space-20);
+    }
+
+    .contact-info li {
+        font-size: var(--fs-16);
+    }
+
+    .contact-badge {
+        white-space: nowrap;
+    }
+
+    .contact-divider {
+        margin: var(--space-15) 0;
+    }
+
+    /*=========================================
+            FOOTER RESPONSIVE
+    =========================================*/
+
+    .footer {
+        padding: var(--space-25) 0;
+    }
+
+    .footer-title {
+        font-size: var(--fs-32);
+        margin-bottom: var(--space-15);
+    }
+
+    .footer-disclaimer h4,
+    .footer-links h4,
+    .footer-help h4,
+    .footer-contact-item h5 {
+        font-size: var(--fs-18);
+    }
+
+    .footer-disclaimer p,
+    .footer-links a,
+    .footer-help p,
+    .footer-contact-item a {
+        font-size: var(--fs-14);
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: var(--space-20);
+    }
+
+    .footer-bottom {
+        margin-top: var(--space-25);
+        font-size: var(--fs-14);
+        line-height: 1.6;
     }
 
 }
@@ -546,6 +806,33 @@
     }
 
     /*=========================================
+            TRUSTPILOT
+    =========================================*/
+
+    .trustpilot {
+        padding: var(--space-30) 0;
+    }
+
+    .trustpilot-card {
+        padding: var(--space-20);
+        border-radius: var(--radius-md);
+    }
+
+    .trustpilot-badge {
+        padding: 6px 12px;
+        font-size: var(--fs-14);
+    }
+
+    .trustpilot-badge i {
+        font-size: var(--fs-14);
+    }
+
+    .trustpilot-text {
+        font-size: var(--fs-14);
+        line-height: 1.8;
+    }
+
+    /*=========================================
                 SERVICES
     =========================================*/
 
@@ -569,6 +856,89 @@
 
     .service-link {
         font-size: var(--fs-16);
+    }
+
+    /*=========================================
+            CONTACT FORM
+    =========================================*/
+
+    .contact-form {
+        padding: var(--space-30) 0;
+    }
+
+    .contact-info,
+    .contact-card {
+        padding: var(--space-15);
+        border-radius: var(--radius-md);
+    }
+
+    .contact-info h3,
+    .contact-card h3 {
+        font-size: var(--fs-20);
+    }
+
+    .contact-info p,
+    .contact-card p {
+        font-size: var(--fs-14);
+        line-height: 1.7;
+    }
+
+    .contact-info ul {
+        gap: var(--space-15);
+    }
+
+    .contact-info li {
+        font-size: var(--fs-14);
+    }
+
+    .form-group label {
+        font-size: var(--fs-10);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: var(--fs-14);
+    }
+
+    .contact-footer {
+        padding: var(--space-15);
+    }
+
+    .contact-footer p {
+        font-size: var(--fs-12);
+    }
+
+    .contact-footer .btn-primary {
+        width: 100%;
+    }
+
+    /*=========================================
+            FOOTER RESPONSIVE
+    =========================================*/
+
+    .footer {
+        padding: var(--space-20) 0;
+    }
+
+    .footer-title {
+        font-size: var(--fs-28);
+    }
+
+    .footer-disclaimer p {
+        line-height: 1.8;
+    }
+
+    .footer-links ul {
+        gap: var(--space-5);
+    }
+
+    .footer-contact-item span {
+        display: block;
+        margin-top: var(--space-5);
+    }
+
+    .footer-bottom {
+        font-size: var(--fs-12);
     }
 
 }

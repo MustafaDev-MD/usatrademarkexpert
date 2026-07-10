@@ -12,6 +12,10 @@
 
 @include('frontend.sections.pricing')
 
+@include('frontend.sections.trustpilot')
+
 @include('frontend.sections.services')
+
+@include('frontend.sections.contact')
  
 @endsection

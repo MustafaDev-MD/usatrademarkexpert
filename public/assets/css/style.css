@@ -377,12 +377,12 @@ button {
     font-weight: var(--fw-medium);
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--text);
+    color: var(--secondary-badge-color);
 }
 
 .hero-badge i {
     font-size: var(--fs-10);
-    color: #000;
+    color: var(--secondary-badge-color);
 }
 
 .hero-content h1 {
@@ -598,13 +598,13 @@ button {
     border: 1px solid var(--card-border-active);
     border-radius: var(--radius-xs);
     font-size: var(--fs-10);
-    color: var(--text);
+    color: var(--secondary-badge-color);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .pricing-badge i {
-    color: #000;
+    color: var(--secondary-badge-color);
     font-size: var(--fs-8);
 }
 
@@ -711,14 +711,65 @@ button {
 }
 
 /*=========================================
+            TRUSTPILOT
+=========================================*/
+
+.trustpilot {
+    padding: var(--space-60) 0;
+    background: var(--body);
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+}
+
+.trustpilot .section-heading {
+    margin-bottom: var(--space-50);
+}
+
+.trustpilot-card {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 34px 42px 42px;
+    background: var(--white);
+    border: 1px solid var(--primary);
+    border-left: 4px solid var(--primary);
+    border-radius: 16px;
+}
+
+.trustpilot-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 8px;
+    background: var(--secondary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading);
+    font-size: var(--fs-18);
+    color: var(--btn-background);
+    margin-bottom: var(--space-20);
+}
+
+.trustpilot-badge i {
+    font-size: var(--fs-18);
+    color: var(--btn-background);
+}
+
+.trustpilot-text {
+    margin: 0;
+    font-size: var(--fs-20);
+    font-weight: var(--fw-regular);
+    line-height: 1.38;
+    color: var(--text-light);
+}
+
+/*=========================================
                 SERVICES
 =========================================*/
 
 .services {
     padding: var(--space-40) 0;
-    background: var(--body);
-    border-top: 1px solid var(--text);
-    border-bottom: 1px solid var(--text);
+    background-color: var(--white);
 }
 
 .services .section-heading {
@@ -732,7 +783,7 @@ button {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-     grid-template-columns: 0.9fr 1.15fr 1.15fr;
+    grid-template-columns: 0.9fr 1.15fr 1.15fr;
     gap: var(--space-30);
 
     grid-template-areas:
@@ -857,7 +908,7 @@ button {
     color: var(--primary);
 }
 
-.service-link{
+.service-link {
     position: relative;
     display: inline-block;
     align-self: end;
@@ -870,7 +921,7 @@ button {
     transition: var(--transition);
 }
 
-.service-link::after{
+.service-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -883,10 +934,279 @@ button {
     transition: var(--transition);
 }
 
-.service-link:hover::after{
+.service-link:hover::after {
     width: 100%;
 }
 
-.service-link:hover{
+.service-link:hover {
     color: var(--primary);
+}
+
+/*=========================================
+                Contact
+=========================================*/
+
+.contact-form {
+    padding: var(--space-60) 0;
+    background: var(--body);
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: var(--space-40);
+    align-items: stretch;
+}
+
+.contact-info,
+.contact-card {
+    position: relative;
+    padding: var(--space-30);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.contact-info {
+    border-left: 6px solid var(--primary-hover);
+}
+
+.contact-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    padding: 5px 14px;
+    background: var(--badge-background);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-xs);
+    font-size: var(--fs-10);
+    letter-spacing: 2px;
+    color: var(--secondary-badge-color);
+    text-transform: uppercase;
+}
+
+.contact-card h3,
+.contact-info h3 {
+    margin-bottom: var(--space-10);
+    font-family: var(--font-heading);
+    font-size: var(--fs-28);
+    color: var(--heading);
+}
+
+.contact-card p,
+.contact-info p {
+    color: var(--text-light);
+    font-size: var(--fs-18);
+    line-height: 1.6;
+}
+
+.contact-divider {
+    height: 1px;
+    background: var(--border);
+    margin: var(--space-5) 0 var(--space-20) 0;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-20);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: var(--space-20) 0 0 0;
+}
+
+.contact-row .form-group {
+    margin-top: 0;
+    width: stretch;
+}
+
+.form-group label {
+    margin-bottom: var(--space-5);
+    font-size: var(--fs-10);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+
+.form-group input,
+.form-group textarea {
+    height: 46px;
+    padding: 0 var(--space-15);
+    border: 1px solid var(--border);
+    font-size: var(--fs-16);
+}
+
+.form-group textarea {
+    height: 90px;
+    padding-top: var(--space-15);
+    resize: none;
+    /* margin-top:var(--space-20); */
+}
+
+.contact-footer {
+    margin-top: var(--space-20);
+    padding: var(--space-20);
+    background: var(--secondary);
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-30);
+}
+
+.contact-footer p {
+    margin: 0;
+    font-size: var(--fs-14);
+}
+
+.contact-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-25);
+    margin: var(--space-30) 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-15);
+    color: var(--text-light);
+    font-size: var(--fs-18);
+}
+
+.contact-info i {
+    color: var(--primary-hover);
+}
+
+/*=========================================
+                FOOTER
+=========================================*/
+
+.footer{
+    padding:var(--space-30) 0 var(--space-10);
+    background:var(--secondary);
+    border-top:1px solid var(--primary);
+    width:100%;
+    overflow:hidden;   
+}
+
+.footer-top{
+    display:grid;
+    grid-template-columns:78% 22%;
+    align-items:start;
+}
+
+.footer-title{
+    margin-bottom:var(--space-20);
+    font-family:var(--font-heading);
+    font-size:var(--fs-36);
+    font-weight:var(--fw-medium);
+    color:var(--heading);
+    line-height:1.1;
+}
+
+.footer-divider{
+    width:78%;
+    height:1px;
+    margin-bottom:var(--space-20);
+    background:var(--border);
+}
+
+.footer-disclaimer h4,
+.footer-links h4,
+.footer-help h4{
+    margin-bottom:var(--space-10);
+    font-size:var(--fs-18);
+    font-weight:var(--fw-semibold);
+    font-family:var(--font-body);
+    color:var(--text-light);
+}
+
+.footer-disclaimer p{
+    width:87%;
+    font-size:var(--fs-16);
+    line-height:1.75;
+    color:var(--text-light);
+}
+
+.footer-contact{
+    display:flex;
+    gap:var(--space-60);
+    margin-top:var(--space-20);
+}
+
+.footer-contact-item h5{
+    margin-bottom:var(--space-5);
+    font-size:var(--fs-18);
+    font-family:var(--font-body);
+    font-weight:var(--fw-medium);
+    color:var(--text-light);
+}
+
+.footer-contact-item p{
+    display:flex;
+    align-items:center;
+    gap:var(--space-5);
+}
+
+.footer-contact-item a{
+    font-size:var(--fs-16);
+    color:var(--text-light);
+}
+
+.footer-contact-item span{
+    font-size:var(--fs-12);
+    color:var(--text-light);
+}
+
+.footer-right{
+    padding-top: var(--space-50);
+}
+
+.footer-links{
+    margin-bottom:var(--space-30);
+}
+
+.footer-links ul{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-links a{
+    font-size:var(--fs-16);
+    color:var(--text-light);
+    transition:var(--transition);
+}
+
+.footer-links a:hover{
+    color:var(--primary-hover);
+}
+
+.footer-help p{
+    font-size:var(--fs-16);
+    line-height:1.7;
+    color:var(--text-light);
+}
+
+.footer-help a{
+    color:var(--primary-hover);
+    font-weight:var(--fw-semibold);
+}
+
+.footer-bottom{
+    margin-top:var(--space-20);
+    padding-top:var(--space-10);
+    border-top:1px solid var(--border);
+    text-align:center;
+    font-size:var(--fs-16);
+    color:var(--text-light);
 }
