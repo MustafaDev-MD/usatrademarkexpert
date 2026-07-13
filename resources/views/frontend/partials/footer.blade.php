@@ -43,7 +43,7 @@
 
                         <p>
 
-                            <a href="tel:+16503840370">
+                            <a href="tel:+16503840370" class="hover-link">
                                 +1 (650) 384-0370
                             </a>
 
@@ -63,7 +63,7 @@
 
                         <p>
 
-                            <a href="mailto:legal@trademarkusp.com">
+                            <a href="mailto:legal@trademarkusp.com" class="hover-link">
                                 legal@trademarkusp.com
                             </a>
 
