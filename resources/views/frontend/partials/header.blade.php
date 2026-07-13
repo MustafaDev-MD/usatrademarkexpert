@@ -91,7 +91,7 @@
         </li>
 
         <li>
-            <a href="#"
+            <a href="{{ route('resources') }}"
                 class="{{ request()->routeIs('resources*') ? 'active' : '' }}"
                 wire:navigate>
                 Resources
