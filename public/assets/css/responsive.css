@@ -6,6 +6,7 @@
 
     .container {
         width: min(100% - 40px, 1200px);
+        max-width: min(100% - 40px, 1200px);
     }
 
     .nav-menu ul {
@@ -31,6 +32,7 @@
 
     .container {
         width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
     }
 
     .logo {
@@ -469,6 +471,7 @@
 
     .container {
         width: calc(100% - 30px);
+        max-width: calc(100% - 30px);
     }
 
     .logo {
@@ -701,6 +704,7 @@
 
     .container {
         width: calc(100% - 24px);
+        max-width: calc(100% - 24px);
     }
 
     .logo {
@@ -1032,7 +1036,17 @@
     =========================================*/
 
     .extension-wrapper {
-        gap: var(--space-50);
+        grid-template-columns: 1fr;
+        gap: var(--space-40);
+    }
+
+    .extension-content {
+        order: 2;
+        text-align: center;
+    }
+
+    .extension-image {
+        order: 1;
     }
 
     .extension-content h2 {
@@ -1042,6 +1056,10 @@
     .extension-text {
         width: 100%;
         font-size: var(--fs-18);
+    }
+
+    .extension-buttons {
+        justify-content: center;
     }
 
     /*=========================================
@@ -1194,6 +1212,33 @@
     .extension-buttons {
         justify-content: center;
     }
+
+    .extension-cards {
+        left: var(--space-20);
+        right: var(--space-20);
+        bottom: var(--space-20);
+    }
+
+    .extension-card {
+        width: 32%;
+        min-height: 70px;
+        padding: var(--space-10);
+    }
+
+    .extension-card-icon {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+    }
+
+    .extension-card-icon i {
+        font-size: var(--fs-18);
+    }
+
+    .extension-card-content h5 {
+        font-size: var(--fs-14);
+    }
+
 
     /*=========================================
         AUTHORITY SECTION
@@ -1543,6 +1588,21 @@
     .extension .btn-primary,
     .extension .btn-outline {
         width: 100%;
+    }
+
+    .extension-cards {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--space-20);
+    }
+
+    .extension-card {
+        width: 100%;
+    }
+
+    .extension-card:not(:last-child) {
+        margin-bottom: var(--space-15);
     }
 
     /*=========================================

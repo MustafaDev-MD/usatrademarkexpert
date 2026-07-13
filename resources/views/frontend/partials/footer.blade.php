@@ -88,19 +88,25 @@
                     <ul>
 
                         <li>
-                            <a href="#">
+                            <a href="{{ route('home') }}" wire:navigate class="hover-link">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover-link">
                                 Our Guarantee
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#" class="hover-link">
                                 Careers
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#" class="hover-link">
                                 Privacy Settings
                             </a>
                         </li>
@@ -122,7 +128,7 @@
                             Live Chat
                         </a>
 
-                        for any immediate assistance.
+                        for any<br> immediate assistance.
 
                     </p>
 

@@ -48,6 +48,46 @@
 
                 <img src="{{ asset('assets/images/services/extension.png') }}" alt="Extension">
 
+                <div class="extension-cards">
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Fast Filing Services</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Fast Filing Services</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Fast Filing Services</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

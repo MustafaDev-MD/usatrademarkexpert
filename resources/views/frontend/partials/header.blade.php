@@ -5,7 +5,7 @@
         <div class="navbar">
 
             <div class="navbar-left">
-                <a href="{{ route('home') }}" class="logo">
+                <a href="{{ route('home') }}" wire:navigate class="logo">
                     USA Trademark Expert
                 </a>
             </div>
@@ -15,12 +15,37 @@
                 <nav class="nav-menu">
 
                     <ul>
+                        <li>
+                            <a href="{{ route('services') }}"
+                                class="{{ request()->routeIs('services') ? 'active' : '' }}"
+                                wire:navigate>
+                                Services
+                            </a>
+                        </li>
 
-                        <li><a href="{{ route('services') }}" class="active">Services</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="{{ route('about') }}">About</a></li>
-                        <li><a href="{{ route('faq') }}">FAQs</a></li>
+                        <li>
+                            <a href="#"
+                                class="{{ request()->routeIs('resources*') ? 'active' : '' }}"
+                                wire:navigate>
+                                Resources
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="{{ route('about') }}"
+                                class="{{ request()->routeIs('about') ? 'active' : '' }}"
+                                wire:navigate>
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('faq') }}"
+                                class="{{ request()->routeIs('faq') ? 'active' : '' }}"
+                                wire:navigate>
+                                FAQs
+                            </a>
+                        </li>
                     </ul>
 
                 </nav>
@@ -57,11 +82,45 @@
 
     <ul>
 
-        <li><a href="{{ route('services') }}">Services</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="{{ route('about') }}">About</a></li>
-        <li><a href="{{ route('faq') }}">FAQs</a></li>
-        <li><a href="{{ route('contact') }}">Free Consultation</a></li>
+        <li>
+            <a href="{{ route('services') }}"
+                class="{{ request()->routeIs('services') ? 'active' : '' }}"
+                wire:navigate>
+                Services
+            </a>
+        </li>
+
+        <li>
+            <a href="#"
+                class="{{ request()->routeIs('resources*') ? 'active' : '' }}"
+                wire:navigate>
+                Resources
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ route('about') }}"
+                class="{{ request()->routeIs('about') ? 'active' : '' }}"
+                wire:navigate>
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ route('faq') }}"
+                class="{{ request()->routeIs('faq') ? 'active' : '' }}"
+                wire:navigate>
+                FAQs
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ route('contact') }}"
+                class="{{ request()->routeIs('contact') ? 'active' : '' }}"
+                wire:navigate>
+                Free Consultation
+            </a>
+        </li>
 
     </ul>
 
