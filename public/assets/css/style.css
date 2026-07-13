@@ -1659,7 +1659,6 @@ button {
     left:var(--space-30);
     right:var(--space-30);
     bottom:var(--space-25);
-
     display:flex;
     justify-content:space-between;
 }
@@ -1667,18 +1666,13 @@ button {
 .extension-card{
     display:flex;
     align-items:center;
-
     width:31%;
     min-height:76px;
-
     padding:var(--space-10);
-
     background:rgba(255,255,255,.45);
     border:1px solid var(--primary);
-
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(12px);
-
     border-radius:var(--radius-xs);
     box-shadow:var(--shadow-sm);
 }
@@ -1686,18 +1680,14 @@ button {
 .extension-card-icon{
     width:52px;
     height:52px;
-
     flex:0 0 52px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     margin-right:var(--space-10);
-
     background:rgba(255,255,255,.65);
     border:1px solid rgba(255,255,255,.70);
-    border-radius:var(--radius-sm);
+    border-radius:var(--radius-xs);
 }
 
 .extension-card-icon i{
@@ -1712,21 +1702,17 @@ button {
 
 .extension-card-content h5{
     margin-bottom:var(--space-5);
-
     font-family:var(--font-body);
     font-size:var(--fs-16);
     font-weight:var(--fw-semibold);
     line-height:1.3;
-
     color:var(--heading);
 }
 
 .extension-card-content span{
     display:block;
-
     font-size:var(--fs-14);
     line-height:1.4;
-
     color:var(--text-light);
 }
 
