@@ -75,42 +75,47 @@
 
                 <div class="contact-divider"></div>
 
-                <form>
+                <form action="#" method="POST">
 
                     <div class="contact-row">
 
                         <div class="form-group">
-
-                            <label>Your Full Name</label>
-
-                            <input type="text">
-
+                            <label for="full_name">Your Full Name</label>
+                            <input
+                                type="text"
+                                id="full_name"
+                                name="full_name"
+                                autocomplete="name"
+                                required>
                         </div>
 
                         <div class="form-group">
-
-                            <label>Email Address</label>
-
-                            <input type="email">
-
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required>
                         </div>
 
                         <div class="form-group">
-
-                            <label>Phone Number</label>
-
-                            <input type="text">
-
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel">
                         </div>
 
                     </div>
 
                     <div class="form-group">
-
-                        <label>What are you looking to protect?</label>
-
-                        <textarea></textarea>
-
+                        <label for="message">What are you looking to protect?</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"></textarea>
                     </div>
 
                     <div class="contact-footer">
@@ -121,7 +126,7 @@
                             material in the manner complained of is not authorized.
                         </p>
 
-                        <button class="btn-outline">
+                        <button type="submit" class="btn-outline">
                             Submit
                         </button>
 

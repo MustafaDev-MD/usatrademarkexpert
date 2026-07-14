@@ -33,7 +33,7 @@
     @livewireStyles
 </head>
 
-<body class="bg-[#F9F8F5] text-gray-900 antialiased">
+<body                                                                                                                                                                                                                                                                                                                   >
 
     {{-- Header --}}
     @include('frontend.partials.header')
