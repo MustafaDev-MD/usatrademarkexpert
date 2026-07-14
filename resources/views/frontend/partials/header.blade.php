@@ -123,6 +123,14 @@
         </li>
 
         <li>
+            <a href="{{ route('blog') }}"
+                class="{{ request()->routeIs('blog') ? 'active' : '' }}"
+                wire:navigate>
+                Blog
+            </a>
+        </li>
+
+        <li>
             <a href="{{ route('contact') }}"
                 class="{{ request()->routeIs('contact') ? 'active' : '' }}"
                 wire:navigate>
