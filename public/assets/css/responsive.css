@@ -69,6 +69,10 @@
         width: 100%;
     }
 
+    .hero-card h4 {
+        font-size: var(--fs-14);
+    }
+
     /*=========================================
                 FEATURES
     =========================================*/
@@ -284,6 +288,14 @@
 
     .hero-card {
         width: 90%;
+    }
+
+    .hero-card h4 {
+        font-size: var(--fs-13);
+    }
+
+    .hero-card p {
+        font-size: var(--fs-10);
     }
 
     /*=========================================
@@ -507,6 +519,14 @@
         bottom: 6%;
         width: 90%;
         width: 93%;
+    }
+
+    .hero-card h4 {
+        font-size: var(--fs-12);
+    }
+
+    .hero-card p {
+        font-size: var(--fs-10);
     }
 
     /*=========================================
@@ -735,6 +755,24 @@
     .hero-content p {
         font-size: var(--fs-16);
         width: 100%;
+    }
+
+    .hero-card {
+        gap: var(--space-10);
+        padding: 5px;
+    }
+
+    .hero-card-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero-card h4 {
+        font-size: var(--fs-10);
+    }
+
+    .hero-card p {
+        font-size: var(--fs-8);
     }
 
     /* .hero-card {
@@ -1744,3 +1782,519 @@
 
 
 }
+
+
+
+/*=========================================
+        BLOG PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner-content {
+        width: 60%;
+        padding: var(--space-30);
+    }
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {
+
+    /*=========================================
+            BLOG BANNER RESPONSIVE
+    =========================================*/
+
+    .blog-banner-image {
+        max-width: 680px;
+    }
+
+    /*=========================================
+            BLOG POSTS
+    =========================================*/
+
+    .blog-filter {
+        gap: var(--space-30);
+    }
+
+    .blog-categories {
+        column-gap: var(--space-40);
+    }
+
+    .blog-search {
+        width: 360px;
+    }
+
+    .blog-grid {
+        gap: var(--space-30);
+    }
+
+    .blog-card-content {
+        width: 92%;
+    }
+
+    .blog-card-content p {
+        font-size: var(--fs-16);
+    }
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner-content {
+        width: 60%;
+        padding: var(--space-30);
+    }
+
+    .cta-banner-content h2 {
+        font-size: var(--fs-32);
+    }
+
+    .cta-banner-content p {
+        width: 95%;
+        font-size: var(--fs-18);
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {
+
+    /*=========================================
+                BLOG HERO
+    =========================================*/
+
+    .blog-hero {
+        padding: var(--space-60) 0;
+    }
+
+    .blog-hero-content h1 {
+        font-size: var(--fs-36);
+    }
+
+    .blog-hero-content p {
+        width: 85%;
+        font-size: var(--fs-18);
+    }
+
+    /*=========================================
+            BLOG BANNER RESPONSIVE
+    =========================================*/
+
+    .blog-banner {
+        padding: var(--space-60) 0;
+    }
+
+    .blog-banner-image {
+        max-width: 100%;
+    }
+
+    /*=========================================
+            BLOG POSTS
+    =========================================*/
+
+    .blog-filter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-25);
+    }
+
+    .blog-categories {
+        width: 100%;
+        justify-content: flex-start;
+        column-gap: var(--space-30);
+        row-gap: var(--space-20);
+    }
+
+    .blog-search {
+        width: 100%;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-30);
+    }
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner {
+        padding: var(--space-60) 0;
+    }
+
+    .cta-banner-overlay {
+        background: linear-gradient(90deg,
+                rgba(255, 251, 248, .95) 0%,
+                rgba(255, 251, 248, .90) 40%,
+                rgba(255, 251, 248, .60) 70%,
+                rgba(255, 251, 248, .25) 100%);
+    }
+
+    .cta-banner-content {
+        width: 70%;
+        padding: var(--space-30);
+    }
+
+    .cta-banner-content h2 {
+        font-size: var(--fs-32);
+    }
+
+    .cta-banner-content p {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {
+
+    /*=========================================
+                BLOG HERO
+    =========================================*/
+
+    .blog-hero {
+        padding: var(--space-50) 0;
+    }
+
+    .blog-hero-content h1 {
+        margin-bottom: var(--space-15);
+        font-size: var(--fs-32);
+    }
+
+    .blog-hero-content p {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+    /*=========================================
+            BLOG BANNER RESPONSIVE
+    =========================================*/
+
+    .blog-banner {
+        padding: var(--space-50) 0;
+    }
+
+    /*=========================================
+            BLOG POSTS
+    =========================================*/
+
+    .blog-posts {
+        padding: var(--space-30) 0 var(--space-60);
+    }
+
+    .blog-filter {
+        margin-bottom: var(--space-40);
+        padding-bottom: var(--space-30);
+    }
+
+    .blog-categories {
+        justify-content: center;
+        column-gap: var(--space-25);
+        row-gap: var(--space-15);
+    }
+
+    .blog-categories button {
+        font-size: var(--fs-18);
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-30);
+    }
+
+    .blog-card-content {
+        width: 90%;
+        bottom: var(--space-20);
+        padding: var(--space-15);
+    }
+
+    .blog-card-content h3 {
+        font-size: var(--fs-18);
+    }
+
+    .blog-card-content p {
+        font-size: var(--fs-16);
+    }
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner-overlay {
+        background: rgba(255, 251, 248, .82);
+    }
+
+    .cta-banner-content {
+        width: 100%;
+        padding: var(--space-25);
+    }
+
+    .cta-banner-content h2 {
+        font-size: var(--fs-32);
+    }
+
+    .cta-banner-content p {
+        width: 100%;
+        font-size: var(--fs-18);
+        line-height: 1.6;
+    }
+
+    .cta-banner-buttons {
+        width: 100%;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {
+
+    /*=========================================
+                BLOG HERO
+    =========================================*/
+
+    .blog-hero {
+        padding: var(--space-40) 0;
+    }
+
+    .blog-hero-content h1 {
+        font-size: var(--fs-28);
+    }
+
+    .blog-hero-content p {
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+            BLOG BANNER RESPONSIVE
+    =========================================*/
+
+    .blog-banner {
+        padding: var(--space-40) 0;
+    }
+
+    /*=========================================
+            BLOG POSTS
+    =========================================*/
+
+    .blog-filter {
+        align-items: stretch;
+    }
+
+    .blog-categories {
+        justify-content: center;
+        overflow-x: auto;
+        flex-wrap: wrap;
+        column-gap: var(--space-25);
+        padding-bottom: var(--space-10);
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .blog-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blog-categories button {
+        white-space: nowrap;
+        font-size: var(--fs-16);
+    }
+
+    .blog-search input {
+        height: 44px;
+        font-size: var(--fs-16);
+        padding: 0 50px 0 var(--space-15);
+    }
+
+    .blog-search button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .blog-card {
+        border-left: 6px solid var(--primary);
+    }
+
+    .blog-card-content {
+        width: 92%;
+        padding: var(--space-15);
+    }
+
+    .blog-card-content span {
+        margin-bottom: var(--space-5);
+    }
+
+    .blog-card-content h3 {
+        margin-bottom: var(--space-5);
+        font-size: var(--fs-14);
+    }
+
+    .blog-card-content p {
+        font-size: var(--fs-12);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner {
+        padding: var(--space-40) 0;
+    }
+
+    .cta-banner-wrapper {
+        border-radius: var(--radius-md);
+    }
+
+    .cta-banner-content {
+        padding: var(--space-20);
+    }
+
+    .cta-banner-badge {
+        gap: var(--space-5);
+        padding: 4px var(--space-10);
+        margin-bottom: var(--space-15);
+        font-size: var(--fs-10);
+        letter-spacing: 1px;
+    }
+
+    .cta-banner-content h2 {
+        font-size: var(--fs-28);
+    }
+
+    .cta-banner-content p {
+        margin-bottom: var(--space-20);
+        font-size: var(--fs-16);
+    }
+
+    .cta-banner-buttons {
+        flex-direction: column;
+        gap: var(--space-10);
+    }
+
+    .cta-banner-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {
+
+    /*=========================================
+            BLOG POSTS
+    =========================================*/
+
+    .blog-categories {
+        column-gap: var(--space-20);
+    }
+
+    .blog-categories button {
+        font-size: var(--fs-14);
+    }
+
+    .blog-search input {
+        height: 42px;
+        font-size: var(--fs-14);
+    }
+
+    .blog-card-content {
+        width: 94%;
+        bottom: var(--space-15);
+        padding: var(--space-10);
+    }
+
+    .blog-card-content span {
+        font-size: var(--fs-12);
+    }
+
+    .blog-card-content h3 {
+        font-size: var(--fs-13);
+    }
+
+    .blog-card-content p {
+        font-size: var(--fs-11);
+    }
+
+    /*=========================================
+            CTA BANNER RESPONSIVE
+    =========================================*/
+
+    .cta-banner-content h2 {
+        font-size: var(--fs-24);
+    }
+
+    .cta-banner-content p {
+        font-size: var(--fs-14);
+    }
+
+}
+
+
+
+/*=========================================
+        PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {}

@@ -14,6 +14,8 @@ Route::view('/faq', 'frontend.faq')->name('faq');
 
 Route::view('/resources', 'frontend.resources')->name('resources');
 
+Route::view('/blog', 'frontend.blog')->name('blog');
+
 Route::view('/contact', 'frontend.contact')->name('contact');
 
 Route::middleware(['auth', 'verified'])->group(function () {

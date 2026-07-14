@@ -46,6 +46,14 @@
                                 FAQs
                             </a>
                         </li>
+
+                        <li>
+                            <a href="{{ route('blog') }}"
+                                class="{{ request()->routeIs('blog') ? 'active' : '' }}"
+                                wire:navigate>
+                                Blog
+                            </a>
+                        </li>
                     </ul>
 
                 </nav>
