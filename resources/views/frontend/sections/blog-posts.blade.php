@@ -17,9 +17,14 @@
 
             <div class="blog-search">
 
-                <input type="text" placeholder="Search articles....">
+                <input
+                    type="search"
+                    id="blog-search"
+                    name="search"
+                    placeholder="Search articles..."
+                    autocomplete="off">
 
-                <button>
+                <button type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
