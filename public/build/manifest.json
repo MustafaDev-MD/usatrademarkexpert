@@ -61,10 +61,13 @@
     "isEntry": true
   },
   "resources/ts/app.ts": {
-    "file": "assets/app-CQN-7T0F.js",
+    "file": "assets/app-ew3mmDZM.js",
     "name": "app",
     "src": "resources/ts/app.ts",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/app-Bdbi0viN.css"
+    ]
   },
   "resources/ts/passkeys.js": {
     "file": "assets/passkeys-ZWACIUjA.js",
