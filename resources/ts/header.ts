@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initMobileMenu() {
 
     const menuToggle = document.getElementById("menuToggle");
     const menuClose = document.getElementById("menuClose");
@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlayRaw = document.querySelector(".menu-overlay");
     const menuIconRaw = menuToggle?.querySelector("i");
 
-    // 1. Your guard clause works perfectly here
     if (
         !(menuToggle instanceof HTMLButtonElement) ||
         !(mobileMenuRaw instanceof HTMLElement) ||
@@ -16,14 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // 2. Create strictly-typed references for the closure to inherit
-    const mobileMenu: HTMLElement = mobileMenuRaw;
-    const overlay: HTMLElement = overlayRaw;
-    const menuIcon: HTMLElement = menuIconRaw;
+    // Duplicate listeners se bachne ke liye
+    if (menuToggle.dataset.initialized) return;
+    menuToggle.dataset.initialized = "true";
 
-    // 3. TypeScript now knows these are 100% safe inside this function
-    function toggleMenu(open?: boolean): void {
+    const mobileMenu = mobileMenuRaw;
+    const overlay = overlayRaw;
+    const menuIcon = menuIconRaw;
 
+    function toggleMenu(open?: boolean) {
         const isOpen = open ?? !mobileMenu.classList.contains("active");
 
         mobileMenu.classList.toggle("active", isOpen);
@@ -32,21 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuIcon.classList.toggle("fa-bars", !isOpen);
         menuIcon.classList.toggle("fa-xmark", isOpen);
-
     }
 
-    menuToggle.addEventListener("click", () => {
-        toggleMenu();
-    });
+    menuToggle.addEventListener("click", () => toggleMenu());
 
     if (menuClose instanceof HTMLButtonElement) {
-        menuClose.addEventListener("click", () => {
-            toggleMenu(false);
-        });
+        menuClose.addEventListener("click", () => toggleMenu(false));
     }
 
-    overlay.addEventListener("click", () => {
-        toggleMenu(false);
-    });
+    overlay.addEventListener("click", () => toggleMenu(false));
+}
 
-});
+document.addEventListener("DOMContentLoaded", initMobileMenu);
+document.addEventListener("livewire:navigated", initMobileMenu);
