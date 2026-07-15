@@ -1,4 +1,4 @@
-<section class="services">
+<section class="services {{ request()->routeIs('home') ? 'services-home' : '' }}">
 
     <div class="container">
 

@@ -6,6 +6,16 @@
 
 @section('content')
 
+@include('frontend.sections.about-hero')
 
+@include('frontend.sections.company-history')
+
+@include('frontend.sections.services-section')
+
+@include('frontend.sections.extension')
+
+@include('frontend.sections.cta-banner')
+
+@include('frontend.sections.services')
  
 @endsection

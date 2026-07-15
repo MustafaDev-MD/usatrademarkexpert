@@ -39,6 +39,10 @@
         font-size: var(--fs-20);
     }
 
+    .logo img{
+        width: 250px;
+    }
+
     .nav-menu ul {
         gap: 28px;
     }
@@ -62,6 +66,7 @@
 
     .hero-content h1 {
         font-size: var(--fs-42);
+        width: 100%;
     }
 
     .hero-content p {
@@ -271,6 +276,10 @@
 
     .hero-badge {
         font-size: var(--fs-10);
+    }
+
+    .hero-content h1 {
+        width: 100%;
     }
 
     .hero-content p {
@@ -731,6 +740,10 @@
         font-size: var(--fs-18);
     }
 
+    .logo img {
+        width: 200px;
+    }
+
     .menu-toggle {
         width: 36px;
         height: 36px;
@@ -993,6 +1006,14 @@
 
     .logo {
         font-size: var(--fs-16);
+    }
+
+    /*=========================================
+                HERO
+    =========================================*/
+
+    .hero-content h1 {
+        font-size: var(--fs-32);
     }
 
     /*=========================================
@@ -2256,6 +2277,560 @@
     }
 
 }
+
+
+
+/*=========================================
+        ABOUT PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero-content {
+        width: 52%;
+        padding: var(--space-50);
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history-connector {
+        width: 78%;
+        right: -12px;
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section .services-grid {
+        gap: var(--space-30);
+    }
+
+    .services-section .service-card p {
+        width: 80%;
+    }
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero {
+        padding: var(--space-60) 0;
+    }
+
+    .about-hero-wrapper {
+        min-height: 460px;
+    }
+
+    .about-hero-content {
+        width: 55%;
+        min-height: 460px;
+        padding: var(--space-40);
+    }
+
+    .about-hero-content h1 {
+        font-size: var(--fs-48);
+    }
+
+    .about-hero-content p {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history {
+        padding: var(--space-60) 0;
+    }
+
+    .company-history-wrapper {
+        column-gap: var(--space-30);
+    }
+
+    .company-history-connector {
+        top: 50%;
+        right: -12px;
+        width: 76%;
+        height: 50%;
+        transform: translateY(-50%);
+    }
+
+    .company-history-card {
+        padding: var(--space-20);
+    }
+
+    .company-history-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .company-history-card p {
+        font-size: var(--fs-16);
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section {
+        padding: var(--space-60) 0;
+    }
+
+    .services-section .section-heading {
+        margin-bottom: var(--space-50);
+    }
+
+    .services-section .section-heading h2 {
+        font-size: var(--fs-36);
+    }
+
+    .services-section .section-heading p {
+        font-size: var(--fs-18);
+    }
+
+    .services-section .services-grid {
+        gap: var(--space-25);
+    }
+
+    .services-section .service-card {
+        padding: var(--space-20);
+    }
+
+    .services-section .service-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .services-section .service-card p {
+        font-size: var(--fs-16);
+        width: 80%;
+    }
+
+    .services-section .service-card a {
+        font-size: var(--fs-18);
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero-wrapper {
+        min-height: 420px;
+    }
+
+    .about-hero-content {
+        width: 65%;
+        min-height: 420px;
+        padding: var(--space-40) var(--space-30);
+    }
+
+    .about-hero-content h1 {
+        font-size: var(--fs-42);
+    }
+
+    .about-hero-content p {
+        font-size: var(--fs-18);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history {
+        padding: var(--space-50) 0;
+    }
+
+    .company-history .section-heading {
+        margin-bottom: var(--space-40);
+    }
+
+    .company-history .section-heading h2 {
+        font-size: var(--fs-36);
+    }
+
+    .company-history-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-20);
+    }
+
+    .company-history-connector {
+        bottom: 5%;
+        right: var(--space-20);
+        width: 2px;
+        height: 90%;
+        border: none;
+        border-radius: 0;
+        background: var(--border);
+    }
+
+    .company-history-card {
+        width: calc(100% - var(--space-40));
+        margin-right: var(--space-40);
+    }
+
+    .company-history-card::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: calc(var(--space-20) * -1);
+        width: var(--space-20);
+        height: 2px;
+        background: var(--border);
+        transform: translateY(-50%);
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section {
+        padding: var(--space-50) 0;
+    }
+
+    .services-section .section-heading {
+        margin-bottom: var(--space-40);
+    }
+
+    .services-section .section-heading h2 {
+        font-size: var(--fs-32);
+    }
+
+    .services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-20);
+    }
+
+    .services-section .service-card p {
+        width: 100%;
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero {
+        padding: var(--space-50) 0;
+    }
+
+    .about-hero-wrapper {
+        min-height: 500px;
+    }
+
+    .about-hero-overlay {
+        background: rgba(255, 247, 227, .88);
+    }
+
+    .about-hero-content {
+        width: 100%;
+        min-height: 500px;
+        justify-content: center;
+        padding: var(--space-30);
+    }
+
+    .about-hero-content h1 {
+        font-size: var(--fs-36);
+    }
+
+    .about-hero-content p {
+        width: 100%;
+        font-size: var(--fs-18);
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history {
+        padding: var(--space-40) 0;
+    }
+
+    .company-history .section-heading h2 {
+        font-size: var(--fs-32);
+        line-height: 1.2;
+    }
+
+    .company-history-card {
+        padding: var(--space-20);
+    }
+
+    .company-history-card span {
+        font-size: var(--fs-13);
+    }
+
+    .company-history-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .company-history-card p {
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section {
+        padding: var(--space-40) 0;
+    }
+
+    .services-section .section-heading {
+        margin-bottom: var(--space-30);
+    }
+
+    .services-section .section-heading h2 {
+        font-size: var(--fs-28);
+    }
+
+    .services-section .section-heading p {
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    .services-section .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-20);
+    }
+
+    .services-section .service-card {
+        padding: var(--space-20);
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero {
+        padding: var(--space-40) 0;
+    }
+
+    .about-hero-wrapper {
+        min-height: 430px;
+        border-radius: var(--radius-md);
+    }
+
+    .about-hero-content {
+        min-height: 430px;
+        padding: var(--space-20);
+    }
+
+    .about-hero-content h1 {
+        margin-bottom: var(--space-15);
+        font-size: var(--fs-32);
+    }
+
+    .about-hero-content p {
+        margin-bottom: var(--space-20);
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history {
+        padding: var(--space-30) 0;
+    }
+
+    .company-history .section-heading {
+        margin-bottom: var(--space-30);
+    }
+
+    .company-history .section-heading h2 {
+        font-size: var(--fs-28);
+    }
+
+    .company-history-card {
+        padding: var(--space-15);
+        border-radius: var(--radius-sm);
+    }
+
+    .company-history-card span {
+        margin-bottom: 8px;
+        font-size: var(--fs-12);
+    }
+
+    .company-history-card h3 {
+        margin-bottom: 8px;
+        font-size: var(--fs-16);
+    }
+
+    .company-history-card p {
+        font-size: var(--fs-14);
+        line-height: 1.6;
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section {
+        padding: var(--space-30) 0;
+    }
+
+    .services-section .section-heading h2 {
+        font-size: var(--fs-24);
+    }
+
+    .services-section .section-heading p {
+        font-size: var(--fs-15);
+    }
+
+    .services-section .service-tag {
+        width: 46px;
+        height: 42px;
+        margin-bottom: var(--space-15);
+        font-size: 26px;
+    }
+
+    .services-section .service-card {
+        padding: var(--space-15);
+        border-radius: var(--radius-sm);
+    }
+
+    .services-section .service-card h3 {
+        font-size: var(--fs-16);
+    }
+
+    .services-section .service-card p {
+        font-size: var(--fs-14);
+        line-height: 1.7;
+    }
+
+    .services-section .service-card a {
+        font-size: var(--fs-16);
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {
+
+    /*=========================================
+        ABOUT HERO RESPONSIVE
+    =========================================*/
+
+    .about-hero-wrapper {
+        min-height: 380px;
+    }
+
+    .about-hero-content {
+        min-height: 380px;
+        padding: var(--space-15);
+    }
+
+    .about-hero-content h1 {
+        font-size: var(--fs-28);
+    }
+
+    .about-hero-content p {
+        font-size: var(--fs-14);
+        line-height: 1.5;
+    }
+
+    /*=========================================
+        COMPANY HISTORY RESPONSIVE
+    =========================================*/
+
+    .company-history .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .company-history-card {
+        padding: 12px;
+    }
+
+    .company-history-card h3 {
+        font-size: 15px;
+    }
+
+    .company-history-card p {
+        font-size: 13px;
+    }
+
+    /*=========================================
+        SERVICES SECTION RESPONSIVE
+    =========================================*/
+
+    .services-section .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .services-section .section-heading p {
+        font-size: 14px;
+    }
+
+    .services-section .service-tag {
+        width: 42px;
+        height: 38px;
+        font-size: 22px;
+    }
+
+    .services-section .service-card {
+        padding: 12px;
+    }
+
+    .services-section .service-card h3 {
+        font-size: 15px;
+    }
+
+    .services-section .service-card p {
+        font-size: 13px;
+    }
+
+    .services-section .service-card a {
+        font-size: 15px;
+    }
+
+}
+
 
 
 
