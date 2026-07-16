@@ -693,7 +693,7 @@
         margin-bottom: var(--space-15);
     }
 
-    .footer-title img{
+    .footer-title img {
         width: 240px;
     }
 
@@ -1043,7 +1043,7 @@
             FOOTER RESPONSIVE
     =========================================*/
 
-    .footer-title img{
+    .footer-title img {
         width: 190px;
     }
 
@@ -3780,10 +3780,10 @@
             LARGE LAPTOP
 =========================================*/
 
-@media (max-width:1400px){
+@media (max-width:1400px) {
 
-    .privacy-content-wrapper{
-        width:95%;
+    .privacy-content-wrapper {
+        width: 95%;
     }
 
 }
@@ -3792,30 +3792,30 @@
                 LAPTOP
 =========================================*/
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-    .privacy-policy-section{
-        padding:0 0 var(--space-50);
+    .privacy-policy-section {
+        padding: 0 0 var(--space-50);
     }
 
-    .privacy-tabs{
-        gap:var(--space-40);
-        margin-bottom:var(--space-35);
-        padding-bottom:var(--space-30);
+    .privacy-tabs {
+        gap: var(--space-40);
+        margin-bottom: var(--space-35);
+        padding-bottom: var(--space-30);
     }
 
-    .privacy-tab{
-        font-size:var(--fs-20);
+    .privacy-tab {
+        font-size: var(--fs-20);
     }
 
-    .privacy-content-wrapper{
-        width:100%;
+    .privacy-content-wrapper {
+        width: 100%;
     }
 
-    .privacy-content-wrapper p{
-        font-size:var(--fs-18);
-        line-height:1.8;
-        margin-bottom:var(--space-20);
+    .privacy-content-wrapper p {
+        font-size: var(--fs-18);
+        line-height: 1.8;
+        margin-bottom: var(--space-20);
     }
 
 }
@@ -3824,26 +3824,26 @@
                 TABLET
 =========================================*/
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .privacy-policy-section{
-        padding:0 0 var(--space-40);
+    .privacy-policy-section {
+        padding: 0 0 var(--space-40);
     }
 
-    .privacy-tabs{
-        gap:var(--space-30);
-        margin-bottom:var(--space-30);
-        padding-bottom:var(--space-25);
+    .privacy-tabs {
+        gap: var(--space-30);
+        margin-bottom: var(--space-30);
+        padding-bottom: var(--space-25);
     }
 
-    .privacy-tab{
-        font-size:var(--fs-18);
-        white-space:nowrap;
+    .privacy-tab {
+        font-size: var(--fs-18);
+        white-space: nowrap;
     }
 
-    .privacy-content-wrapper p{
-        font-size:var(--fs-17);
-        line-height:1.75;
+    .privacy-content-wrapper p {
+        font-size: var(--fs-17);
+        line-height: 1.75;
     }
 
 }
@@ -3852,26 +3852,26 @@
                 MOBILE
 =========================================*/
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .privacy-policy-section{
-        padding:0 0 var(--space-35);
+    .privacy-policy-section {
+        padding: 0 0 var(--space-35);
     }
 
-    .privacy-tabs{
-        gap:var(--space-25);
-        margin-bottom:var(--space-25);
-        padding-bottom:20px;
+    .privacy-tabs {
+        gap: var(--space-25);
+        margin-bottom: var(--space-25);
+        padding-bottom: 20px;
     }
 
-    .privacy-tab{
-        font-size:var(--fs-16);
+    .privacy-tab {
+        font-size: var(--fs-16);
     }
 
-    .privacy-content-wrapper p{
-        font-size:var(--fs-16);
-        line-height:1.7;
-        margin-bottom:18px;
+    .privacy-content-wrapper p {
+        font-size: var(--fs-16);
+        line-height: 1.7;
+        margin-bottom: 18px;
     }
 
 }
@@ -3880,27 +3880,27 @@
             SMALL MOBILE
 =========================================*/
 
-@media (max-width:576px){
+@media (max-width:576px) {
 
-    .privacy-policy-section{
-        padding:0 0 30px;
+    .privacy-policy-section {
+        padding: 0 0 30px;
     }
 
-    .privacy-tabs{
-        gap:20px;
+    .privacy-tabs {
+        gap: 20px;
         justify-content: center;
-        margin-bottom:20px;
-        padding-bottom:18px;
+        margin-bottom: 20px;
+        padding-bottom: 18px;
     }
 
-    .privacy-tab{
-        font-size:15px;
+    .privacy-tab {
+        font-size: 15px;
     }
 
-    .privacy-content-wrapper p{
-        font-size:15px;
-        line-height:1.7;
-        margin-bottom:16px;
+    .privacy-content-wrapper p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 16px;
     }
 
 }
@@ -3909,20 +3909,235 @@
             EXTRA SMALL
 =========================================*/
 
-@media (max-width:380px){
+@media (max-width:380px) {
 
-    .privacy-tabs{
-        gap:16px;
+    .privacy-tabs {
+        gap: 16px;
     }
 
-    .privacy-tab{
-        font-size:14px;
+    .privacy-tab {
+        font-size: 14px;
     }
 
-    .privacy-content-wrapper p{
-        font-size:14px;
-        line-height:1.65;
-        margin-bottom:14px;
+    .privacy-content-wrapper p {
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 14px;
+    }
+
+}
+
+
+
+
+/*=========================================
+        CONTACT PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width:1400px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods .contact-methods-wrapper {
+        gap: var(--space-30);
+    }
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width:1200px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods {
+        padding: var(--space-60) 0;
+    }
+
+    .contact-methods .contact-methods-wrapper {
+        gap: var(--space-25);
+    }
+
+    .contact-methods .contact-card {
+        padding: 18px;
+    }
+
+    .contact-methods .contact-card h3 {
+        font-size: var(--fs-28);
+    }
+
+    .contact-methods .contact-card p {
+        font-size: var(--fs-18);
+        line-height: 1.7;
+    }
+
+    .contact-methods .contact-card-icon {
+        width: 54px;
+        height: 46px;
+        margin-bottom: 18px;
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width:992px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods {
+        padding: var(--space-50) 0;
+    }
+
+    .contact-methods .contact-methods-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-methods .contact-card {
+        padding: 20px;
+    }
+
+    .contact-methods .contact-card h3 {
+        font-size: var(--fs-28);
+        margin-bottom: 12px;
+    }
+
+    .contact-methods .contact-card p {
+        font-size: var(--fs-18);
+        line-height: 1.7;
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width:768px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods {
+        padding: var(--space-40) 0;
+    }
+
+    .contact-methods .contact-card {
+        padding: 18px;
+    }
+
+    .contact-methods .contact-card-icon {
+        width: 50px;
+        height: 44px;
+        margin-bottom: 16px;
+    }
+
+    .contact-methods .contact-card-icon i {
+        font-size: 22px;
+    }
+
+    .contact-methods .contact-card h3 {
+        font-size: var(--fs-24);
+        margin-bottom: 10px;
+    }
+
+    .contact-methods .contact-card p {
+        font-size: var(--fs-16);
+        line-height: 1.7;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:576px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods {
+        padding: 30px 0;
+    }
+
+    .contact-methods .contact-methods-wrapper {
+        gap: 16px;
+    }
+
+    .contact-methods .contact-card {
+        padding: 16px;
+    }
+
+    .contact-methods .contact-card-icon {
+        width: 46px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .contact-methods .contact-card-icon i {
+        font-size: 20px;
+    }
+
+    .contact-methods .contact-card h3 {
+        font-size: 22px;
+    }
+
+    .contact-methods .contact-card p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width:380px) {
+
+    /*=========================================
+        CONTACT METHODS RESPONSIVE
+    =========================================*/
+
+    .contact-methods .contact-card {
+        padding: 14px;
+    }
+
+    .contact-methods .contact-card-icon {
+        width: 42px;
+        height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .contact-methods .contact-card-icon i {
+        font-size: 18px;
+    }
+
+    .contact-methods .contact-card h3 {
+        font-size: 20px;
+    }
+
+    .contact-methods .contact-card p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
 }

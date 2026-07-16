@@ -591,17 +591,38 @@ button {
     gap: 40px;
 }
 
-.feature-card {
-    padding: 26px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xs);
-    transition: var(--transition);
+.feature-card{
+    position:relative;
+    overflow:hidden;
+    padding:26px;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius-xs);
+    transition:
+        border-color .35s ease,
+        background-color .35s ease;
 }
 
-.feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-md);
+.feature-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:var(--primary);
+    transform:scaleY(0);
+    transform-origin:top;
+    transition:transform .35s ease;
+}
+
+.feature-card:hover{
+    border-color:var(--primary);
+    background:var(--body);
+}
+
+.feature-card:hover::before{
+    transform:scaleY(1);
 }
 
 .feature-icon {
@@ -2724,20 +2745,41 @@ button {
 
 /* Card */
 
-.services-section .service-card {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-20);
-    background: var(--white);
-    border: 1px solid #dddddd;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+.services-section .service-card{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    padding:var(--space-20);
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    box-shadow:var(--shadow-sm);
+    transition:
+        border-color .35s ease,
+        background-color .35s ease;
 }
 
-.services-section .service-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
+.services-section .service-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:var(--primary);
+    transform:scaleY(0);
+    transform-origin:top;
+    transition:transform .35s ease;
+}
+
+.services-section .service-card:hover{
+    border-color:var(--primary);
+    background:var(--body);
+}
+
+.services-section .service-card:hover::before{
+    transform:scaleY(1);
 }
 
 /* Number */
@@ -2796,7 +2838,7 @@ button {
     text-decoration: none;
 }
 
-                                            /*=========================================
+/*=========================================
                                                             FAQ PAGE
                                             =========================================*/
 
@@ -2961,7 +3003,7 @@ button {
     color: var(--text-light);
 }
 
-                                            /*=========================================
+/*=========================================
                                                     PRIVACY POLICY PAGE
                                             =========================================*/
 
@@ -3046,4 +3088,122 @@ button {
 
 .privacy-content-wrapper p:last-child {
     margin-bottom: 0;
+}
+
+/*=========================================
+                                                        CONTACT PAGE
+                                            =========================================*/
+
+/*=========================================
+            CONTACT METHODS
+=========================================*/
+
+.contact-methods {
+    padding: var(--space-80) 0;
+    background: var(--body);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/*----- WRAPPER -----*/
+
+.contact-methods-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-35);
+}
+
+/*----- CARD -----*/
+
+.contact-methods .contact-card {
+    position: relative;
+    padding: var(--space-20);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition:
+        border-color .35s ease,
+        background-color .35s ease;
+}
+
+.contact-methods .contact-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .35s ease;
+}
+
+.contact-methods .contact-card:hover {
+    border-color: var(--primary);
+    background: #fffdf8;
+}
+
+.contact-methods .contact-card:hover::before {
+    transform: scaleY(1);
+}
+
+/*----- ICON -----*/
+
+.contact-methods .contact-card-icon {
+    width: 58px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-20);
+    background: var(--secondary);
+    border: 2px solid rgba(137, 128, 98, .45);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.contact-methods .contact-card-icon i {
+    font-size: var(--fs-24);
+    color: var(--primary);
+}
+
+/*----- HEADING -----*/
+
+.contact-methods .contact-card h3 {
+    margin-bottom: var(--space-15);
+    font-family: var(--font-heading);
+    font-size: var(--fs-32);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+    color: var(--heading);
+}
+
+/*----- TEXT -----*/
+
+.contact-methods .contact-card p {
+    margin: 0;
+    font-size: var(--fs-20);
+    color: var(--text-light);
+}
+
+.contact-methods .contact-card p a.live-chat {
+    color: var(--primary-hover);
+    font-weight: var(--fw-medium);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-methods .contact-card p a:hover {
+    color: var(--primary-hover);
+}
+
+/*=========================================
+            CONTACT FAQ SECTION
+=========================================*/
+
+.contact-faq-section {
+    padding: var(--space-80) 0;
+    background: var(--white);
 }
