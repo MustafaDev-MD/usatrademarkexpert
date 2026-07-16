@@ -9,7 +9,9 @@
             <div class="footer-left">
 
                 <h2 class="footer-title">
-                    <img src="{{ asset('assets/images/home/usa-trademark-logo.png') }}" alt="">
+                    <a href="{{ route('home') }}" wire:navigate class="logo">
+                        <img src="{{ asset('assets/images/home/usa-trademark-logo.png') }}" alt="USA Trademark Expert Logo">
+                    </a>
                 </h2>
 
                 <div class="footer-divider"></div>

@@ -6,7 +6,7 @@
 
             <div class="navbar-left">
                 <a href="{{ route('home') }}" wire:navigate class="logo">
-                    <img src="{{ asset('assets/images/home/usa-trademark-logo.png') }}" alt="">
+                    <img src="{{ asset('assets/images/home/usa-trademark-logo.png') }}" alt="USA Trademark Expert Logo">
                 </a>
             </div>
 
