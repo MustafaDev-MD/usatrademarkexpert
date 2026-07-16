@@ -1205,6 +1205,15 @@ button {
     align-items: start;
 }
 
+.footer-title {
+    margin-bottom: var(--space-20);
+    font-family: var(--font-heading);
+    font-size: var(--fs-36);
+    font-weight: var(--fw-medium);
+    color: var(--heading);
+    line-height: 1.1;
+}
+
 .footer-title img {
     width: 300px;
 }

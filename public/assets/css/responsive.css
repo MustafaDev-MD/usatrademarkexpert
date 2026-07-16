@@ -689,6 +689,10 @@
         padding: var(--space-25) 0;
     }
 
+    .footer-title {
+        margin-bottom: var(--space-15);
+    }
+
     .footer-title img{
         width: 240px;
     }
