@@ -10,7 +10,7 @@ Route::view('/about', 'frontend.about')->name('about');
 
 Route::view('/services', 'frontend.services')->name('services');
 
-Route::view('/faq', 'frontend.faq')->name('faq');
+Route::view('/faqs', 'frontend.faqs')->name('faqs');
 
 Route::view('/resources', 'frontend.resources')->name('resources');
 

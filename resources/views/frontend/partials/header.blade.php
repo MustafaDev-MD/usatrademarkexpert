@@ -40,8 +40,8 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('faq') }}"
-                                class="{{ request()->routeIs('faq') ? 'active' : '' }}"
+                            <a href="{{ route('faqs') }}"
+                                class="{{ request()->routeIs('faqs') ? 'active' : '' }}"
                                 wire:navigate>
                                 FAQs
                             </a>
@@ -115,8 +115,8 @@
         </li>
 
         <li>
-            <a href="{{ route('faq') }}"
-                class="{{ request()->routeIs('faq') ? 'active' : '' }}"
+            <a href="{{ route('faqs') }}"
+                class="{{ request()->routeIs('faqs') ? 'active' : '' }}"
                 wire:navigate>
                 FAQs
             </a>
