@@ -1,22 +1,27 @@
+@props([
+    'showFilter' => true,
+    'title' => null,
+])
+
 <section class="blog-posts">
 
     <div class="container">
 
         <!-- Filter -->
 
+        @if($showFilter)
+
+        <!-- Filter -->
         <div class="blog-filter">
 
             <div class="blog-categories">
-
                 <button class="active">Services</button>
                 <button>Services</button>
                 <button>Services</button>
                 <button>Services</button>
-
             </div>
 
             <div class="blog-search">
-
                 <input
                     type="search"
                     id="blog-search"
@@ -27,10 +32,19 @@
                 <button type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-
             </div>
 
         </div>
+
+        @else
+
+        @if($title)
+        <div class="section-heading text-center">
+            <h2>{{ $title }}</h2>
+        </div>
+        @endif
+
+        @endif
 
         <div class="blog-grid">
 

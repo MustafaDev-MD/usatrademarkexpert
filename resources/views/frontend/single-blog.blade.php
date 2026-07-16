@@ -6,14 +6,17 @@
 
 @section('content')
 
-@include('frontend.sections.blog-hero')
+@include('frontend.sections.single-blog-header')
 
-@include('frontend.sections.blog-banner')
+@include('frontend.sections.single-blog-body')
+
+@include('frontend.sections.single-blog-highlight')
+
+@include('frontend.sections.single-blog-text')
 
 @include('frontend.sections.blog-posts', [
-    'showFilter' => true
+    'showFilter' => false,
+    'title' => 'Explore More Topics'
 ])
-
-@include('frontend.sections.cta-banner')
  
 @endsection
