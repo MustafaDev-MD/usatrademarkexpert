@@ -689,9 +689,8 @@
         padding: var(--space-25) 0;
     }
 
-    .footer-title {
-        font-size: var(--fs-32);
-        margin-bottom: var(--space-15);
+    .footer-title img{
+        width: 240px;
     }
 
     .footer-disclaimer h4,
@@ -975,10 +974,6 @@
         padding: var(--space-20) 0;
     }
 
-    .footer-title {
-        font-size: var(--fs-28);
-    }
-
     .footer-disclaimer p {
         line-height: 1.8;
     }
@@ -1038,6 +1033,14 @@
 
     .pricing-card li i {
         font-size: var(--fs-14);
+    }
+
+    /*=========================================
+            FOOTER RESPONSIVE
+    =========================================*/
+
+    .footer-title img{
+        width: 190px;
     }
 
 }

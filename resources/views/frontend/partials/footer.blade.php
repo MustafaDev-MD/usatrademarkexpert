@@ -9,7 +9,7 @@
             <div class="footer-left">
 
                 <h2 class="footer-title">
-                    USA Trademark Expert
+                    <img src="{{ asset('assets/images/home/usa-trademark-logo.png') }}" alt="">
                 </h2>
 
                 <div class="footer-divider"></div>
