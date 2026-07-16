@@ -1,4 +1,5 @@
-import './header.js';
+import './header';
+import './faq';
 
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';

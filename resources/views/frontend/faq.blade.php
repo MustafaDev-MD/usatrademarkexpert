@@ -6,6 +6,10 @@
 
 @section('content')
 
+@include('frontend.sections.blog-hero')
 
+@include('frontend.sections.faq-section')
+
+@include('frontend.sections.cta-banner')
  
 @endsection

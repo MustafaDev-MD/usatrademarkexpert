@@ -3491,6 +3491,280 @@
 
 
 
+
+/*=========================================
+        FAQ PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width:1400px) {
+
+    .faq-question {
+        padding: 15px 22px;
+    }
+
+    /* .faq-answer {
+        width: 100%;
+    } */
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width:1200px) {
+
+    .faq-section {
+        padding: var(--space-50) 0 var(--space-60);
+    }
+
+    .faq-tabs {
+        gap: var(--space-40);
+        margin-bottom: var(--space-35);
+        padding-bottom: var(--space-30);
+    }
+
+    .faq-tab {
+        font-size: var(--fs-20);
+    }
+
+    .faq-question {
+        padding: 15px 20px;
+    }
+
+    .faq-question span:first-child {
+        font-size: var(--fs-18);
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+
+    .faq-answer p {
+        font-size: var(--fs-16);
+        padding-bottom: 20px;
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width:992px) {
+
+    .faq-section {
+        padding: var(--space-40) 0 var(--space-50);
+    }
+
+    .faq-tabs {
+        gap: var(--space-30);
+        margin-bottom: var(--space-30);
+        padding-bottom: var(--space-25);
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .faq-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .faq-tab {
+        flex-shrink: 0;
+        font-size: var(--fs-18);
+    }
+
+    .faq-question {
+        padding: 16px 18px;
+    }
+
+    .faq-question span:first-child {
+        width: 90%;
+        font-size: var(--fs-18);
+        line-height: 1.5;
+    }
+
+    .faq-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+        width: 14px;
+    }
+
+    .faq-answer {
+        /* width: 100%; */
+        padding: 0 18px;
+    }
+
+    .faq-answer p {
+        font-size: var(--fs-16);
+        line-height: 1.7;
+        padding-bottom: 18px;
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width:768px) {
+
+    .faq-section {
+        padding: var(--space-40) 0;
+    }
+
+    .faq-tabs {
+        gap: var(--space-25);
+        margin-bottom: var(--space-25);
+        padding-bottom: 20px;
+    }
+
+    .faq-tab {
+        font-size: var(--fs-16);
+        white-space: nowrap;
+    }
+
+    .faq-question {
+        align-items: flex-start;
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .faq-question span:first-child {
+        width: 100%;
+        font-size: var(--fs-16);
+        line-height: 1.6;
+    }
+
+    .faq-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+        width: 12px;
+    }
+
+    .faq-answer {
+        padding: 0 16px;
+    }
+
+    .faq-answer p {
+        font-size: var(--fs-15);
+        line-height: 1.7;
+        padding-bottom: 16px;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:576px) {
+
+    .faq-section {
+        padding: 30px 0;
+    }
+
+    .faq-tabs {
+        gap: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 18px;
+    }
+
+    .faq-tab {
+        font-size: 15px;
+    }
+
+    .faq-question {
+        padding: 14px;
+    }
+
+    .faq-question span:first-child {
+        font-size: 15px;
+    }
+
+    .faq-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+        width: 10px;
+    }
+
+    .faq-answer {
+        padding: 0 14px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+        line-height: 1.7;
+        padding-bottom: 14px;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width:380px) {
+
+    .faq-tabs {
+        gap: 16px;
+    }
+
+    .faq-tab {
+        font-size: 14px;
+    }
+
+    .faq-question {
+        padding: 12px;
+    }
+
+    .faq-question span:first-child {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .faq-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+        width: 9px;
+    }
+
+    .faq-answer {
+        padding: 0 12px;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+        line-height: 1.6;
+        padding-bottom: 12px;
+    }
+
+}
+
+
+
+
+
 /*=========================================
         PAGE RESPONSIVE
 =========================================*/
