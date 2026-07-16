@@ -20,6 +20,8 @@ Route::view('/single-blog', 'frontend.single-blog')->name('single-blog');
 
 Route::view('/contact', 'frontend.contact')->name('contact');
 
+Route::view('/privacy-policy', 'frontend.privacy-policy')->name('privacy-policy');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });

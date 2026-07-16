@@ -108,7 +108,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="hover-link">
+                            <a href="{{ route('privacy-policy') }}" wire:navigate class="hover-link">
                                 Privacy Settings
                             </a>
                         </li>

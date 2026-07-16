@@ -3773,6 +3773,164 @@
 
 
 /*=========================================
+    PRIVACY POLICY RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width:1400px){
+
+    .privacy-content-wrapper{
+        width:95%;
+    }
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width:1200px){
+
+    .privacy-policy-section{
+        padding:0 0 var(--space-50);
+    }
+
+    .privacy-tabs{
+        gap:var(--space-40);
+        margin-bottom:var(--space-35);
+        padding-bottom:var(--space-30);
+    }
+
+    .privacy-tab{
+        font-size:var(--fs-20);
+    }
+
+    .privacy-content-wrapper{
+        width:100%;
+    }
+
+    .privacy-content-wrapper p{
+        font-size:var(--fs-18);
+        line-height:1.8;
+        margin-bottom:var(--space-20);
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width:992px){
+
+    .privacy-policy-section{
+        padding:0 0 var(--space-40);
+    }
+
+    .privacy-tabs{
+        gap:var(--space-30);
+        margin-bottom:var(--space-30);
+        padding-bottom:var(--space-25);
+    }
+
+    .privacy-tab{
+        font-size:var(--fs-18);
+        white-space:nowrap;
+    }
+
+    .privacy-content-wrapper p{
+        font-size:var(--fs-17);
+        line-height:1.75;
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width:768px){
+
+    .privacy-policy-section{
+        padding:0 0 var(--space-35);
+    }
+
+    .privacy-tabs{
+        gap:var(--space-25);
+        margin-bottom:var(--space-25);
+        padding-bottom:20px;
+    }
+
+    .privacy-tab{
+        font-size:var(--fs-16);
+    }
+
+    .privacy-content-wrapper p{
+        font-size:var(--fs-16);
+        line-height:1.7;
+        margin-bottom:18px;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:576px){
+
+    .privacy-policy-section{
+        padding:0 0 30px;
+    }
+
+    .privacy-tabs{
+        gap:20px;
+        justify-content: center;
+        margin-bottom:20px;
+        padding-bottom:18px;
+    }
+
+    .privacy-tab{
+        font-size:15px;
+    }
+
+    .privacy-content-wrapper p{
+        font-size:15px;
+        line-height:1.7;
+        margin-bottom:16px;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width:380px){
+
+    .privacy-tabs{
+        gap:16px;
+    }
+
+    .privacy-tab{
+        font-size:14px;
+    }
+
+    .privacy-content-wrapper p{
+        font-size:14px;
+        line-height:1.65;
+        margin-bottom:14px;
+    }
+
+}
+
+
+
+
+/*=========================================
         PAGE RESPONSIVE
 =========================================*/
 
