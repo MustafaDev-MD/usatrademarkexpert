@@ -22,6 +22,8 @@ Route::view('/contact', 'frontend.contact')->name('contact');
 
 Route::view('/privacy-policy', 'frontend.privacy-policy')->name('privacy-policy');
 
+Route::view('/trademark-search', 'frontend.trademark-search')->name('trademark-search');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });

@@ -4,8 +4,16 @@
 
         <div class="service-hero-wrapper">
 
-            <div class="service-hero-card">
+            <div class="service-hero-card {{ request()->routeIs('trademark-search') ? 'search-card' : '' }}">
 
+                @if(request()->routeIs('trademark-search'))
+
+                {{-- Trademark Search Page Content --}}
+                @include('frontend.sections.trademark-search-box')
+
+                @else
+
+                {{-- Service Pages Content --}}
                 <h2>Bona Fide Use</h2>
 
                 <p class="service-hero-desc">
@@ -45,6 +53,8 @@
                 <a href="#" class="btn btn-outline">
                     Learn More
                 </a>
+
+                @endif
 
             </div>
 

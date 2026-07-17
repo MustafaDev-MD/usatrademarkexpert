@@ -1,6 +1,7 @@
 import './header';
 import './faq';
 import './privacy-policy';
+import './trademark-search';
 
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';

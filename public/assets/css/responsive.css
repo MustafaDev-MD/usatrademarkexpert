@@ -4145,6 +4145,302 @@
 
 
 
+
+/*=========================================
+        TRADEMARK SEARCH RESPONSIVE
+=========================================*/
+
+/*=========================================
+        TRADEMARK SEARCH RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width:1400px) {
+
+    .tm-search-table-wrapper {
+        height: 210px;
+        max-height: 210px;
+    }
+
+}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width:1200px) {
+
+    .tm-search-table {
+        min-width: fit-content;
+    }
+
+    .tm-search-icon {
+        width: 50px;
+        height: 40px;
+    }
+
+    .tm-search-icon i {
+        font-size: var(--fs-16);
+    }
+
+    .tm-search-card h3 {
+        font-size: var(--fs-20);
+    }
+
+    .tm-search-card p {
+        font-size: 15px;
+    }
+
+    .tm-search-form {
+        height: 46px;
+    }
+
+    .tm-search-form input {
+        padding: 0 var(--space-15);
+        font-size: 15px;
+    }
+
+    .tm-search-form button {
+        width: 40px;
+        height: 36px;
+    }
+
+    .tm-search-table-wrapper {
+        height: 200px;
+        max-height: 200px;
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width:992px) {
+
+    .tm-search-icon {
+        width: 46px;
+        height: 38px;
+        margin-bottom: var(--space-10);
+    }
+
+    .tm-search-card h3 {
+        font-size: var(--fs-20);
+    }
+
+    .tm-search-card p {
+        font-size: 15px;
+    }
+
+    .tm-search-form {
+        height: 44px;
+    }
+
+    .tm-search-form input {
+        font-size: 14px;
+    }
+
+    .tm-search-form button {
+        width: 38px;
+        height: 34px;
+    }
+
+    .tm-search-table-wrapper {
+        height: 160px;
+        max-height: 220px;
+    }
+
+    .tm-search-table {
+        min-width: max-content;
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width:768px) {
+
+    .tm-search-icon {
+        width: 42px;
+        height: 36px;
+    }
+
+    .tm-search-icon i {
+        font-size: 15px;
+    }
+
+    .tm-search-card h3 {
+        font-size: var(--fs-18);
+    }
+
+    .tm-search-card p {
+        font-size: 14px;
+    }
+
+    .tm-search-form {
+        height: 42px;
+    }
+
+    .tm-search-form input {
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+    .tm-search-form button {
+        width: 36px;
+        height: 32px;
+    }
+
+    .tm-search-table-wrapper {
+        height: 220px;
+        max-height: 220px;
+    }
+
+    .tm-search-table {
+        min-width: 530px;
+    }
+
+    .tm-search-table thead th {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .tm-search-table tbody td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:576px) {
+
+    .tm-search-icon {
+        width: 40px;
+        height: 34px;
+    }
+
+    .tm-search-card h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .tm-search-card p {
+        font-size: 13px;
+    }
+
+    .tm-search-form {
+        height: 40px;
+    }
+
+    .tm-search-form input {
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .tm-search-form button {
+        width: 34px;
+        height: 30px;
+    }
+
+    .tm-search-table-wrapper {
+        height: 200px;
+        max-height: 200px;
+    }
+
+    .tm-search-table {
+        min-width: 500px;
+    }
+
+    .tm-search-table thead th {
+        font-size: 11px;
+        padding: 10px 6px;
+    }
+
+    .tm-search-table tbody td {
+        font-size: 12px;
+        padding: 10px 6px;
+    }
+
+    .tm-placeholder td {
+        height: 140px;
+        font-size: 13px;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width:380px) {
+
+    .tm-search-icon {
+        width: 36px;
+        height: 32px;
+    }
+
+    .tm-search-icon i {
+        font-size: 14px;
+    }
+
+    .tm-search-card h3 {
+        font-size: 16px;
+    }
+
+    .tm-search-card p {
+        font-size: 12px;
+    }
+
+    .tm-search-form {
+        height: 38px;
+    }
+
+    .tm-search-form input {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .tm-search-form button {
+        width: 30px;
+        height: 28px;
+        margin-right: 4px;
+    }
+
+    .tm-search-table-wrapper {
+        height: 180px;
+        max-height: 180px;
+    }
+
+    .tm-search-table {
+        min-width: 480px;
+    }
+
+    .tm-search-table thead th {
+        font-size: 10px;
+    }
+
+    .tm-search-table tbody td {
+        font-size: 11px;
+    }
+
+    .tm-placeholder td {
+        height: 120px;
+        font-size: 12px;
+    }
+
+}
+
+
+
 /*=========================================
         PAGE RESPONSIVE
 =========================================*/
