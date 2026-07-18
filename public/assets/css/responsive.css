@@ -4441,6 +4441,205 @@
 
 
 
+
+/*=========================================
+        OUR TEAM PAGE RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {
+
+    .team-member-inner{
+        gap:var(--space-50);
+    }
+
+    .team-member-image{
+        width:230px;
+    }
+
+    .team-member-image img{
+        height:270px;
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-28);
+    }
+
+    .team-member-content p{
+        font-size:var(--fs-18);
+    }
+
+}
+
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {
+
+    .team-member-inner{
+        gap:var(--space-40);
+        padding:var(--space-35) 0;
+    }
+
+    .team-member-image{
+        width:220px;
+    }
+
+    .team-member-image img{
+        height:260px;
+    }
+
+    .team-member-info{
+        left:15px;
+        right:15px;
+        bottom:15px;
+        padding:10px;
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-28);
+    }
+
+}
+
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {
+
+    .team-member-inner{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:var(--space-30);
+    }
+
+    .team-member-image{
+        width:250px;
+    }
+
+    .team-member-image img{
+        height:280px;
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-28);
+    }
+
+    .team-member-content p{
+        font-size:var(--fs-18);
+    }
+
+}
+
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {
+
+    .team-member-inner{
+        padding:var(--space-30) 0;
+        gap:var(--space-25);
+    }
+
+    .team-member-image{
+        width:220px;
+    }
+
+    .team-member-image img{
+        height:250px;
+    }
+
+    .team-member-info{
+        left:12px;
+        right:12px;
+        bottom:12px;
+    }
+
+    .team-member-info h4{
+        font-size:var(--fs-16);
+    }
+
+    .team-member-info span{
+        font-size:var(--fs-12);
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-24);
+    }
+
+    .team-member-content p{
+        font-size:var(--fs-16);
+        line-height:1.7;
+    }
+
+}
+
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {
+
+    .team-member-inner{
+        padding:var(--space-25) 0;
+    }
+
+    .team-member-image{
+        width:100%;
+        max-width:260px;
+    }
+
+    .team-member-image img{
+        height:300px;
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-22);
+    }
+
+    .team-member-content p{
+        font-size:var(--fs-16);
+    }
+
+}
+
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {
+
+    .team-member-image{
+        max-width:220px;
+    }
+
+    .team-member-image img{
+        height:260px;
+    }
+
+    .team-member-content h3{
+        font-size:var(--fs-20);
+    }
+
+    .team-member-content p{
+        font-size:var(--fs-14);
+    }
+
+}
+
+
+
 /*=========================================
         PAGE RESPONSIVE
 =========================================*/

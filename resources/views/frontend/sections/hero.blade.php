@@ -29,7 +29,7 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#" class="btn-primary">
+                    <a href="#" data-popup class="btn btn-primary">
                         Get Started
                     </a>
 

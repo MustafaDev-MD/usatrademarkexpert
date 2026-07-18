@@ -6,18 +6,10 @@
 
 @section('content')
 
-@include('frontend.sections.hero')
+@include('frontend.sections.blog-hero')
 
-@include('frontend.sections.features')
+@include('frontend.sections.team-members-section')
 
-@include('frontend.sections.pricing')
-
-@include('frontend.sections.trustpilot')
-
-@include('frontend.sections.services')
-
-@include('frontend.sections.contact')
-
-@include('frontend.sections.popup-form')
+@include('frontend.sections.cta-banner')
  
 @endsection
