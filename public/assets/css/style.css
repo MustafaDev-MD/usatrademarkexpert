@@ -364,7 +364,7 @@ button {
     position: absolute;
     top: calc(100% + 8px);
     left: 0%;
-    transform: translateY(15px);
+    transform: translateX(-12%) translateY(15px);
     width: 620px;
     padding: var(--space-5) var(--space-15) var(--space-5) var(--space-5);
     background: rgba(255, 255, 255, .92);
@@ -386,7 +386,7 @@ button {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translateX(-12%) translateY(0);
 }
 
 .mega-menu-small {
