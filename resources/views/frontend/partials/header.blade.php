@@ -16,7 +16,7 @@
 
                     <ul>
 
-                        <li class="has-mega-menu">
+                        <li class="has-mega-menu mega-delay">
 
                             <span
                                 class="mega-trigger {{ request()->is('services*') ? 'active' : '' }}"
@@ -278,21 +278,19 @@
 
 </nav>
 <script>
-const megaItems = document.querySelectorAll('.has-mega-menu');
-
-megaItems.forEach(item => {
+document.querySelectorAll('.mega-delay').forEach(menu => {
 
     let timer;
 
-    item.addEventListener('mouseenter', () => {
+    menu.addEventListener('mouseenter', () => {
         clearTimeout(timer);
-        item.classList.add('open');
+        menu.classList.add('open');
     });
 
-    item.addEventListener('mouseleave', () => {
+    menu.addEventListener('mouseleave', () => {
         timer = setTimeout(() => {
-            item.classList.remove('open');
-        }, 300); // 300ms delay
+            menu.classList.remove('open');
+        }, 450);
     });
 
 });

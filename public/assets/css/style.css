@@ -358,14 +358,23 @@ button {
     transform: rotate(180deg);
 }
 
-.has-mega-menu .mega-menu{
+/* Default (Resources/About) */
+.has-mega-menu:hover .mega-menu{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translateX(-50%) translateY(0);
+}
+
+/* Services only */
+.mega-delay:hover .mega-menu{
     opacity:0;
     visibility:hidden;
     pointer-events:none;
-    transform:translateX(-50%) translateY(15px);
 }
 
-.has-mega-menu.open .mega-menu{
+/* JS controls this one */
+.mega-delay.open .mega-menu{
     opacity:1;
     visibility:visible;
     pointer-events:auto;
@@ -379,8 +388,8 @@ button {
     top: calc(100% + 18px);
     left: 50%;
     transform: translateX(-50%) translateY(15px);
-    width: 660px;
-    padding: var(--space-15);
+    width: 720px;
+    padding: var(--space-15) var(--space-35) var(--space-15) var(--space-15);
     background: rgba(255, 255, 255, .92);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
@@ -404,7 +413,7 @@ button {
 }
 
 .mega-menu-small {
-    width: 320px;
+    width: 170px;
 }
 
 .mega-menu-small .mega-menu-grid {
