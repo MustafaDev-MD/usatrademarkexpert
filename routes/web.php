@@ -24,7 +24,7 @@ Route::view('/services/comprehensive-trademark-search', 'frontend.services.compr
 
 Route::view('/services/copyright-registration', 'frontend.services.copyright-registration')->name('copyright-registration');
 
-Route::view('/services/trademark-search', 'frontend.trademark-search')->name('trademark-search');
+Route::view('/services/trademark-search', 'frontend.services.trademark-search')->name('trademark-search');
 
 Route::view('/services/statement-of-use', 'frontend.services.statement-of-use')->name('statement-of-use');
 
