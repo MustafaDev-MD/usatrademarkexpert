@@ -2144,7 +2144,7 @@ button {
 
 .testimonial {
     padding: var(--space-80) 0;
-    background: var(--body);
+    background: var(--white);
 }
 
 .testimonial .section-heading {
