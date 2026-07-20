@@ -4,11 +4,10 @@
 
         <div class="section-heading">
 
-            <h2>Simple, Transparent Legal Pricing</h2>
+            <h2>Secure Your Brand Before Someone Else Does</h2>
 
             <p>
-                Clear, upfront costs with no hidden fees.
-                Choose the level of protection that fits your business needs.
+                Don't leave your hard work unprotected. Take the first step toward federal registration by requesting your preliminary review today.
             </p>
 
         </div>
@@ -19,35 +18,36 @@
 
             <div class="contact-info">
 
-                <h3>Bona Fide Use</h3>
+                <h3>Why Choose USA Trademark Expert?</h3>
 
                 <p>
-                    Customer Trademark Classification:
-                    Using the USPTO's ID manual,
-                    our attorneys.
+                    We eliminate the complexity and guesswork of dealing with the USPTO. From initial database searches to final government filing, we act as your dedicated brand protection partner.
                 </p>
 
                 <ul>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Direct-Hit Search of the Federal USPTO Database Ensure your.
+                        Attorney-Assisted Precision: 
+                        Avoid costly structural mistakes with custom classification guidance tailored to your specific industry.
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Direct-Hit Search of the Federal USPTO Database Ensure your.
+                        Proactive Dispute Avoidance: 
+                        We scan federal registries to flag phonetic similarities and conflicting marks before you spend money on government fees.
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Direct-Hit Search of the Federal USPTO Database Ensure your.
+                        Transparent Lifecyle Management: 
+                        Enjoy total peace of mind with continuous tracking, updates, and maintenance solutions for your brand.
                     </li>
 
                 </ul>
 
                 <a href="#" class="btn-outline">
-                    Learn More
+                    Learn More About Us
                 </a>
 
             </div>
@@ -61,16 +61,14 @@
                     <!-- <i class="fa-solid fa-link"></i> -->
                     <i class="fa-solid fa-comments-dollar"></i>
 
-                    BEST AND FAIR PRICING
+                    FREE AVAILABILITY CHECK
 
                 </span>
 
-                <h3>Bona Fide Use</h3>
+                <h3>Start Your Application Now</h3>
 
                 <p>
-                    Customer Trademark Classification:
-                    Using the USPTO's ID manual,
-                    our attorneys.
+                    Provide a few quick details below, and our support team will help you verify your mark's eligibility.
                 </p>
 
                 <div class="contact-divider"></div>
@@ -121,13 +119,11 @@
                     <div class="contact-footer">
 
                         <p>
-                            By clicking submit, you state under penalty of perjury
-                            that you have a good faith belief that the use of the
-                            material in the manner complained of is not authorized.
+                            By clicking submit, you agree to our Terms of Service and Privacy Policy, and consent to receiving communications regarding your brand protection review.
                         </p>
 
                         <button type="submit" class="btn-outline">
-                            Submit
+                            Secure My Brand Now
                         </button>
 
                     </div>

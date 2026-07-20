@@ -310,8 +310,6 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* width: 180px; */
-    /* height: 48px; */
     padding: 10px 48px;
     font-weight: var(--fw-semibold);
     border: 1px solid var(--border);
@@ -358,6 +356,20 @@ button {
 
 .has-mega-menu:hover>span i {
     transform: rotate(180deg);
+}
+
+.has-mega-menu .mega-menu{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transform:translateX(-50%) translateY(15px);
+}
+
+.has-mega-menu.open .mega-menu{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translateX(-50%) translateY(0);
 }
 
 /*----- DROPDOWN -----*/
@@ -726,7 +738,7 @@ button {
 
 .hero-content h1 {
     margin-bottom: 18px;
-    width: 80%;
+    width: 100%;
     font-size: var(--fs-56);
     font-weight: var(--fw-medium);
     line-height: 1.1;
@@ -830,7 +842,7 @@ button {
 }
 
 .section-heading {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto var(--space-60);
     text-align: center;
     justify-content: center;
@@ -1242,7 +1254,7 @@ button {
 }
 
 .service-card p {
-    font-size: var(--fs-16);
+    font-size: var(--fs-15);
     line-height: 1.7;
     color: var(--text-light);
 }
@@ -1403,7 +1415,7 @@ button {
 .contact-card p,
 .contact-info p {
     color: var(--text-light);
-    font-size: var(--fs-18);
+    font-size: var(--fs-15);
     line-height: 1.6;
 }
 
@@ -1481,7 +1493,7 @@ button {
     align-items: baseline;
     gap: var(--space-15);
     color: var(--text-light);
-    font-size: var(--fs-18);
+    font-size: var(--fs-15);
 }
 
 .contact-info i {

@@ -715,7 +715,7 @@
 
     .contact-info p,
     .contact-card p {
-        font-size: var(--fs-16);
+        font-size: var(--fs-14);
     }
 
     .contact-info ul {
@@ -723,7 +723,7 @@
     }
 
     .contact-info li {
-        font-size: var(--fs-16);
+        font-size: var(--fs-14);
     }
 
     .contact-badge {
@@ -1016,7 +1016,7 @@
 
     .contact-info p,
     .contact-card p {
-        font-size: var(--fs-14);
+        font-size: var(--fs-13);
         line-height: 1.7;
     }
 
@@ -1025,7 +1025,7 @@
     }
 
     .contact-info li {
-        font-size: var(--fs-14);
+        font-size: var(--fs-13);
     }
 
     .form-group label {
@@ -2559,7 +2559,7 @@
     }
 
     .services-section .service-card p {
-        font-size: var(--fs-16);
+        font-size: var(--fs-14);
         width: 80%;
     }
 

@@ -5,12 +5,11 @@
         <div class="section-heading">
 
             <h2>
-                Simple, Transparent Legal Pricing
+                Trusted by Thousands of Growing Brands
             </h2>
 
             <p>
-                Clear, upfront costs with no hidden fees.
-                Choose the level of protection that fits your business needs.
+                See how business owners are securing their intellectual property and scaling with confidence using USA Trademark Expert.
             </p>
 
         </div>
@@ -27,14 +26,7 @@
 
             <p class="trustpilot-text">
 
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-                nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                qui blandit praesent luptatum zzril delenit consequat."
+                "Choosing the Standard Package gave me complete confidence throughout the entire process. The 1-on-1 consultation with a trademark attorney cleared up every question I had about protecting my brand's exclusivity, and the legal support team fast-tracked my application straight to the USPTO. Having a formal cease-and-desist strategy ready to go provides incredible peace of mind. USA Trademark Expert delivers elite attorney oversight and unmatched value without the typical high law firm fees."
 
             </p>
 

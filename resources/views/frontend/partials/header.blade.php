@@ -278,20 +278,21 @@
 
 </nav>
 <script>
-    document.querySelectorAll(".mobile-dropdown-toggle").forEach(button => {
+const megaItems = document.querySelectorAll('.has-mega-menu');
 
-    button.addEventListener("click", () => {
+megaItems.forEach(item => {
 
-        const parent = button.parentElement;
+    let timer;
 
-        document.querySelectorAll(".mobile-dropdown").forEach(item => {
-            if(item !== parent){
-                item.classList.remove("active");
-            }
-        });
+    item.addEventListener('mouseenter', () => {
+        clearTimeout(timer);
+        item.classList.add('open');
+    });
 
-        parent.classList.toggle("active");
-
+    item.addEventListener('mouseleave', () => {
+        timer = setTimeout(() => {
+            item.classList.remove('open');
+        }, 300); // 300ms delay
     });
 
 });

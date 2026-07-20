@@ -4,21 +4,54 @@
 
         <div class="section-heading">
 
-            <h2>
-                Simple, Transparent Legal Pricing
-            </h2>
+            <h2>{{ $pricingTitle }}</h2>
             <p>
-                Clear, upfront costs with no hidden fees.
-                Choose the level of protection that fits your business needs.
+                {{ $pricingDescription }}
             </p>
 
         </div>
 
         <div class="pricing-wrapper">
 
+            @foreach($pricingPackages as $package)
+            <div class="pricing-card {{ $package['active'] ? 'active' : '' }}">
+
+                @if($package['active'])
+                <span class="pricing-badge">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                    {{ $package['badge'] }}
+                </span>
+                @endif
+
+                <h3>{{ $package['title'] }}</h3>
+
+                <div class="pricing-price">
+                    <span class="price">${{ $package['price'] }}</span>
+                    <span class="fees">+ applicable fees</span>
+                </div>
+
+                <p class="pricing-desc">{{ $package['description'] }}</p>
+
+                <ul>
+                    @foreach($package['features'] as $feature)
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>{{ $feature }}</span>
+                    </li>
+                    @endforeach
+                </ul>
+
+                <a href="#"
+                    class="pricing-btn {{ $package['active'] ? 'pricing-btn-active' : '' }}">
+                    {{ $package['button'] }}
+                </a>
+
+            </div>
+            @endforeach
+
             {{-- Card 1 --}}
 
-            <div class="pricing-card">
+            <!-- <div class="pricing-card">
 
                 <h3>Basic Package</h3>
                 <div class="pricing-price">
@@ -43,7 +76,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Direct-Hit Search of the Federal USPTO Database: 
+                            Direct-Hit Search of the Federal USPTO Database:
                             Ensure your trademark is unique and available.
                         </span>
                     </li>
@@ -51,7 +84,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Customer Trademark Classification: 
+                            Customer Trademark Classification:
                             Using the USPTO’s ID manual, our attorneys will devise a class and description of goods and services that best matches what you seek to protect with your trademark registration.
                         </span>
                     </li>
@@ -62,15 +95,14 @@
                     Select Basic
                 </a>
 
-            </div>
+            </div> -->
 
             {{-- Card 2 --}}
 
-            <div class="pricing-card active">
+            <!-- <div class="pricing-card active">
 
                 <span class="pricing-badge">
 
-                    <!-- <i class="fa-solid fa-square-full"></i> -->
                     <i class="fa-solid fa-comments-dollar"></i>
                     Continuous Protection
 
@@ -100,7 +132,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            One-on-One Consultation with a Trademark Lawyer: 
+                            One-on-One Consultation with a Trademark Lawyer:
                             15-minute session to address your specific needs.
                         </span>
                     </li>
@@ -108,7 +140,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Cease and Desist Letter: 
+                            Cease and Desist Letter:
                             Take action against potential infringements
                         </span>
                     </li>
@@ -119,11 +151,11 @@
                     Select Basic
                 </a>
 
-            </div>
+            </div> -->
 
             {{-- Card 3 --}}
 
-            <div class="pricing-card">
+            <!-- <div class="pricing-card">
 
                 <h3>Premium Package</h3>
 
@@ -149,7 +181,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            One-on-One Consultation with a Trademark Lawyer: 
+                            One-on-One Consultation with a Trademark Lawyer:
                             Extended 1-hour session for in-depth assistance.
                         </span>
                     </li>
@@ -157,7 +189,7 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Rush Processing: 
+                            Rush Processing:
                             Priority 48-hour processing
                         </span>
                     </li>
@@ -175,7 +207,7 @@
                     Select Basic
                 </a>
 
-            </div>
+            </div> -->
 
         </div>
 

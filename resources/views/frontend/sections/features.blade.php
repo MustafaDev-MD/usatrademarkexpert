@@ -4,25 +4,38 @@
 
         <div class="section-heading">
             <h2>
-                Absolute Authority in Brand Protection
+                Federal Trademark Protection in 3 Simple Steps
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                We have streamlined the complex legal system into an efficient, worry-free online process designed for modern business owners.
             </p>
         </div>
 
         <div class="features-wrapper">
 
             <div class="feature-card">
+
                 <div class="feature-icon">
                     <i class="fa-regular fa-file-lines"></i>
                 </div>
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Complete a Brief Questionnaire
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod magna.
+                    Tell us about your brand. Simply choose the package and tier of legal support that best fits your goals, and fill out our short online form to kick off the process.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+                <h3>
+                    Database Search & Review
+                </h3>
+                <p>
+                    Our legal support staff conducts a direct-hit search of the USPTO database to check the availability of your mark, helping catch potential conflicts and reducing your risk of rejection.
                 </p>
             </div>
 
@@ -32,24 +45,10 @@
                     <i class="fa-regular fa-file-lines"></i>
                 </div>
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Official Application Filing
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod magna.
-                </p>
-
-            </div>
-
-            <div class="feature-card">
-
-                <div class="feature-icon">
-                    <i class="fa-regular fa-file-lines"></i>
-                </div>
-                <h3>
-                    Lorem ipsum dolor sit amet.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod magna.
+                    Once your details are verified and your custom goods and services classifications are perfected, our team files your finalized application directly with the U.S. government.
                 </p>
 
             </div>

@@ -11,26 +11,22 @@
                     <!-- <i class="fa-solid fa-square-full"></i> -->
                     <i class="fa-solid fa-shield-halved"></i>
 
-                    Continuous Protection
+                    ATTORNEY-ASSISTED FILING
 
                 </span>
 
                 <h1>
-                    Absolute Authority in
-                    
-                    Brand Protection
+                    The Certain Way to Secure Your Brand’s Future
                 </h1>
 
                 <p>
-                    Expert trademark search, filing, and monitoring services.
-                    We provide the legal precision required to safeguard your
-                    intellectual property across the globe.
+                    USA Trademark Expert provides comprehensive federal protection tailored entirely to your business needs. Our team handles the heavy lifting, guiding you seamlessly through the USPTO registration process so you can secure your name, logo, or slogan with zero confusion.
                 </p>
 
                 <div class="hero-buttons">
 
                     <a href="#" data-popup class="btn btn-primary">
-                        Get Started
+                        Register My Trademark
                     </a>
 
                     <a href="#" class="btn-outline">
@@ -44,7 +40,7 @@
             <div class="hero-image">
 
                 <img src="{{ asset('assets/images/hero/hero.webp') }}"
-                     alt="Trademark Expert">
+                    alt="Trademark Expert">
 
                 <div class="hero-card">
 
