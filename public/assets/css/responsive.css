@@ -4640,6 +4640,187 @@
 
 
 
+
+
+/*=========================================
+        POPUP RESPONSIVE
+=========================================*/
+
+/*=========================================
+            LARGE LAPTOP
+=========================================*/
+
+@media (max-width: 1400px) {}
+
+/*=========================================
+                LAPTOP
+=========================================*/
+
+@media (max-width: 1200px) {
+
+    .contact-popup-box{
+        max-width:400px;
+    }
+
+}
+
+/*=========================================
+                TABLET
+=========================================*/
+
+@media (max-width: 992px) {
+
+    .contact-popup-box{
+        max-width:380px;
+        padding:var(--space-20);
+    }
+
+    .contact-popup-box h2{
+        font-size:var(--fs-24);
+    }
+
+    .contact-popup-box>p{
+        font-size:var(--fs-14);
+    }
+
+}
+
+/*=========================================
+                MOBILE
+=========================================*/
+
+@media (max-width: 768px) {
+
+    .contact-popup-box{
+        max-width:95%;
+        margin:var(--space-15);
+        padding:var(--space-20);
+    }
+
+    .contact-popup-close{
+        top:var(--space-5);
+        right:var(--space-10);
+        width:32px;
+        height:32px;
+    }
+
+    .contact-popup-box h2{
+        padding-right:40px;
+        font-size:var(--fs-22);
+    }
+
+    .contact-popup-box>p{
+        font-size:var(--fs-14);
+        line-height:1.5;
+    }
+
+    .popup-form{
+        gap:var(--space-10);
+    }
+
+    .popup-form input{
+        height:42px;
+    }
+
+    .popup-form textarea{
+        height:110px;
+    }
+
+    .popup-btn{
+        width:100%;
+        height:44px;
+    }
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width: 576px) {
+
+    .contact-popup{
+        align-items:flex-start;
+        overflow-y:auto;
+        padding:var(--space-20) 0;
+    }
+
+    .contact-popup-box{
+        margin:var(--space-15);
+        padding:var(--space-20);
+        border-radius:var(--radius-md);
+    }
+
+    .contact-popup-box h2{
+        font-size:var(--fs-20);
+    }
+
+    .contact-popup-box>p{
+        margin-bottom:var(--space-10);
+        font-size:var(--fs-13);
+    }
+
+    .popup-form input{
+        height:40px;
+        font-size:var(--fs-11);
+    }
+
+    .popup-form textarea{
+        height:100px;
+        font-size:var(--fs-11);
+    }
+
+    .popup-note strong{
+        font-size:var(--fs-12);
+    }
+
+    .popup-note span{
+        font-size:var(--fs-11);
+    }
+
+    .popup-btn{
+        width:100%;
+    }
+
+}
+
+/*=========================================
+            EXTRA SMALL
+=========================================*/
+
+@media (max-width: 380px) {
+
+    .contact-popup-box{
+        margin:var(--space-10);
+        padding:var(--space-15);
+    }
+
+    .contact-popup-box h2{
+        font-size:var(--fs-18);
+    }
+
+    .contact-popup-box>p{
+        font-size:var(--fs-12);
+    }
+
+    .popup-form input{
+        padding:0 var(--space-10);
+    }
+
+    .popup-form textarea{
+        padding:var(--space-10);
+    }
+
+    .popup-btn{
+        height:40px;
+        font-size:var(--fs-13);
+    }
+
+}
+
+
+
+
 /*=========================================
         PAGE RESPONSIVE
 =========================================*/

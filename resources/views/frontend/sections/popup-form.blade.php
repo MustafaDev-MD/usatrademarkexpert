@@ -46,33 +46,3 @@
     </div>
 
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-        const popup = document.querySelector(".contact-popup");
-
-        document.querySelectorAll("[data-popup]").forEach(button => {
-            button.addEventListener("click", () => {
-                popup.classList.add("active");
-                document.body.style.overflow = "hidden";
-            });
-        });
-
-        function closePopup() {
-            popup.classList.remove("active");
-            document.body.style.overflow = "";
-        }
-
-        document.querySelector(".contact-popup-close").addEventListener("click", closePopup);
-
-        document.querySelector(".contact-popup-overlay").addEventListener("click", closePopup);
-
-        document.addEventListener("keydown", e => {
-            if (e.key === "Escape") {
-                closePopup();
-            }
-        });
-
-    });
-</script>
