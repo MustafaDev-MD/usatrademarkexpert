@@ -277,21 +277,3 @@
     </ul>
 
 </nav>
-<script>
-document.querySelectorAll('.mega-delay').forEach(menu => {
-
-    let timer;
-
-    menu.addEventListener('mouseenter', () => {
-        clearTimeout(timer);
-        menu.classList.add('open');
-    });
-
-    menu.addEventListener('mouseleave', () => {
-        timer = setTimeout(() => {
-            menu.classList.remove('open');
-        }, 450);
-    });
-
-});
-</script>

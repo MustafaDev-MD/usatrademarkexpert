@@ -358,38 +358,15 @@ button {
     transform: rotate(180deg);
 }
 
-/* Default (Resources/About) */
-.has-mega-menu:hover .mega-menu{
-    opacity:1;
-    visibility:visible;
-    pointer-events:auto;
-    transform:translateX(-50%) translateY(0);
-}
-
-/* Services only */
-.mega-delay:hover .mega-menu{
-    opacity:0;
-    visibility:hidden;
-    pointer-events:none;
-}
-
-/* JS controls this one */
-.mega-delay.open .mega-menu{
-    opacity:1;
-    visibility:visible;
-    pointer-events:auto;
-    transform:translateX(-50%) translateY(0);
-}
-
 /*----- DROPDOWN -----*/
 
 .mega-menu {
     position: absolute;
-    top: calc(100% + 18px);
-    left: 50%;
-    transform: translateX(-50%) translateY(15px);
-    width: 720px;
-    padding: var(--space-15) var(--space-35) var(--space-15) var(--space-15);
+    top: calc(100% + 8px);
+    left: 0%;
+    transform: translateY(15px);
+    width: 620px;
+    padding: var(--space-5) var(--space-15) var(--space-5) var(--space-5);
     background: rgba(255, 255, 255, .92);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
@@ -409,7 +386,7 @@ button {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
 .mega-menu-small {
@@ -423,7 +400,7 @@ button {
 
 /*----- ARROW -----*/
 
-.mega-menu::before {
+/* .mega-menu::before {
     content: "";
     position: absolute;
     top: -9px;
@@ -434,7 +411,7 @@ button {
     background: var(--white);
     border-top: 1px solid rgba(137, 128, 98, .15);
     border-left: 1px solid rgba(137, 128, 98, .15);
-}
+} */
 
 /*----- GRID -----*/
 
@@ -456,7 +433,7 @@ button {
     border: 1px solid transparent;
     border-radius: var(--radius-md);
     overflow: hidden;
-    font-size: var(--fs-16);
+    font-size: var(--fs-14);
     font-weight: var(--fw-medium);
     color: var(--text-light);
     transition:
