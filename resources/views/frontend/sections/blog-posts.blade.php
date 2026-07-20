@@ -1,6 +1,6 @@
 @props([
-    'showFilter' => true,
-    'title' => null,
+'showFilter' => true,
+'title' => null,
 ])
 
 <section class="blog-posts">
@@ -49,63 +49,75 @@
         <div class="blog-grid">
 
             <!-- Card -->
-            <article class="blog-card">
+            <article>
 
-                <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
+                <a href="{{ route('single-blog') }}" class="blog-card">
 
-                <div class="blog-card-content">
+                    <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
 
-                    <span>Trademark</span>
+                    <div class="blog-card-content">
 
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                        <span>Trademark</span>
 
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consect adipiscing elit,
-                        sed diam nonummy nibh euismod magna.
-                    </p>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
 
-                </div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consect adipiscing elit,
+                            sed diam nonummy nibh euismod magna.
+                        </p>
 
-            </article>
+                    </div>
 
-            <article class="blog-card">
-
-                <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
-
-                <div class="blog-card-content">
-
-                    <span>Trademark</span>
-
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consect adipiscing elit,
-                        sed diam nonummy nibh euismod magna.
-                    </p>
-
-                </div>
+                </a>
 
             </article>
 
-            <article class="blog-card">
+            <article>
 
-                <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
+                <a href="{{ route('single-blog') }}" class="blog-card">
 
-                <div class="blog-card-content">
+                    <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
 
-                    <span>Trademark</span>
+                    <div class="blog-card-content">
 
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                        <span>Trademark</span>
 
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consect adipiscing elit,
-                        sed diam nonummy nibh euismod magna.
-                    </p>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
 
-                </div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consect adipiscing elit,
+                            sed diam nonummy nibh euismod magna.
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+            <article>
+
+                <a href="{{ route('single-blog') }}" class="blog-card">
+
+                    <img src="{{ asset('assets/images/blog/blog-card.png') }}" alt="">
+
+                    <div class="blog-card-content">
+
+                        <span>Trademark</span>
+
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consect adipiscing elit,
+                            sed diam nonummy nibh euismod magna.
+                        </p>
+
+                    </div>
+
+                </a>
 
             </article>
 

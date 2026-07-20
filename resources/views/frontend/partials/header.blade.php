@@ -24,10 +24,18 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('resources') }}"
-                                class="{{ request()->routeIs('resources*') ? 'active' : '' }}"
+                            <a href="{{ route('trademark-search') }}"
+                                class="{{ request()->routeIs('trademark-search*') ? 'active' : '' }}"
                                 wire:navigate>
-                                Resources
+                                Trademark Search
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('our-team') }}"
+                                class="{{ request()->routeIs('our-team*') ? 'active' : '' }}"
+                                wire:navigate>
+                                Our Team
                             </a>
                         </li>
 

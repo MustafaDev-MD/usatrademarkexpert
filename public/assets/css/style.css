@@ -678,15 +678,26 @@ button {
     flex-direction: column;
     position: relative;
     padding: var(--space-30);
-    background: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    transition: var(--transition);
+
+    background:
+        linear-gradient(var(--primary), var(--primary)) left top / 0 100% no-repeat,
+        var(--white);
+
+    transition:
+        background-size .35s ease,
+        background-color .35s ease,
+        border-color .35s ease,
+        transform .35s ease;
 }
 
 .pricing-card:hover {
-    background: var(--card-hover);
-    transform: translateY(-6px);
+    background:
+        linear-gradient(var(--primary), var(--primary)) left top / 4px 100% no-repeat,
+        var(--card-hover);
+
+    border-color: var(--primary);
 }
 
 .pricing-card.active {
@@ -2126,9 +2137,14 @@ button {
 
 .blog-card {
     position: relative;
+    display: block;
     overflow: hidden;
     border-left: 8px solid var(--primary);
     border-radius: var(--radius-md);
+    text-decoration: none;
+    background: var(--white);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
 }
 
 .blog-card img {
@@ -2175,6 +2191,41 @@ button {
     font-size: var(--fs-18);
     line-height: 1.6;
     color: var(--text-light);
+}
+
+/*=========================
+        HOVER
+=========================*/
+
+.blog-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+
+.blog-card:hover .blog-card-content {
+    background: rgba(255, 255, 255, .92);
+    border-color: var(--primary);
+}
+
+.blog-card:hover h3 {
+    color: var(--primary-hover);
+}
+
+.blog-card:hover::after {
+    opacity: 1;
+}
+
+.blog-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .08), transparent 55%);
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
 }
 
 /*=========================================
@@ -3550,206 +3601,206 @@ button {
                 POPUP
 =========================================*/
 
-.contact-popup{
-    position:fixed;
-    inset:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    visibility:hidden;
-    opacity:0;
-    z-index:var(--z-modal);
-    transition:var(--transition);
+.contact-popup {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: var(--z-modal);
+    transition: var(--transition);
 }
 
-.contact-popup.active{
-    visibility:visible;
-    opacity:1;
+.contact-popup.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 /*----- OVERLAY -----*/
 
-.contact-popup-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
-    backdrop-filter:blur(var(--radius-xs));
+.contact-popup-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    backdrop-filter: blur(var(--radius-xs));
 }
 
 /*----- BOX -----*/
 
-.contact-popup-box{
-    position:relative;
-    width:100%;
-    max-width:420px;
-    margin:var(--space-20);
-    padding:var(--space-25);
-    background:var(--body);
-    border:1px solid var(--border);
-    border-radius:var(--radius-lg);
-    z-index:2;
-    animation:popupShow .3s ease;
+.contact-popup-box {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: var(--space-20);
+    padding: var(--space-25);
+    background: var(--body);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    z-index: 2;
+    animation: popupShow .3s ease;
 }
 
 /*----- CLOSE BUTTON -----*/
 
-.contact-popup-close{
-    position:absolute;
-    top:var(--space-20);
-    right:var(--space-20);
-    width:var(--fs-36);
-    height:var(--fs-36);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border:none;
-    background:transparent;
-    color:var(--text-light);
-    cursor:pointer;
-    transition:var(--transition);
+.contact-popup-close {
+    position: absolute;
+    top: var(--space-20);
+    right: var(--space-20);
+    width: var(--fs-36);
+    height: var(--fs-36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-.contact-popup-close i{
-    font-size:var(--fs-18);
+.contact-popup-close i {
+    font-size: var(--fs-18);
 }
 
-.contact-popup-close:hover{
-    color:var(--heading);
+.contact-popup-close:hover {
+    color: var(--heading);
 }
 
 /*----- TITLE -----*/
 
-.contact-popup-box h2{
-    font-family:var(--font-heading);
-    font-size:var(--fs-28);
-    font-weight:var(--fw-medium);
-    color:var(--heading);
+.contact-popup-box h2 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-28);
+    font-weight: var(--fw-medium);
+    color: var(--heading);
 }
 
-.contact-popup-box>p{
-    margin-bottom:var(--space-15);
-    font-family:var(--font-body);
-    font-size:var(--fs-16);
-    line-height:1.6;
-    color:var(--text-light);
+.contact-popup-box>p {
+    margin-bottom: var(--space-15);
+    font-family: var(--font-body);
+    font-size: var(--fs-16);
+    line-height: 1.6;
+    color: var(--text-light);
 }
 
 /*----- DIVIDER -----*/
 
-.popup-divider{
-    width:100%;
-    height:1px;
-    background:var(--border);
-    margin-bottom:var(--space-20);
+.popup-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin-bottom: var(--space-20);
 }
 
 /*----- FORM -----*/
 
-.popup-form{
-    display:flex;
-    flex-direction:column;
-    gap:var(--space-10);
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-10);
 }
 
 .popup-form input,
-.popup-form textarea{
-    width:100%;
-    border:1px solid var(--border);
-    border-radius:var(--radius-xs);
-    background:var(--white);
-    font-family:var(--font-body);
-    font-size:var(--fs-12);
-    letter-spacing:2px;
-    color:var(--heading);
-    transition:var(--transition);
-    outline:none;
-    box-sizing:border-box;
+.popup-form textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    background: var(--white);
+    font-family: var(--font-body);
+    font-size: var(--fs-12);
+    letter-spacing: 2px;
+    color: var(--heading);
+    transition: var(--transition);
+    outline: none;
+    box-sizing: border-box;
 }
 
-.popup-form input{
-    height:40px;
-    padding:0 var(--space-15);
+.popup-form input {
+    height: 40px;
+    padding: 0 var(--space-15);
 }
 
-.popup-form textarea{
-    height:88px;
-    resize:none;
-    padding:14px var(--space-15);
+.popup-form textarea {
+    height: 88px;
+    resize: none;
+    padding: 14px var(--space-15);
 }
 
 .popup-form input::placeholder,
-.popup-form textarea::placeholder{
-    color:var(--text-light);
-    text-transform:uppercase;
-    letter-spacing:2px;
+.popup-form textarea::placeholder {
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .popup-form input:focus,
-.popup-form textarea:focus{
-    border-color:var(--primary);
+.popup-form textarea:focus {
+    border-color: var(--primary);
 }
 
 /*----- NOTE -----*/
 
-.popup-note{
-    margin-top:var(--space-5);
+.popup-note {
+    margin-top: var(--space-5);
 }
 
-.popup-note strong{
-    display:block;
-    font-size:var(--fs-13);
-    font-weight:var(--fw-medium);
-    line-height:normal;
-    color:var(--text-light);
+.popup-note strong {
+    display: block;
+    font-size: var(--fs-13);
+    font-weight: var(--fw-medium);
+    line-height: normal;
+    color: var(--text-light);
 }
 
-.popup-note span{
-    font-size:var(--fs-12);
-    color:var(--text-light);
+.popup-note span {
+    font-size: var(--fs-12);
+    color: var(--text-light);
 }
 
-.popup-note a{
-    color:var(--primary-hover);
-    text-decoration:none;
+.popup-note a {
+    color: var(--primary-hover);
+    text-decoration: none;
 }
 
-.popup-note a:hover{
-    color:var(--primary);
+.popup-note a:hover {
+    color: var(--primary);
 }
 
 /*----- BUTTON -----*/
 
-.popup-btn{
-    width:118px;
-    height:38px;
-    background:var(--secondary);
-    border:1px solid var(--primary);
-    border-radius:var(--radius-xs);
-    color:var(--heading);
-    font-size:var(--fs-14);
-    font-weight:var(--fw-medium);
-    font-family:var(--font-body);
-    cursor:pointer;
-    transition:var(--transition);
+.popup-btn {
+    width: 118px;
+    height: 38px;
+    background: var(--secondary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-xs);
+    color: var(--heading);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-medium);
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-.popup-btn:hover{
-    background:var(--primary);
-    color:var(--white);
+.popup-btn:hover {
+    background: var(--primary);
+    color: var(--white);
 }
 
 /*----- ANIMATION -----*/
 
-@keyframes popupShow{
+@keyframes popupShow {
 
-    from{
-        opacity:0;
-        transform:translateY(var(--space-20)) scale(.96);
+    from {
+        opacity: 0;
+        transform: translateY(var(--space-20)) scale(.96);
     }
 
-    to{
-        opacity:1;
-        transform:translateY(0) scale(1);
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 
 }
