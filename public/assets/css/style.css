@@ -3255,7 +3255,7 @@ button {
 }
 
 .faq-item.active .faq-question span:first-child{
-    color: var(--primary);
+    color: var(--primary-hover);
 }
 
 /*------ QUESTION ------*/
