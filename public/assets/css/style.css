@@ -3534,6 +3534,14 @@ button {
     background: var(--white);
 }
 
+.contact-faq-bg {
+    background: var(--white);
+}
+
+.default-faq-bg {
+    background: var(--body);
+}
+
 /*=========================================
                                                     TRADEMARK SEARCH PAGE
                                             =========================================*/

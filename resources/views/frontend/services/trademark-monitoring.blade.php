@@ -70,5 +70,7 @@
 @include('frontend.sections.authority')
 
 @include('frontend.sections.testimonial')
+
+@include('frontend.sections.contact-faq-section')
  
 @endsection

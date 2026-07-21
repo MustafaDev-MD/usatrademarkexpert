@@ -1,4 +1,4 @@
-<section class="contact-faq-section faq-section">
+<section class="contact-faq-section faq-section {{ request()->routeIs('contact') ? 'contact-faq-bg' : 'default-faq-bg' }}">
 
     <div class="container">
 
