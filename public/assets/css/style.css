@@ -3251,6 +3251,11 @@ button {
 
 .faq-item.active {
     box-shadow: var(--shadow-sm);
+    background-color: var(--body);
+}
+
+.faq-item.active .faq-question span:first-child{
+    color: var(--primary);
 }
 
 /*------ QUESTION ------*/
