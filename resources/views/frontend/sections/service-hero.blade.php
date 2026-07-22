@@ -14,12 +14,10 @@
                 @else
 
                 {{-- Service Pages Content --}}
-                <h2>Bona Fide Use</h2>
+                <h2>Federal Trademark Registration</h2>
 
                 <p class="service-hero-desc">
-                    Customer Trademark Classification:
-                    Using the USPTO's ID manual,
-                    our attorneys.
+                    Protect your brand name, logo, or slogan nationwide with seamless, attorney-assisted USPTO filing.
                 </p>
 
                 <ul>
@@ -27,31 +25,28 @@
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Direct-Hit Search of the Federal USPTO Database
-                            Ensure your.
+                            USPTO Direct-Hit Database Search: Verify availability and catch conflicts early.
                         </span>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Direct-Hit Search of the Federal USPTO Database
-                            Ensure your.
+                            Custom Goods & Services Mapping: Precise legal classification for maximum protection.
                         </span>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
                         <span>
-                            Direct-Hit Search of the Federal USPTO Database
-                            Ensure your.
+                            Complete Application Processing: Full file preparation and official government submission.
                         </span>
                     </li>
 
                 </ul>
 
                 <a href="#" class="btn btn-outline">
-                    Learn More
+                    Start Your Filing
                 </a>
 
                 @endif

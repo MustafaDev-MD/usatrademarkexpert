@@ -6,16 +6,11 @@
             <div class="extension-content">
 
                 <h2>
-                    Why Request an Extension?
+                    Why Conduct a Trademark Search First?
                 </h2>
 
                 <p class="extension-text">
-                    If you filed under an "Intent to Use" basis, you must
-                    eventually submit a Statement of Use (SOU) proving you
-                    are actively using the trademark in commerce. If you are
-                    not ready within the initial 6-month window after the
-                    Notice of Allowance is issued, an extension grants you
-                    an additional 6 months to avoid abandonment.
+                    Before submitting your official application, verifying that your brand name or logo is truly available is critical. A pre-filing clearance search identifies existing registrations and confusingly similar marks, helping you avoid immediate USPTO rejections, non-refundable government fees, and mandatory rebranding later.
                 </p>
 
                 <div class="extension-insight">
@@ -23,9 +18,7 @@
                     <span>KEY INSIGHT:</span>
 
                     <p>
-                        By clicking submit, you state under penalty of perjury
-                        that you have a good faith belief that the use of the
-                        material in the manner complained of is not authorized.
+                        USPTO filing fees are strictly non-refundable once submitted. Checking your mark’s availability upfront protects your financial investment and speeds up approval.
                     </p>
 
                 </div>
@@ -57,7 +50,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Fast Filing Services</h5>
+                            <h5>Direct-Hit USPTO Search</h5>
                         </div>
 
                     </div>
@@ -69,7 +62,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Fast Filing Services</h5>
+                            <h5>Conflict & Risk Clearance</h5>
                         </div>
 
                     </div>
@@ -81,7 +74,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Fast Filing Services</h5>
+                            <h5>Attorney-Backed Guidance</h5>
                         </div>
 
                     </div>

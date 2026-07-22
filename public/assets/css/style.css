@@ -2030,7 +2030,7 @@ button {
 .extension-card-content h5 {
     margin-bottom: var(--space-5);
     font-family: var(--font-body);
-    font-size: var(--fs-16);
+    font-size: var(--fs-14);
     font-weight: var(--fw-semibold);
     color: var(--heading);
 }

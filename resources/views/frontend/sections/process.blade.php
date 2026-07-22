@@ -5,12 +5,11 @@
         <div class="process-heading">
 
             <h2>
-                Absolute Authority in Brand Protection
+                Why Register Your Trademark?
             </h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                Securing your intellectual property prevents costly disputes, blocks competitors from stealing your identity, and establishes total ownership of your brand.
             </p>
 
         </div>
@@ -25,14 +24,11 @@
                 </div>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Nationwide Exclusivity
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet,
-                    consect adipiscing elit,
-                    sed diam nonummy nibh
-                    euismod magna.
+                    Stop competitors from using confusingly similar names. Federal registration grants you the presumed right to exclusive use of your mark across the entire country, not just locally.
                 </p>
 
             </div>
@@ -45,14 +41,11 @@
                 </div>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Enhanced Legal Power
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet,
-                    consect adipiscing elit,
-                    sed diam nonummy nibh
-                    euismod magna.
+                    A registered mark gives you superior standing in federal court. It proves the validity of your brand ownership and opens the door to additional financial remedies in infringement lawsuits.
                 </p>
 
             </div>
@@ -65,14 +58,11 @@
                 </div>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Official Brand Authority
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet,
-                    consect adipiscing elit,
-                    sed diam nonummy nibh
-                    euismod magna.
+                    Unlock the right to use the prestigious ® symbol on your products and marketing. This signals to the market that your business is established, serious, and legally protected.
                 </p>
 
             </div>

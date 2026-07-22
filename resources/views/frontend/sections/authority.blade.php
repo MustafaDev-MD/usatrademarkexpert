@@ -4,7 +4,7 @@
 
         <div class="section-heading">
 
-            <h2>Absolute Authority in Brand Protection</h2>
+            <h2>Name vs. Logo: What Should You Protect?</h2>
 
         </div>
 
@@ -16,15 +16,15 @@
                     <i class="fa-regular fa-file-lines"></i>
                 </div>
 
-                <h3>Bona Fide Use</h3>
+                <h3>Trademarking Your Name</h3>
 
                 <ul>
 
-                    <li>Customer Trademark Classification</li>
+                    <li>Offers the broadest nationwide brand protection</li>
 
-                    <li>Customer Trademark Classification</li>
+                    <li>Shields your brand regardless of font or color style</li>
 
-                    <li>Customer Trademark Classification</li>
+                    <li>Remains fully valid through future logo redesigns</li>
 
                 </ul>
 
@@ -33,15 +33,10 @@
 
             <div class="authority-card authority-right">
 
-                <h3>Why Request an Extension?</h3>
+                <h3>Registering Your Custom Logo</h3>
 
                 <p>
-                    If you filed under an "Intent to Use" basis, you must
-                    eventually submit a Statement of Use (SOU) proving you are
-                    actively using the trademark in commerce. If you are not
-                    ready within the initial 6-month window after the Notice of
-                    Allowance is issued, an extension grants you an additional
-                    6 months to avoid abandonment.
+                    While trademarking your name provides the strongest legal baseline, registering a logo locks down your unique visual identity, graphic artwork, and stylization. Securing both guarantees that competitors cannot clone your business name or misappropriate your visual representation in the marketplace.
                 </p>
 
             </div>
