@@ -340,6 +340,8 @@ ul li {
 
 .has-mega-menu {
     position: relative;
+    list-style: none;
+    margin: 0;
 }
 
 .has-mega-menu::after {
@@ -1308,6 +1310,7 @@ ul li {
     font-size: var(--fs-16);
     line-height: 1.6;
     color: var(--text-light);
+    margin: 0;
 }
 
 .service-column li i {
@@ -1489,6 +1492,7 @@ ul li {
     gap: var(--space-15);
     color: var(--text-light);
     font-size: var(--fs-15);
+    margin: 0;
 }
 
 .contact-info i {
@@ -1541,6 +1545,11 @@ ul li {
     font-weight: var(--fw-semibold);
     font-family: var(--font-body);
     color: var(--text-light);
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin: 0;
 }
 
 .footer-disclaimer p {
@@ -2676,6 +2685,8 @@ ul li {
 .breadcrumb li {
     font-size: var(--fs-18);
     color: var(--primary-hover);
+    list-style: none;
+    margin: 0;
 }
 
 .breadcrumb li i {
@@ -2843,6 +2854,7 @@ ul li {
     font-size: var(--fs-20);
     line-height: 1.6;
     color: var(--text-light);
+    margin: 0;
 }
 
 .single-blog-box li:last-child {
