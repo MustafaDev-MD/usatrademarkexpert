@@ -134,6 +134,14 @@ button {
     cursor: pointer;
 }
 
+ul li {
+    color: var(--text-light);
+    font-size: var(--fs-16);
+    line-height: 1.7;
+    list-style: disc;
+    margin-left: var(--space-20);
+}
+
 /*=========================================
                 LAYOUT
 =========================================*/
@@ -1049,6 +1057,7 @@ button {
     display: flex;
     gap: var(--space-10);
     align-items: flex-start;
+    margin: 0;
 }
 
 .pricing-card li i {
@@ -1725,14 +1734,14 @@ button {
 
 .service-hero-card h2 {
     font-family: var(--font-heading);
-    font-size: var(--fs-36);
+    font-size: var(--fs-32);
     font-weight: var(--fw-medium);
     color: var(--heading);
 }
 
 .service-hero-desc {
     margin-bottom: var(--space-15);
-    font-size: var(--fs-18);
+    font-size: var(--fs-16);
     line-height: 1.7;
     color: var(--text-light);
 }
@@ -1748,6 +1757,7 @@ button {
     display: flex;
     gap: var(--space-15);
     align-items: flex-start;
+    margin: 0;
 }
 
 .service-hero-card li i {
@@ -1757,14 +1767,14 @@ button {
 }
 
 .service-hero-card li span {
-    font-size: var(--fs-18);
+    font-size: var(--fs-16);
     line-height: 1.6;
     color: var(--text-light);
 }
 
 .service-hero-card .btn {
     margin-top: auto;
-    width: 220px;
+    width: fit-content;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -1870,7 +1880,7 @@ button {
 }
 
 .process-card p {
-    width: 70%;
+    width: 100%;
     font-size: var(--fs-18);
     line-height: 1.8;
     color: var(--text-light);
@@ -2125,7 +2135,7 @@ button {
 
 .authority-left li {
     color: var(--text-light);
-    font-size: var(--fs-18);
+    font-size: var(--fs-16);
     line-height: 1.7;
     list-style: disc;
     margin-left: var(--space-20);
@@ -2163,7 +2173,19 @@ button {
     overflow: hidden;
 }
 
+.testimonialSwiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.testimonialSwiper .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
 .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     height: 100%;
     padding: var(--space-25);
     background: var(--white);
@@ -2180,6 +2202,7 @@ button {
 }
 
 .testimonial-card p {
+    flex: 1;
     font-size: var(--fs-18);
     padding-right: var(--space-40);
     line-height: 1.7;
@@ -2190,6 +2213,10 @@ button {
     margin: var(--space-20) 0;
     height: 1px;
     background: var(--border);
+}
+
+.testimonial-user {
+    margin-top: auto;
 }
 
 .testimonial-user h4 {
@@ -3254,7 +3281,7 @@ button {
     background-color: var(--body);
 }
 
-.faq-item.active .faq-question span:first-child{
+.faq-item.active .faq-question span:first-child {
     color: var(--primary-hover);
 }
 
