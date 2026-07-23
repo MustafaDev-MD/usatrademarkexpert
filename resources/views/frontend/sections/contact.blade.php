@@ -123,7 +123,8 @@
                         </p>
 
                         <button type="submit" class="btn-outline">
-                            Secure My Brand Now
+                            <!-- Secure My Brand Now -->
+                            Submit
                         </button>
 
                     </div>
