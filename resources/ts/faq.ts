@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initFaq() {
 
     /*=========================================
                     TABS
@@ -20,11 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             tab.classList.add("active");
 
-            const activeContent = document.getElementById(target);
-
-            if (activeContent) {
-                activeContent.classList.add("active");
-            }
+            document.getElementById(target)?.classList.add("active");
 
         });
 
@@ -39,8 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     faqLists.forEach((list) => {
 
         const items = list.querySelectorAll<HTMLElement>(".faq-item");
-
-        /* Initial State */
 
         items.forEach((item) => {
 
@@ -69,11 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!question || !answer) return;
 
-            question.addEventListener("click", () => {
+            question.onclick = () => {
 
                 const opened = item.classList.contains("active");
-
-                /* Close all */
 
                 items.forEach((faq) => {
 
@@ -95,8 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
 
                 });
-
-                /* Open */
 
                 if (!opened) {
 
@@ -124,10 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 }
 
-            });
+            };
 
         });
 
     });
 
-});
+}
+
+document.addEventListener("DOMContentLoaded", initFaq);
+document.addEventListener("livewire:navigated", initFaq);

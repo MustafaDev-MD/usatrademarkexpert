@@ -1,48 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\FrontendController;
+use App\Http\Controllers\Frontend\ServiceController;
 
 // Route::view('/', 'welcome')->name('home');
 
-Route::view('/', 'frontend.home')->name('home');
+Route::controller(FrontendController::class)->group(function () {
 
-Route::view('/about', 'frontend.about')->name('about');
+    // Main Pages
+    Route::get('/', 'home')->name('home');
+    Route::get('/about', 'about')->name('about');
+    // Route::get('/services', 'services')->name('services');
+    Route::get('/faqs', 'faqs')->name('faqs');
+    Route::get('/resources', 'resources')->name('resources');
+    Route::get('/blog', 'blog')->name('blog');
+    Route::get('/single-blog', 'singleBlog')->name('single-blog');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/privacy-policy', 'privacyPolicy')->name('privacy-policy');
+    Route::get('/our-team', 'ourTeam')->name('our-team');
 
-Route::view('/services', 'frontend.services')->name('services');
-
-Route::view('/services/trademark-registration', 'frontend.services.trademark-registration')->name('trademark-registration');
-
-Route::view('/services/trademark-monitoring', 'frontend.services.trademark-monitoring')->name('trademark-monitoring');
-
-Route::view('/services/trademark-renewal', 'frontend.services.trademark-renewal')->name('trademark-renewal');
-
-Route::view('/services/office-action-response', 'frontend.services.office-action-response')->name('office-action-response');
-
-Route::view('/services/filing-an-extension', 'frontend.services.filing-an-extension')->name('filing-an-extension');
-
-Route::view('/services/comprehensive-trademark-search', 'frontend.services.comprehensive-trademark-search')->name('comprehensive-trademark-search');
-
-Route::view('/services/copyright-registration', 'frontend.services.copyright-registration')->name('copyright-registration');
-
-Route::view('/services/trademark-search', 'frontend.services.trademark-search')->name('trademark-search');
-
-Route::view('/services/statement-of-use', 'frontend.services.statement-of-use')->name('statement-of-use');
-
-Route::view('/services/dmca-takedown', 'frontend.services.dmca-takedown')->name('dmca-takedown');
-
-Route::view('/faqs', 'frontend.faqs')->name('faqs');
-
-Route::view('/resources', 'frontend.resources')->name('resources');
-
-Route::view('/blog', 'frontend.blog')->name('blog');
-
-Route::view('/single-blog', 'frontend.single-blog')->name('single-blog');
-
-Route::view('/contact', 'frontend.contact')->name('contact');
-
-Route::view('/privacy-policy', 'frontend.privacy-policy')->name('privacy-policy');
-
-Route::view('/our-team', 'frontend.our-team')->name('our-team');
+    // All Service Pages
+    Route::get('/services/{slug}', 'service')->name('service');
+});
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');

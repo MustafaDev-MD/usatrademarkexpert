@@ -5,11 +5,11 @@
     </div>
 
     <h3>
-        Search millions of Trademarks for Free
+        Federal Direct Trademark Search
     </h3>
 
     <p>
-        Search millions of trademarks that are live or pending with the USPTO.
+        Fast, direct clearance checks across active and pending USPTO records to spot immediate registration conflicts before you apply.
     </p>
 
     <form class="tm-search-form">

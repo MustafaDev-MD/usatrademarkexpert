@@ -1,3 +1,19 @@
+@php
+
+$services = [
+'trademark-registration' => 'Trademark Registration',
+'comprehensive-trademark-search' => 'Comprehensive Trademark Search',
+'trademark-monitoring' => 'Trademark Monitoring',
+'trademark-search' => 'Free Trademark Search',
+'trademark-renewal' => 'Trademark Renewal',
+'office-action-response' => 'Office Action Response',
+'statement-of-use' => 'Statement of Use',
+'filing-an-extension' => 'Filing an Extension',
+'copyright-registration' => 'Copyright Registration',
+'dmca-takedown' => 'DMCA Takedown',
+];
+
+@endphp
 <header class="header">
 
     <div class="container">
@@ -29,75 +45,19 @@
 
                                 <div class="mega-menu-grid">
 
-                                    <a href="{{ route('trademark-registration') }}"
-                                        class="{{ request()->routeIs('trademark-registration') ? 'active' : '' }}"
+                                    @foreach($services as $slug => $title)
+
+                                    <a href="{{ route('service', $slug) }}"
+                                        class="{{ request()->route('slug') === $slug ? 'active' : '' }}"
                                         wire:navigate>
-                                        Trademark Registration
+
+                                        {{ $title }}
+
                                         <i class="fa-solid fa-arrow-right"></i>
+
                                     </a>
 
-                                    <a href="{{ route('comprehensive-trademark-search') }}"
-                                        class="{{ request()->routeIs('comprehensive-trademark-search') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Comprehensive Trademark Search
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('trademark-monitoring') }}"
-                                        class="{{ request()->routeIs('trademark-monitoring') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Trademark Monitoring
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('trademark-search') }}"
-                                        class="{{ request()->routeIs('trademark-search') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Free Trademark Search
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('trademark-renewal') }}"
-                                        class="{{ request()->routeIs('trademark-renewal') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Trademark Renewal
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('office-action-response') }}"
-                                        class="{{ request()->routeIs('office-action-response') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Office Action Response
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('statement-of-use') }}"
-                                        class="{{ request()->routeIs('statement-of-use') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Statement of Use
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('filing-an-extension') }}"
-                                        class="{{ request()->routeIs('filing-an-extension') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Filing an Extension
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('copyright-registration') }}"
-                                        class="{{ request()->routeIs('copyright-registration') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        Copyright Registration
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-
-                                    <a href="{{ route('dmca-takedown') }}"
-                                        class="{{ request()->routeIs('dmca-takedown') ? 'active' : '' }}"
-                                        wire:navigate>
-                                        DMCA Takedown
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
+                                    @endforeach
 
                                 </div>
 
@@ -223,16 +183,15 @@
 
             <ul class="mobile-submenu">
 
-                <li><a href="{{ route('trademark-registration') }}" wire:navigate>Trademark Registration</a></li>
-                <li><a href="{{ route('comprehensive-trademark-search') }}" wire:navigate>Comprehensive Trademark Search</a></li>
-                <li><a href="{{ route('trademark-monitoring') }}" wire:navigate>Trademark Monitoring</a></li>
-                <li><a href="{{ route('trademark-search') }}" wire:navigate>Free Trademark Search</a></li>
-                <li><a href="{{ route('trademark-renewal') }}" wire:navigate>Trademark Renewal</a></li>
-                <li><a href="{{ route('office-action-response') }}" wire:navigate>Office Action Response</a></li>
-                <li><a href="{{ route('statement-of-use') }}" wire:navigate>Statement of Use</a></li>
-                <li><a href="{{ route('filing-an-extension') }}" wire:navigate>Filing an Extension</a></li>
-                <li><a href="{{ route('copyright-registration') }}" wire:navigate>Copyright Registration</a></li>
-                <li><a href="{{ route('dmca-takedown') }}" wire:navigate>DMCA Takedown</a></li>
+                @foreach($services as $slug => $title)
+
+                <li>
+                    <a href="{{ route('service', $slug) }}" wire:navigate>
+                        {{ $title }}
+                    </a>
+                </li>
+
+                @endforeach
 
             </ul>
 
