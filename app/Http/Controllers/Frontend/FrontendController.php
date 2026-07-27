@@ -18,11 +18,6 @@ class FrontendController extends Controller
         return view('frontend.about');
     }
 
-    public function services(): View
-    {
-        return view('frontend.services');
-    }
-
     public function faqs(): View
     {
         return view('frontend.faqs');
@@ -58,7 +53,7 @@ class FrontendController extends Controller
         return view('frontend.our-team');
     }
 
-    public function service($slug): View
+    public function service(string $slug): View
     {
         $services = $this->servicesData();
 
