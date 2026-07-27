@@ -4,60 +4,61 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 
 class FrontendController extends Controller
 {
-    public function home()
+    public function home(): View
     {
         return view('frontend.home');
     }
 
-    public function about()
+    public function about(): View
     {
         return view('frontend.about');
     }
 
-    public function services()
+    public function services(): View
     {
         return view('frontend.services');
     }
 
-    public function faqs()
+    public function faqs(): View
     {
         return view('frontend.faqs');
     }
 
-    public function resources()
+    public function resources(): View
     {
         return view('frontend.resources');
     }
 
-    public function blog()
+    public function blog(): View
     {
         return view('frontend.blog');
     }
 
-    public function singleBlog()
+    public function singleBlog(): View
     {
         return view('frontend.single-blog');
     }
 
-    public function contact()
+    public function contact(): View
     {
         return view('frontend.contact');
     }
 
-    public function privacyPolicy()
+    public function privacyPolicy(): View
     {
         return view('frontend.privacy-policy');
     }
 
-    public function ourTeam()
+    public function ourTeam(): View
     {
         return view('frontend.our-team');
     }
 
-    public function service($slug)
+    public function service($slug): View
     {
         $services = $this->servicesData();
 
@@ -66,7 +67,11 @@ class FrontendController extends Controller
         return view('frontend.service', $services[$slug]);
     }
 
-    private function servicesData()
+    /**
+     * @return array<string, array<string, mixed>>
+     */
+
+    private function servicesData(): array
     {
         return [
 

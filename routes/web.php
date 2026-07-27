@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\FrontendController;
-use App\Http\Controllers\Frontend\ServiceController;
 
 // Route::view('/', 'welcome')->name('home');
 
