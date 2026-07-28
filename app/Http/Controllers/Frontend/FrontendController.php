@@ -20,7 +20,376 @@ class FrontendController extends Controller
 
     public function faqs(): View
     {
-        return view('frontend.faqs');
+        return view('frontend.faqs', $this->faqPageData());
+    }
+
+    private function faqPageData()
+    {
+        return [
+
+            'trademarkFaqs' => [
+
+                [
+                    'question' => 'What is a trademark?',
+                    'answer' => '<p>A trademark is any word, phrase, symbol, logo, design, or combination thereof that identifies and distinguishes the source of goods of one seller or manufacturer from those of others in the marketplace.</p>',
+                ],
+
+                [
+                    'question' => 'What is the difference between a trademark and a service mark?',
+                    'answer' => '<p>While "trademark" is often used as a general term for both, a trademark specifically identifies physical goods or manufactured products, whereas a service mark identifies intangible services (such as consulting, software-as-a-service, or retail services).</p>',
+                ],
+
+                [
+                    'question' => 'What is trade dress?',
+                    'answer' => '<p>Trade dress refers to the overall visual appearance and commercial "look and feel" of a product or its packaging that identifies its source to consumers. It includes unique packaging designs, product shapes, and distinctive retail interior environments.</p>',
+                ],
+
+                [
+                    'question' => 'Is federal trademark registration required in the United States?',
+                    'answer' => '<p>No, federal registration is not strictly mandatory. Simply using a mark in commerce creates limited "common law" rights in your immediate geographic area. However, federal registration with the USPTO provides essential nationwide priority, legal presumption of ownership, and federal court enforcement rights.</p>',
+                ],
+
+                [
+                    'question' => 'What are the key benefits of registering my trademark federally?',
+                    'answer' => '
+                                <p>Federal USPTO registration offers critical legal advantages, including:</p>
+                                <ul>
+                                    <li>Nationwide Notice: Legal presumption of exclusive ownership across all 50 U.S. states.</li>
+                                    <li>Federal Enforcement: The right to file trademark infringement lawsuits in U.S. federal courts.</li>
+                                    <li>Customs Enforcement: Ability to record your mark with U.S. Customs and Border Protection to block counterfeit imports.</li>
+                                    <li>Foreign Expansion: Serves as a solid foundation for securing international trademark protection.</li>
+                                    <li>Exclusive Symbol Use: Authorization to display the official ® symbol.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Can I apply for a trademark before I start selling products or services?',
+                    'answer' => '<p>Yes. You can file an Intent-to-Use (Section 1(b)) application based on a good-faith intention to use the mark in commerce. This reserves your brand name early. You will simply need to submit proof of commercial use (a Statement of Use) before final registration is granted.</p>',
+                ],
+
+                [
+                    'question' => 'What are the main steps in the federal trademark registration process?',
+                    'answer' => '
+                                <p>The typical process follows four key stages:</p>
+                                <ul>
+                                    <li>Pre-Filing Clearance Search: Checking USPTO and commercial records for conflicting marks.</li>
+                                    <li>Application Filing: Submitting complete applicant details, mark graphics, and goods/service classes to the USPTO.</li>
+                                    <li>USPTO Examination: Review by an examining attorney for legal and procedural compliance.</li>
+                                    <li>Publication & Registration: Formal 30-day public notice for potential oppositions, followed by official registration issuance.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Do I need to hire an attorney to file my trademark?',
+                    'answer' => '<p>U.S.-domiciled applicants are not strictly required by law to use an attorney, but working with experienced trademark specialists helps avoid common filing errors, improper class selections, and unexpected Office Action refusals. (Note: Foreign-domiciled applicants are required by USPTO rules to be represented by a U.S.-licensed attorney).</p>',
+                ],
+
+                [
+                    'question' => 'How long does it take for a trademark application to be approved?',
+                    'answer' => '<p>The typical USPTO application timeline takes between 8 to 14 months, depending on examination backlogs, whether an Intent-to-Use basis was selected, and whether the examiner issues an Office Action requiring a response.</p>',
+                ],
+
+                [
+                    'question' => 'What is the difference between the ™ and ® symbols?',
+                    'answer' => '
+                                <ul>
+                                    <li>™ (Trademark) / ℠ (Service Mark): Can be used by anyone claiming ownership of an unregistered mark to notify the public of their common law rights.</li>
+                                    <li>® (Registered Symbol): Can only be legally used after the USPTO officially grants a federal registration certificate. Using ® during a pending application is illegal.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Where should I place the ® symbol on my brand materials?',
+                    'answer' => '<p>There are no strict placement rules, but standard industry practice is to place the ® symbol in the upper-right superscript (<sup>®</sup>) or lower-right subscript (<sub>®</sub>) adjacent to your logo or brand name.</p>',
+                ],
+
+                [
+                    'question' => 'What is a "drawing" and a "specimen" in a USPTO application?',
+                    'answer' => '
+                                <ul>
+                                    <li>Drawing: A clean digital graphic or plain-text file depicting the exact wordmark or logo you want to register.</li>
+                                    <li>Specimen: Real-world proof showing how your mark is actively used in sales (e.g., product packaging, branded hangtags, or live e-commerce websites with purchase buttons).</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Can I register the name of my band or musical group?',
+                    'answer' => '<p>Yes. Band and performer names can be registered as service marks covering "entertainment services in the nature of live musical performances," as well as physical goods like merchandise or sound recordings.</p>',
+                ],
+
+                [
+                    'question' => 'Can a registered trademark be transferred or sold to someone else?',
+                    'answer' => '<p>Yes. Trademarks are valuable intellectual property assets that can be assigned, sold, or transferred through a formal legal document called a Trademark Assignment, which is filed with the USPTO Assignment Recordation Branch.</p>',
+                ],
+
+                [
+                    'question' => 'Why choose USA Trademark Expert to manage my application?',
+                    'answer' => '<p>We eliminate the complexity of trademark law. From pre-filing clearance searches and specimen audits to handling office responses and statement-of-use filings, our team ensures your mark is protected smoothly and accurately.</p>',
+                ],
+
+                [
+                    'question' => 'What is an International Class of goods or services?',
+                    'answer' => '<p>The USPTO categorizes all products and services into 45 International Classes (Classes 1–34 cover physical goods, while Classes 35–45 cover services). Filing fees and clearance searches are calculated based on the number of classes your brand operates in.</p>',
+                ],
+
+                [
+                    'question' => 'What is a USPTO Office Action?',
+                    'answer' => '<p>An Office Action is an official notification issued by a USPTO examining attorney outlining legal, technical, or procedural deficiencies in your application. Responses must be submitted within strict statutory deadlines to prevent your application from becoming abandoned.</p>',
+                ],
+
+                [
+                    'question' => 'What does "Likelihood of Confusion" mean?',
+                    'answer' => '<p>"Likelihood of Confusion" (Section 2(d)) is the most common reason for trademark refusal. It occurs when a proposed mark sounds, looks, or conveys a meaning similar to an existing registered mark in a related industry, leading consumers to confuse the sources.</p>',
+                ],
+
+                [
+                    'question' => 'What is the difference between descriptive and distinctive trademarks?',
+                    'answer' => '
+                                <ul>
+                                    <li>Distinctive Marks (Fanciful, Arbitrary, Suggestive): Strong, highly protectable names that do not directly describe the product (e.g., Apple for computers).</li>
+                                    <li>Descriptive Marks: Words that merely describe a feature, ingredient, or function of the item (e.g., Cold Ice Cream). Descriptive marks are generally refused unless commercial "secondary meaning" is established over time.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Can I register a personal name or surname as a trademark?',
+                    'answer' => '<p>A personal name or surname can be registered, but if the USPTO considers it "primarily merely a surname," it may require proof that the name has acquired distinctiveness in the marketplace through extensive commercial use and customer recognition.</p>',
+                ],
+
+                [
+                    'question' => 'What is a Trademark Opposition proceeding?',
+                    'answer' => '<p>After passing USPTO examination, your mark is published in the official Trademark Official Gazette for 30 days. During this window, any third party who believes your registration would damage their existing brand rights can file a formal opposition with the Trademark Trial and Appeal Board (TTAB).</p>',
+                ],
+
+                [
+                    'question' => 'How long does a federal trademark registration last?',
+                    'answer' => '<p>A federal trademark registration can last indefinitely, provided the mark remains in continuous commercial use and all required USPTO maintenance and renewal filings are submitted on time.</p>',
+                ],
+
+                [
+                    'question' => 'When must I file trademark maintenance and renewal documents?',
+                    'answer' => '
+                                <p>Required USPTO post-registration filings include:</p>
+                                <ul>
+                                    <li>Section 8 Declaration: Filed between the 5th and 6th years after initial registration.</li>
+                                    <li>Section 8 & 9 Renewal: Filed between the 9th and 10th years, and every 10 years thereafter.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'What is the difference between a Section 8 and Section 15 declaration?',
+                    'answer' => '<ul>
+                                    <li>Section 8 Declaration: A mandatory filing confirming that your trademark is actively used in commerce.</li>
+                                    <li>Section 15 Declaration: An optional filing made after 5 consecutive years of registered commercial use that grants your mark "incontestable" status, protecting it against common court challenges.</li>
+                                </ul>',
+                ],
+
+                [
+                    'question' => 'Who is responsible for monitoring and enforcing my trademark?',
+                    'answer' => '<p>The USPTO approves registrations but does not actively police or enforce your mark. As the owner, you are responsible for monitoring the market for unauthorized infringers and taking legal action to defend your brand rights.</p>',
+                ],
+
+                [
+                    'question' => 'What should I do if someone is infringing on my registered trademark?',
+                    'answer' => '<p>You can issue a formal Cease and Desist notice, initiate digital marketplace/DMCA takedown procedures, or pursue civil litigation in federal court to halt unauthorized commercial use and recover monetary damages.</p>',
+                ],
+
+                [
+                    'question' => 'What is trademark abandonment?',
+                    'answer' => '<p>A trademark is considered abandoned if commercial use stops with no intention to resume (presumed after 3 consecutive years of non-use) or if the owner fails to file required USPTO renewal documents on time.</p>',
+                ],
+
+                [
+                    'question' => 'Is registering a state LLC or DBA the same as federal trademark protection?',
+                    'answer' => '<p>No. Registering an LLC, corporation, or DBA with your state secretary only grants you the right to operate under that name in that specific state. It does not grant federal trademark rights or prevent out-of-state competitors from using your brand.</p>',
+                ],
+
+                [
+                    'question' => 'Can I trademark a website domain name or social media handle?',
+                    'answer' => '<p>Yes, but only if the domain or handle is used as a brand identifier for goods or services (e.g., Booking.com) rather than functioning merely as an internet web address.</p>',
+                ],
+
+                [
+                    'question' => 'Does a U.S. trademark protect my brand in foreign countries?',
+                    'answer' => '<p>No. U.S. trademark registrations are territorial and apply exclusively within the United States and its territories. Protecting your brand internationally requires filing separate registrations in target countries.</p>',
+                ],
+
+                [
+                    'question' => 'What is the Madrid Protocol?',
+                    'answer' => '<p>The Madrid Protocol is an international treaty that allows U.S. trademark owners to extend their protection to over 120 member countries through a single standardized application filed via the USPTO.</p>',
+                ],
+
+                [
+                    'question' => 'What happens if I alter my logo or brand name after registration?',
+                    'answer' => '<p>The USPTO does not permit material changes to registered trademarks. If you significantly update your logo or rebrand your name, you must file a new trademark application to protect the updated visual mark.</p>',
+                ],
+
+            ],
+
+            'copyrightFaqs' => [
+
+                [
+                    'question' => 'What is a copyright?',
+                    'answer' => '<p>A copyright is a form of intellectual property protection grounded in the U.S. Constitution that protects original works of authorship fixed in a tangible medium of expression.</p>',
+                ],
+
+                [
+                    'question' => 'What types of creative works can be copyrighted?',
+                    'answer' => '
+                                <p>Copyright protects a wide spectrum of creative expression, including:</p>
+                                <ul>
+                                    <li>Literary Works: Books, articles, blog posts, software source code, and mobile app content.</li>
+                                    <li>Visual Arts: Graphic designs, illustrations, photographs, paintings, and logos.</li>
+                                    <li>Performing Arts: Musical compositions, sound recordings, scripts, and choreography.</li>
+                                    <li>Architectural & Sculptural Works: Building plans, 3D models, and physical sculptures.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'What cannot be protected by copyright?',
+                    'answer' => '<p>Copyright does not protect ideas, concepts, facts, systems, operational methods, raw data, blank forms, or short phrases/titles. (Note: Titles, slogans, and brand names are protected under trademark law instead).</p>',
+                ],
+
+                [
+                    'question' => 'When does copyright protection actually begin?',
+                    'answer' => '<p>Copyright protection exists automatically the moment an original work is created and fixed in a tangible form (such as written on paper, saved to a digital hard drive, or recorded on audio/video).</p>',
+                ],
+
+                [
+                    'question' => 'What is the difference between a copyright, a trademark, and a patent?',
+                    'answer' => '
+                                <ul>
+                                    <li>Copyright: Protects original creative, artistic, and literary expressions.</li>
+                                    <li>Trademark: Protects brand identifiers like business names, logos, and slogans used in commerce.</li>
+                                    <li>Patent: Protects functional inventions, mechanical designs, and industrial processes.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Do I need to display the © symbol on my work?',
+                    'answer' => '<p>Displaying the copyright symbol (©) is no longer legally required for protection on works created after March 1, 1989. However, using it serves as clear public notice of ownership and defeats an infringer’s claim of "innocent infringement."</p>',
+                ],
+
+                [
+                    'question' => 'Why should I formally register my copyright if protection is automatic?',
+                    'answer' => '<p>While basic copyright exists upon creation, official registration with the U.S. Copyright Office is mandatory to file an infringement lawsuit in U.S. federal court. Timely registration also qualifies you for statutory damages up to $150,000 per violation plus legal fee recovery.</p>',
+                ],
+
+                [
+                    'question' => 'What is a deposit copy?',
+                    'answer' => '<p>A deposit copy is an official visual, physical, or digital copy of your creative work (e.g., a manuscript PDF, audio file, or digital image) submitted to the U.S. Copyright Office along with your application for archival and examination purposes.</p>',
+                ],
+
+                [
+                    'question' => 'Can I register multiple works under a single copyright application?',
+                    'answer' => '<p>Yes. Under specific U.S. Copyright Office rules (such as Group Registration for Unpublished Works, Group Photographs, or Group Short Online Literary Works), you can register multiple related assets in one application to save on filing fees.</p>',
+                ],
+
+                [
+                    'question' => 'What is a "Work Made for Hire"?',
+                    'answer' => '<p>A "Work Made for Hire" is a work created by an employee within the scope of their employment, or a specially ordered/commissioned work where both parties sign a written agreement. In these cases, the employer or commissioning party is considered the legal author and copyright owner.</p>',
+                ],
+
+                [
+                    'question' => 'How long does the U.S. Copyright Office take to issue a registration certificate?',
+                    'answer' => '<p>Digital applications submitted with electronic deposit uploads typically take 2 to 6 months to process. Physical deposit submissions or complex applications requiring manual examiner review can take longer.</p>',
+                ],
+
+                [
+                    'question' => 'Do I need to be a U.S. citizen to register a copyright with the USPTO / U.S. Copyright Office?',
+                    'answer' => '<p>No. Foreign creators and non-U.S. citizens can register their works in the United States, as the U.S. maintains copyright treaties (such as the Berne Convention) with over 180 countries worldwide.</p>',
+                ],
+
+                [
+                    'question' => 'How long does a federal copyright last?',
+                    'answer' => '
+                                <p>Duration depends on who created the work:</p>
+                                <ul>
+                                    <li>Individual Author: The author’s entire lifetime plus 70 years after their death.</li>
+                                    <li>Works Made for Hire / Corporate Works: 95 years from the date of first publication or 120 years from the date of creation, whichever expires first.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'What exclusive legal rights does a copyright owner hold?',
+                    'answer' => '
+                                <p>As a copyright owner, you hold the exclusive right to:</p>
+                                <ul>
+                                    <li>Reproduce and copy the work.</li>
+                                    <li>Prepare derivative works based on the original.</li>
+                                    <li>Distribute copies to the public by sale, rental, or lease.</li>
+                                    <li>Publicly perform or display the work.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'Can I transfer, sell, or license my copyright to someone else?',
+                    'answer' => '<p>Yes. Copyrights can be sold or assigned permanently through a written Copyright Assignment, or leased temporarily through a Copyright License Agreement that specifies exact usage scope and royalties.</p>',
+                ],
+
+                [
+                    'question' => 'What is the difference between exclusive and non-exclusive copyright licenses?',
+                    'answer' => '
+                                <ul>
+                                    <li>Exclusive License: The licensee is the only person permitted to use the work in a defined manner, and the copyright owner cannot grant those rights to anyone else.</li>
+                                    <li>Non-Exclusive License: The copyright owner can grant the exact same rights to multiple parties simultaneously.</li>
+                                </ul>
+                            ',
+                ],
+
+                [
+                    'question' => 'What constitutes copyright infringement?',
+                    'answer' => '<p>Copyright infringement occurs whenever a third party exercises any of the owner\'s exclusive rights (such as copying, distributing, displaying, or modifying the work) without express legal authorization or license.</p>',
+                ],
+
+                [
+                    'question' => 'What is "Fair Use"?',
+                    'answer' => '<p>Fair Use is a legal doctrine that permits limited use of copyrighted material without permission for purposes such as criticism, news reporting, teaching, scholarship, or research. Courts evaluate Fair Use based on four factors, including commercial purpose and financial effect on the market.</p>',
+                ],
+
+                [
+                    'question' => 'What are statutory damages and attorney fee recoveries?',
+                    'answer' => '<p>If you register your work within 3 months of publication (or before infringement occurs), you do not have to prove actual financial losses. Courts can award statutory damages ranging from $750 up to $150,000 per willful infringement, plus reimbursement of your legal fees.</p>',
+                ],
+
+                [
+                    'question' => 'Can software, mobile apps, and website code be copyrighted?',
+                    'answer' => '<p>Yes. Computer source code, object code, user interface graphics, and app content are legally classified as literary/visual works and can be registered to prevent competitor code theft.</p>',
+                ],
+
+                [
+                    'question' => 'How do I remove stolen copyrighted content from the internet?',
+                    'answer' => '<p>You can enforce your rights through a formal DMCA Takedown Notice issued to web hosting providers, e-commerce marketplaces (Amazon, Etsy, eBay), social media platforms, or search engines (Google, Bing) to disable access to pirated copies.</p>',
+                ],
+
+                [
+                    'question' => 'Can I copyright AI-generated content?',
+                    'answer' => '<p>According to current U.S. Copyright Office guidance, purely AI-generated text, art, or code without human creative input is not eligible for copyright. However, human-created arrangements, edits, or compilations containing AI elements may receive limited copyright protection.</p>',
+                ],
+
+                [
+                    'question' => 'What happens if I update or revise my registered work?',
+                    'answer' => '<p>Minor edits do not require a new filing. However, if you create a major revision, new edition, or derivative work containing significant new creative content, you should file a new copyright registration for the updated version.</p>',
+                ],
+
+                [
+                    'question' => 'Why should I use USA Trademark Expert for my copyright registration?',
+                    'answer' => '<p>Preparing proper deposit files, selecting correct work classifications, and defining exact authorship claims can be tricky. We handle the entire submission process smoothly to ensure your creative assets achieve maximum, enforceable protection without administrative delays.</p>',
+                ],
+
+            ],
+
+        ];
     }
 
     public function resources(): View
