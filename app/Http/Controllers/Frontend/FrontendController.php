@@ -23,7 +23,13 @@ class FrontendController extends Controller
         return view('frontend.faqs', $this->faqPageData());
     }
 
-    private function faqPageData()
+    /**
+     * 
+     *  @return array<string, array<string, mixed>> 
+     * 
+     */
+
+    private function faqPageData(): array
     {
         return [
 
