@@ -63,7 +63,9 @@ class FrontendController extends Controller
     }
 
     /**
+     * 
      * @return array<string, array<string, mixed>>
+     * 
      */
 
     private function servicesData(): array

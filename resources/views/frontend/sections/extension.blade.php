@@ -6,10 +6,10 @@
 
             <div class="extension-content">
 
-                <h2>{{ $extensionTitle ?? 'Why Conduct a Trademark Search First?' }}</h2>
+                <h2>{{ $extensionTitle ?? 'Why Request an Extension?' }}</h2>
 
                 <p class="extension-text">
-                    {{ $extensionDescription ?? '' }}
+                    {{ $extensionDescription ?? 'If you filed under an "Intent to Use" basis, you must eventually submit a Statement of Use (SOU) proving you are actively using the trademark in commerce. If you are not ready within the initial 6-month window after the Notice of Allowance is issued, an extension grants you an additional 6 months to avoid abandonment.' }}
                 </p>
 
                 <div class="extension-insight">
@@ -17,7 +17,7 @@
                     <span>{{ $extensionInsightTitle ?? 'KEY INSIGHT:' }}</span>
 
                     <p>
-                        {{ $extensionInsight ?? '' }}
+                        {{ $extensionInsight ?? 'By clicking submit, you state under penalty of perjury that you have a good faith belief that the use of the material in the manner complained of is not authorized, the material in the manner complained of is not authorized.' }}
                     </p>
 
                 </div>
