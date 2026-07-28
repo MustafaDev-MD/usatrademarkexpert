@@ -39,28 +39,68 @@
             <div class="extension-image">
 
                 <img src="{{ $extensionImage ?? asset('assets/images/services/extension.png') }}"
-                     alt="{{ $extensionTitle ?? 'Extension' }}">
+                    alt="{{ $extensionTitle ?? 'Extension' }}">
 
                 @if(!empty($extensionCards))
-                    <div class="extension-cards">
+                <div class="extension-cards">
 
-                        @foreach($extensionCards as $card)
+                    @foreach($extensionCards as $card)
 
-                            <div class="extension-card">
+                    <div class="extension-card">
 
-                                <div class="extension-card-icon">
-                                    <i class="{{ $card['icon'] }}"></i>
-                                </div>
+                        <div class="extension-card-icon">
+                            <i class="{{ $card['icon'] }}"></i>
+                        </div>
 
-                                <div class="extension-card-content">
-                                    <h5>{{ $card['title'] }}</h5>
-                                </div>
-
-                            </div>
-
-                        @endforeach
+                        <div class="extension-card-content">
+                            <h5>{{ $card['title'] }}</h5>
+                        </div>
 
                     </div>
+
+                    @endforeach
+
+                </div>
+                @else
+                <div class="extension-cards">
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Filing Extension</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Filing Extension</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="extension-card">
+
+                        <div class="extension-card-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="extension-card-content">
+                            <h5>Filing Extension</h5>
+                        </div>
+
+                    </div>
+
+                </div>
                 @endif
 
             </div>
