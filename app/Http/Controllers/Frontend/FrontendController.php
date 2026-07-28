@@ -25,7 +25,12 @@ class FrontendController extends Controller
 
     /**
      * 
-     *  @return array<string, array<string, mixed>> 
+     * @return array{
+     *     faqs: list<array{
+     *         question: string,
+     *         answer: string
+     *     }>
+     * }
      * 
      */
 
