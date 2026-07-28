@@ -24,14 +24,10 @@ class FrontendController extends Controller
     }
 
     /**
-     * 
-     * @return array{
-     *     faqs: list<array{
-     *         question: string,
-     *         answer: string
-     *     }>
-     * }
-     * 
+     * @return array<string, list<array{
+     *     question: string,
+     *     answer: string
+     * }>>
      */
 
     private function faqPageData(): array
