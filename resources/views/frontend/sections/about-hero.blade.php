@@ -15,26 +15,22 @@
 
                     <i class="fa-solid fa-shield-halved"></i>
 
-                    Continuous Protection
+                    THE NATION'S TRADEMARK AUTHORITY
 
                 </span>
 
                 <h1>
-                    Absolute Authority in
-                    Brand Protection
+                    Empowering Brands with Unshakable Legal Protection
                 </h1>
 
                 <p>
-                    Expert trademark search, filing, and monitoring
-                    services. We provide the legal precision required
-                    to safeguard your intellectual property across
-                    the globe.
+                    At USA Trademark Expert, we demystify federal intellectual property law. We help innovators, small business owners, and growing enterprises establish nationwide ownership and defend what they’ve built.
                 </p>
 
                 <div class="about-hero-buttons">
 
                     <a href="#" class="btn btn-outline">
-                        Get Started
+                        Discover Our Mission
                     </a>
 
                 </div>

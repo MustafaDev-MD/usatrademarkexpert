@@ -88,7 +88,7 @@
 
                     </div>
 
-                    <div class="extension-card">
+                    <div class="extension-card"> 
 
                         <div class="extension-card-icon">
                             <i class="fa-solid fa-file-lines"></i>

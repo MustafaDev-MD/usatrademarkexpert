@@ -3,7 +3,7 @@
     <div class="container">
 
         <div class="section-heading">
-            <h2>Absolute Authority in Brand Protection</h2>
+            <h2>Pioneering Simplicity in Intellectual Property</h2>
         </div>
 
         <div class="company-history-wrapper">
@@ -13,52 +13,48 @@
 
             <div class="company-history-card">
 
-                <span>Trademark</span>
+                <span>CLEARANCE AUDITS</span>
 
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h3>Deep Search Intelligence</h3>
 
                 <p>
-                    An experienced team consisting of a lawyer and several technologists
-                    bring trademark filing services to consumers and small businesses.
+                    We search far beyond basic registers—analyzing federal databases, state filings, and commercial markets to ensure your brand name has a clear runway before you file.
                 </p>
 
             </div>
 
             <div class="company-history-card">
 
-                <span>Trademark</span>
+                <span>PRECISION DRAFTING</span>
 
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h3>Flawless USPTO Filings</h3>
 
                 <p>
-                    An experienced team consisting of a lawyer and several technologists
-                    bring trademark filing services to consumers and small businesses.
+                    Our team structures every class description and application detail with legal accuracy, dramatically reducing the risk of procedural delays or examiner refusals.
                 </p>
 
             </div>
 
             <div class="company-history-card">
 
-                <span>Trademark</span>
+                <span>LEGAL ADVOCACY</span>
 
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h3>Active Examination Management</h3>
 
                 <p>
-                    An experienced team consisting of a lawyer and several technologists
-                    bring trademark filing services to consumers and small businesses.
+                    When USPTO examiners issue queries or legal refusals, we craft strategic, evidence-backed responses to keep your application moving toward registration.
                 </p>
 
             </div>
 
             <div class="company-history-card">
 
-                <span>Trademark</span>
+                <span>LONG-TERM SECURITY</span>
 
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h3>Proactive Brand Defense</h3>
 
                 <p>
-                    An experienced team consisting of a lawyer and several technologists
-                    bring trademark filing services to consumers and small businesses.
+                    Securing your registration is just the beginning. We continuously monitor new registry filings and online marketplaces to prevent unauthorized infringement of your identity.
                 </p>
 
             </div>
