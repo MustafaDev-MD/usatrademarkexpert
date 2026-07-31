@@ -97,11 +97,16 @@
                         services that best matches what you seek to protect."
         ],
     ];
-@endphp
+@endphp 
 
 <section class="team-members-section">
 
-    @foreach($teamMembers as $member)
+    {{-- @if(isset($teamMembers) == empty)
+
+    @foreach($teamMembers as $member) --}}
+
+    @forelse($teamMembers ?? [] as $member)
+
         <article class="team-member">
             <div class="container">
 
@@ -128,6 +133,42 @@
 
             </div>
         </article>
-    @endforeach
+
+    @empty
+
+        <article class="team-member">
+            <div class="container">
+
+                <div class="team-member-inner">
+
+                    <div class="team-member-image">
+                        <img src="{{ asset('assets/images/our-team/member-1.jpg') }}" alt="John Franklin">
+
+                        <div class="team-member-info">
+                            <h4>John Franklin</h4>
+                            <span>Paralegal</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member-content">
+                        <h3>Bona Fide Use</h3>
+
+                        <p>
+                            Customer Trademark Classification: Using the USPTO's ID manual,
+                            our attorneys will devise a class and description of goods and
+                            services that best matches what you seek to protect.
+                            Customer Trademark Classification: Using the USPTO's ID manual,
+                            our attorneys will devise a class and description of goods and
+                            services that best matches what you seek to protect.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+
+    @endforelse
+    {{-- @endforeach --}}
 
 </section>
