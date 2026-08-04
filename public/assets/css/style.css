@@ -903,8 +903,8 @@ ul li {
 }
 
 .feature-icon {
-    width: 58px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     margin-bottom: 30px;
     border-radius: var(--radius-xs);
     border: 1px solid var(--primary);

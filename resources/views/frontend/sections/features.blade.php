@@ -29,7 +29,8 @@
 
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fa-regular fa-file-lines"></i>
+                    <!-- <i class="fa-regular fa-file-lines"></i> -->
+                    <img src="{{ asset('assets/images/home/database-search-review.png') }}" alt="">
                 </div>
                 <h3>
                     Database Search & Review
