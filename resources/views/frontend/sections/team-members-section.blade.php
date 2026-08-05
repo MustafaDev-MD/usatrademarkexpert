@@ -2,99 +2,17 @@
     $teamMembers = [
         [
             'image' => 'member-1.jpg',
-            'name' => 'John Franklin',
-            'designation' => 'Paralegal',
-            'title' => 'Bona Fide Use',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
+            'name' => 'IP Attorney',
+            'designation' => 'IP Attorney',
+            'title' => 'Lisa Jean Borodkin',
+            'description' => "Lisa Jean Borodkin is a lawyer practicing business law, entertainment & sports, internet and 3 other areas of law. Lisa received a A.B. degree from Harvard University in 1990, and has been licensed for 28 years. Lisa practices in Los Angeles, CA."
         ],
         [
             'image' => 'member-1.jpg',
-            'name' => 'Tim Anderson',
-            'designation' => 'Trademark Attorney',
-            'title' => 'Trademark Registration',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Andrew Brown',
-            'designation' => 'Legal Advisor',
-            'title' => 'Trademark Monitoring',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Dwayne Smith',
-            'designation' => 'Senior Attorney',
-            'title' => 'Trademark Renewal',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Richard Westfair',
-            'designation' => 'IP Consultant',
-            'title' => 'Brand Protection',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Raymond Franklin',
-            'designation' => 'IP Consultant',
-            'title' => 'Brand Protection',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Richard Mandel',
-            'designation' => 'IP Consultant',
-            'title' => 'Brand Protection',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
-        ],
-        [
-            'image' => 'member-1.jpg',
-            'name' => 'Michael Steger',
-            'designation' => 'IP Consultant',
-            'title' => 'Brand Protection',
-            'description' => "Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect.
-                        Customer Trademark Classification: Using the USPTO's ID manual,
-                        our attorneys will devise a class and description of goods and
-                        services that best matches what you seek to protect."
+            'name' => 'IP Attorney',
+            'designation' => 'IP Attorney',
+            'title' => 'Joseph C. Lee',
+            'description' => "Joseph Lee is an Intellectual Property Attorney admitted to the California State Bar, with a practice focused on trademark and patent law. He advises businesses, entrepreneurs, and innovators on securing, protecting, and enforcing their intellectual property rights, providing strategic legal guidance from filing through registration and portfolio management."
         ],
     ];
 @endphp 
@@ -117,7 +35,7 @@
 
                         <div class="team-member-info">
                             <h4>{{ $member['name'] }}</h4>
-                            <span>{{ $member['designation'] }}</span>
+                            {{-- <span>{{ $member['designation'] ?? '' }}</span> --}}
                         </div>
                     </div>
 
