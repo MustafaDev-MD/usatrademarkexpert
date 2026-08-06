@@ -124,12 +124,12 @@ $services = [
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
 
-                                    <a href="{{ route('our-team') }}"
+                                    <!-- <a href="{{ route('our-team') }}"
                                         class="{{ request()->routeIs('our-team*') ? 'active' : '' }}"
                                         wire:navigate>
                                         Our Team
                                         <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
+                                    </a> -->
 
                                 </div>
 
@@ -222,7 +222,7 @@ $services = [
 
             <ul class="mobile-submenu">
                 <li><a href="{{ route('about') }}" wire:navigate>About Us</a></li>
-                <li><a href="{{ route('our-team') }}" wire:navigate>Our Team</a></li>
+                <!-- <li><a href="{{ route('our-team') }}" wire:navigate>Our Team</a></li> -->
             </ul>
 
         </li>
