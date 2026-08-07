@@ -14,7 +14,16 @@
 
 @include('frontend.sections.extension')
 
-@include('frontend.sections.cta-banner')
+@include('frontend.sections.cta-banner',[
+    'icon' => 'fa-solid fa-link',
+    'badge' => 'BEST AND FAIR PRICING',
+    'title' => 'Simple, Transparent Legal Pricing',
+    'description' => 'Clear, upfront costs with no hidden fees. Choose the level of protection that fits your business needs.',
+    'primaryButtonText' => 'Get Started',
+    'primaryButtonUrl' => route('contact'),
+    'secondaryButtonText' => 'Learn More',
+    'secondaryButtonUrl' => route('home')
+])
 
 @include('frontend.sections.services')
  

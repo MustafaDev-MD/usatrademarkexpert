@@ -4,11 +4,10 @@
 
         <div class="section-heading">
 
-            <h2>Absolute Authority in Brand Protection</h2>
+            <h2>The Core Principles Driving Our Brand Protection</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                We combine deep legal expertise with streamlined digital workflows to make federal trademark registration accessible, transparent, and hassle-free for every business owner.
             </p>
 
         </div>
@@ -24,16 +23,15 @@
                 </span>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Transparent, Fixed-Fee Pricing
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consect adipiscing elit,
-                    sed diam nonummy nibh euismod magna.
+                    We eliminate the uncertainty of unpredictable legal fees. Our clear, fixed-rate packages mean you know your exact investment upfront without unexpected billable surprises.
                 </p>
 
                 <a href="#" class="hover-link">
-                    Visit page
+                    Explore Our Services
                 </a>
 
             </div>
@@ -47,16 +45,15 @@
                 </span>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Rigorous Examination Audits
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consect adipiscing elit,
-                    sed diam nonummy nibh euismod magna.
+                    Every application, classification choice, and commercial specimen undergoes meticulous review prior to USPTO submission to maximize approval odds and eliminate costly filing mistakes.
                 </p>
 
                 <a href="#" class="hover-link">
-                    Visit page
+                    View Our Strategy
                 </a>
 
             </div>
@@ -70,16 +67,15 @@
                 </span>
 
                 <h3>
-                    Lorem ipsum dolor sit amet.
+                    Dedicated Long-Term Partnership
                 </h3>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consect adipiscing elit,
-                    sed diam nonummy nibh euismod magna.
+                    Securing your mark is only the beginning. From handling unexpected office actions to tracking post-registration maintenance deadlines, we advocate for your brand every step of the way.
                 </p>
 
                 <a href="#" class="hover-link">
-                    Visit page
+                    Contact Our Experts
                 </a>
 
             </div>

@@ -6,18 +6,18 @@
 
             <div class="extension-content">
 
-                <h2>{{ $extensionTitle ?? 'Why Request an Extension?' }}</h2>
+                <h2>{{ $extensionTitle ?? 'Protecting What You Build' }}</h2>
 
                 <p class="extension-text">
-                    {{ $extensionDescription ?? 'If you filed under an "Intent to Use" basis, you must eventually submit a Statement of Use (SOU) proving you are actively using the trademark in commerce. If you are not ready within the initial 6-month window after the Notice of Allowance is issued, an extension grants you an additional 6 months to avoid abandonment.' }}
+                    {{ $extensionDescription ?? 'We simplify complex intellectual property laws so you can scale with confidence. From clearance searches to final registration, we keep your brand secure every step of the way.' }}
                 </p>
 
                 <div class="extension-insight">
 
-                    <span>{{ $extensionInsightTitle ?? 'KEY INSIGHT:' }}</span>
+                    <span>{{ $extensionInsightTitle ?? 'OUR APPROACH:' }}</span>
 
                     <p>
-                        {{ $extensionInsight ?? 'By clicking submit, you state under penalty of perjury that you have a good faith belief that the use of the material in the manner complained of is not authorized, the material in the manner complained of is not authorized.' }}
+                        {{ $extensionInsight ?? 'Proactive clearance audits and expert USPTO filings—stopping legal conflicts before they happen.' }}
                     </p>
 
                 </div>
@@ -25,11 +25,11 @@
                 <div class="extension-buttons">
 
                     <a href="{{ $extensionPrimaryButtonLink ?? '#' }}" class="btn btn-primary">
-                        {{ $extensionPrimaryButtonText ?? 'Get Started' }}
+                        {{ $extensionPrimaryButtonText ?? 'Partner With Us' }}
                     </a>
 
                     <a href="{{ $extensionSecondaryButtonLink ?? '#' }}" class="btn btn-outline">
-                        {{ $extensionSecondaryButtonText ?? 'Learn More' }}
+                        {{ $extensionSecondaryButtonText ?? 'Our Services' }}
                     </a>
 
                 </div>
@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Filing Extension</h5>
+                            <h5>USPTO Compliance</h5>
                         </div>
 
                     </div>
@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Filing Extension</h5>
+                            <h5>Thorough Clearance</h5>
                         </div>
 
                     </div>
@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="extension-card-content">
-                            <h5>Filing Extension</h5>
+                            <h5>Brand Security</h5>
                         </div>
 
                     </div>
