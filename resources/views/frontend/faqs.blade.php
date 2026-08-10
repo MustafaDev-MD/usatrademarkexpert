@@ -6,7 +6,10 @@
 
 @section('content')
 
-@include('frontend.sections.blog-hero')
+@include('frontend.sections.blog-hero',[
+    'title' => 'Intellectual Property FAQs',
+    'description' => 'Expert guidance on safeguarding your business assets—from brand names and logos to original creative content.'
+])
 
 @include('frontend.sections.faq-section')
 

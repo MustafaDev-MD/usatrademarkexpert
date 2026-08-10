@@ -487,23 +487,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Register Your Trademark?',
 
-                'processDescription' => 'Securing your intellectual property prevents costly disputes, blocks competitors from stealing your identity, and establishes total ownership of your brand.',
+                'processDescription' => 'Securing your brand prevents costly disputes, blocks competitors, and establishes full legal ownership.',
 
                 'processCards' => [
 
                     [
                         'title' => 'Nationwide Exclusivity',
-                        'description' => 'Stop competitors from using confusingly similar names. Federal registration grants you the presumed right to exclusive use of your mark across the entire country, not just locally.',
+                        'description' => 'Federal registration gives you exclusive rights to use your mark across the entire country, not just locally.',
                     ],
 
                     [
                         'title' => 'Enhanced Legal Power',
-                        'description' => 'A registered mark gives you superior standing in federal court. It proves the validity of your brand ownership and opens the door to additional financial remedies in infringement lawsuits.',
+                        'description' => 'A registered mark proves ownership in federal court and provides stronger protection against infringement.',
                     ],
 
                     [
                         'title' => 'Official Brand Authority',
-                        'description' => 'Unlock the right to use the prestigious ® symbol on your products and marketing. This signals to the market that your business is established, serious, and legally protected.',
+                        'description' => 'Unlocks the official ® symbol, signaling to customers and competitors that your business is fully protected.',
                     ],
 
                 ],
@@ -514,7 +514,7 @@ class FrontendController extends Controller
                 |--------------------------------------------------------------------------
                 */
 
-                'extensionTitle' => 'Why Conduct a Trademark Search First?',
+                'extensionTitle' => 'Why Search First?',
 
                 'extensionDescription' => 'Before submitting your official application, verifying that your brand name or logo is truly available is critical. A pre-filing clearance search identifies existing registrations and confusingly similar marks, helping you avoid immediate USPTO rejections, non-refundable government fees, and mandatory rebranding later.',
 
@@ -546,7 +546,7 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-scale-balanced',
-                        'title' => 'Attorney-Backed Guidance',
+                        'title' => 'Attorney Guidance',
                     ],
 
                 ],
@@ -565,74 +565,42 @@ class FrontendController extends Controller
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -807,9 +775,9 @@ class FrontendController extends Controller
                 'heroDescription' => 'Proactively defend your brand against unauthorized use, potential infringement, and marketplace dilution.',
 
                 'heroFeatures' => [
-                    '24/7 USPTO Database Scans: Detect newly submitted applications that closely mimic your mark.',
+                    '24/7 USPTO Scans: Detect newly submitted applications that mimic your mark.',
                     'Instant Conflict Alerts: Receive immediate notifications whenever similar filings emerge.',
-                    'Proactive Defense Strategy: Take swift legal action before copycats establish market presence.',
+                    'Proactive Defense Strategy: Take swift legal action before copycats enter the market.',
                 ],
 
                 'heroButtonText' => 'Start Monitoring Now',
@@ -823,25 +791,25 @@ class FrontendController extends Controller
                 | Process
                 |--------------------------------------------------------------------------
                 */
-                'processTitle' => 'Why Is Active Brand Monitoring Essential?',
+                'processTitle' => 'Why Monitor Your Brand?',
 
-                'processDescription' => 'Registering a trademark is only the first step. Continuous surveillance ensures no competitor encroaches on your exclusive rights or dilutes your brand identity.',
+                'processDescription' => 'Registration is just step one. Continuous monitoring stops competitors from encroaching on your rights.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Early Infringement Detection',
-                        'description' => 'Catch conflicting applications immediately. Automated tracking scans federal registries continuously so you can oppose similar marks before the USPTO officially grants them protection.',
+                        'title' => 'Early Detection',
+                        'description' => 'Catch conflicting marks early, allowing you to challenge and oppose similar filings before USPTO approval.',
                     ],
 
                     [
-                        'title' => 'Prevent Brand Dilution',
-                        'description' => 'Safeguard your brand’s commercial value and reputation. Allowing unauthorized or confusingly similar marks to coexist weakens your legal standing and confuses your customers.',
+                        'title' => 'Prevent Dilution',
+                        'description' => 'Protect your brand value by stopping similar marks that confuse customers and weaken your standing.',
                     ],
 
                     [
-                        'title' => 'Safeguard Market Equity',
-                        'description' => 'Preserve the nationwide trust and goodwill you have built. Proactive vigilance ensures that your business name, logo, and slogans remain strictly yours across all channels.',
+                        'title' => 'Protect Market Equity',
+                        'description' => 'Keep your name, logo, and slogans strictly yours by securing complete exclusive ownership across all sales channels.',
                     ],
 
                 ],
@@ -851,9 +819,9 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Why Is Proactive Surveillance Necessary?',
+                'extensionTitle' => 'Why Proactive Surveillance Matters',
 
-                'extensionDescription' => 'The USPTO does not actively police trademark infringement or enforce your legal rights for you. As a brand owner, the responsibility to monitor federal databases and challenge conflicting mark submissions rests entirely with you before those applications become fully registered.',
+                'extensionDescription' => 'The USPTO does not actively police trademark infringement or enforce your legal rights for you. As a brand owner, the burden to monitor federal databases, detect infringing filings, and challenge conflicting mark submissions rests entirely on your shoulders before those applications gain full registration status.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
@@ -893,78 +861,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -974,20 +915,19 @@ class FrontendController extends Controller
                 | Authority
                 |--------------------------------------------------------------------------
                 */
-                'authorityTitle' => 'Federal Database vs. Market-Wide Surveillance',
+                'authorityTitle' => 'USPTO vs. Market Surveillance',
 
                 'authorityLeftIcon' => 'fa-regular fa-file-lines',
 
-                'authorityLeftTitle' => 'Federal USPTO Monitoring',
+                'authorityLeftTitle' => 'USPTO Monitoring',
 
                 'authorityLeftItems' => [
 
-                    'Daily scans of new USPTO filings for phonetic and visual matches',
+                    'Daily scans for phonetic and visual matches.',
 
-                    'Automated detection of conflicting marks in similar industry classes',
-
-                    'Early warnings that allow you to file timely Opposition Proceedings',
-
+                    'Automated conflict detection in relevant classes.',
+                    
+                    'Early warnings for timely opposition filings.',
                 ],
 
                 'authorityRightTitle' => 'Multi-Channel Brand Tracking',
@@ -1125,14 +1065,14 @@ class FrontendController extends Controller
                 |--------------------------------------------------------------------------
                 */
 
-                'heroTitle' => 'Federal Trademark Renewal Services',
+                'heroTitle' => "Federal Trademark \n Renewal Services",
 
-                'heroDescription' => 'Maintain your registered rights and keep your brand legally protected with seamless Section 8 and Section 9 filings.',
+                'heroDescription' => 'Maintain registered rights and protect your brand with seamless Section 8 and Section 9 filings.',
 
                 'heroFeatures' => [
-                    'USPTO Maintenance Filings: Expert preparation of Section 8 Declarations and Section 9 Renewals.',
-                    'Specimen Compliance Audits: Ensure your current commercial use meets strict USPTO standards.',
-                    'Deadline Safeguards: Avoid costly grace-period surcharges or permanent mark cancellation.',
+                    'USPTO Maintenance: Expert Section 8 and Section 9 filings.',
+                    'Specimen Audits: Ensure proof of use meets USPTO standards.',
+                    'Deadline Safeguards: Avoid late fees or mark cancellation.',
                 ],
 
                 'heroButtonText' => 'Renew Your Trademark',
@@ -1148,23 +1088,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Is Timely Renewal Critical?',
 
-                'processDescription' => 'Federal trademark rights can last indefinitely, but only if required maintenance filings are submitted on schedule with the USPTO.',
+                'processDescription' => 'Federal trademark rights last indefinitely, but only if required maintenance filings are submitted on schedule.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Prevent Permanent Cancellation',
-                        'description' => 'Missing mandatory USPTO filing windows causes your registration to expire automatically. Timely renewal ensures your nationwide brand protection never lapses.',
+                        'title' => 'Prevent Cancellation',
+                        'description' => 'Missing USPTO filing windows causes automatic expiration. Timely renewal ensures protection never lapses.',
                     ],
 
                     [
                         'title' => 'Preserve Priority Ownership',
-                        'description' => 'Continuous renewals protect your original filing date and nationwide rights, preventing competitors from snatching up your established brand name or logo.',
+                        'description' => 'Continuous renewals protect your original filing date, keeping competitors from taking your brand name or logo.',
                     ],
 
                     [
                         'title' => 'Avoid Surcharges & Re-Filing',
-                        'description' => 'Submitting your declaration within the primary renewal window saves your business from expensive USPTO late fees, penalties, or having to re-apply from scratch.',
+                        'description' => 'Filing within the primary window saves your business from expensive late fees, penalties, or re-applying from scratch.',
                     ],
 
                 ],
@@ -1174,13 +1114,13 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Why Are USPTO Renewal Filings Mandatory?',
+                'extensionTitle' => 'Why Renewals Are Mandatory',
 
-                'extensionDescription' => 'Federal trademark registrations do not automatically stay active forever. The USPTO requires trademark owners to periodically submit official proof of commercial use between the 5th and 6th years, and every 10 years thereafter, to maintain active federal status and prevent mark expiration.',
+                'extensionDescription' => 'Federal trademark registrations do not automatically stay active forever. To maintain active protection and prevent permanent cancellation, the USPTO strictly requires brand owners to periodically submit official proof of ongoing commercial use between the 5th and 6th years, and every 10 years thereafter.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
-                'extensionInsight' => 'Missing your USPTO maintenance deadline results in immediate cancellation of your trademark, surrendering your nationwide rights and allowing competitors to claim your brand name.',
+                'extensionInsight' => 'Missing USPTO deadlines causes immediate trademark cancellation, losing your nationwide rights to competitors.',
 
                 'extensionPrimaryButtonText' => 'Start Renewal',
 
@@ -1216,78 +1156,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -1305,11 +1218,11 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Verifies continuous commercial use during your initial 5-year registration period',
+                    'Verifies commercial use in years 1–5.',
 
-                    'Option to submit Section 15 to gain powerful Incontestable status',
+                    'Option to file Section 15 for incontestable status.', 
 
-                    'Essential legal step required to keep your registration active through year 10',
+                    'Required to keep mark active until year 10.',
 
                 ],
 
@@ -1450,12 +1363,12 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'USPTO Office Action Response',
 
-                'heroDescription' => 'Overcome legal refusals, procedural objections, and examiner requirements to keep your trademark application moving toward registration.',
+                'heroDescription' => 'Overcome USPTO refusals and objections to keep your trademark moving toward approval.',
 
                 'heroFeatures' => [
-                    "In-Depth Refusal Analysis: Comprehensive review of the examining attorney's legal objections.",
-                    'Custom Legal Argumentation: Professional drafting of response briefs, amendments, and evidence.',
-                    'On-Time USPTO Filing: Compliant submissions that safeguard your priority filing date.',
+                    "Refusal Analysis: Review of the examiner's legal objections.",
+                    'Legal Drafting: Professional response briefs and amendments.',
+                    'On-Time Filing: Compliant submissions to protect your priority date.',
                 ],
 
                 'heroButtonText' => 'Resolve Your Office Action',
@@ -1471,23 +1384,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Is a Structured Response Critical?',
 
-                'processDescription' => 'Receiving an Office Action does not mean your trademark is denied. A prompt, well-reasoned legal response can successfully overcome USPTO objections.',
+                'processDescription' => 'An Office Action is not a final denial—a prompt, well-reasoned response can successfully overcome USPTO objections.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Prevent Application Abandonment',
-                        'description' => 'Failing to respond before strict USPTO deadlines results in automatic application abandonment, causing you to lose your filing fees and priority registration rights.',
+                        'title' => 'Prevent Abandonment',
+                        'description' => 'Missing USPTO deadlines causes automatic abandonment, losing your filing fees and priority rights.',
                     ],
 
                     [
-                        'title' => 'Overcome Substantive Refusals',
-                        'description' => 'Whether facing "Likelihood of Confusion" or "Descriptiveness" refusals, targeted legal arguments and precedent analysis give your application the best path to approval.',
+                        'title' => 'Overcome Refusals',
+                        'description' => 'Targeted legal arguments and precedent analysis give refusals like "Likelihood of Confusion" the best path to approval.',
                     ],
 
                     [
                         'title' => 'Fix Technical & Specimen Issues',
-                        'description' => 'Correct goods/services classifications, submit acceptable commercial specimens, and address administrative requirements cleanly to keep your filing on track.',
+                        'description' => 'Correct classifications, submit valid commercial specimens, and resolve procedural requirements cleanly.',
                     ],
 
                 ],
@@ -1497,7 +1410,7 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Overcoming USPTO Examiner Refusals',
+                'extensionTitle' => 'Overcoming Examiner Refusals',
 
                 'extensionDescription' => "Receiving an Office Action means the USPTO examining attorney has identified legal obstacles or administrative errors that must be resolved. Submitting a structured legal response allows you to address examiner objections, modify your application details, and defend your brand's right to full registration.",
 
@@ -1519,7 +1432,7 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'Targeted Argument Briefs',
+                        'title' => 'Targeted Briefs',
                     ],
 
                     [
@@ -1539,78 +1452,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -1628,11 +1514,11 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Issued when an examiner raises initial legal or procedural issues',
+                    'Issued for initial legal or procedural issues.',
 
-                    'Opportunity to amend classifications, specimens, or legal arguments',
+                    'Fix classes, specimens, or legal arguments.',
 
-                    'Must be answered within the mandatory 3-month filing window',
+                    'Must be answered within the 3-month window.',
 
                 ],
 
@@ -1770,14 +1656,14 @@ class FrontendController extends Controller
                 |--------------------------------------------------------------------------
                 */
 
-                'heroTitle' => 'USPTO Statement of Use Filing',
+                'heroTitle' => "USPTO Statement of\n Use Filing",
 
-                'heroDescription' => 'Submit verified proof of commercial use to convert your pending "Intent-to-Use" application into an officially registered trademark.',
+                'heroDescription' => 'Submit proof of commercial use to register your Intent-to-Use trademark.',
 
                 'heroFeatures' => [
-                    'Specimen Compliance Audit: Ensure your product packaging, labeling, or digital store meets USPTO standards.',
-                    'First Use Date Verification: Accurately record your dates of first commercial use for maximum legal weight.',
-                    "Notice of Allowance Filing: Swift submission following your application's formal USPTO approval.",
+                    'Specimen Audit: Ensure packaging, labeling, or site proof meets USPTO standards.',
+                    'First Use Date: Accurately record commercial use dates for maximum protection.',
+                    'Notice of Allowance: Swift filing after your application’s official USPTO approval.',
                 ],
 
                 'heroButtonText' => 'File Statement of Use',
@@ -1793,23 +1679,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Is an SOU Filing Mandatory?',
 
-                'processDescription' => 'An "Intent-to-Use" filing reserves your name early, but submitting an official Statement of Use (SOU) is required to secure your final registration certificate.',
+                'processDescription' => 'An Intent-to-Use filing reserves your name, but an SOU is required to secure your registration certificate.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Final Step to Registration',
-                        'description' => 'Submitting your SOU provides the USPTO with required proof of real-world sales, triggering the issuance of your official Certificate of Registration.',
+                        'title' => 'Final Registration Step',
+                        'description' => 'Submitting an SOU provides proof of sales, triggering your official Certificate of Registration.',
                     ],
 
                     [
-                        'title' => 'Solidify Commercial Priority',
-                        'description' => 'Formally establishing your dates of first commercial use locks in your legal nationwide priority over later market competitors.',
+                        'title' => 'Solidify Priority',
+                        'description' => 'Formally establishing first use dates locks in nationwide legal priority over competitors.',
                     ],
 
                     [
-                        'title' => 'Prevent Application Abandonment',
-                        'description' => 'Failing to submit acceptable proof of commercial use within 6 months of receiving your Notice of Allowance results in automatic application abandonment.',
+                        'title' => 'Prevent Abandonment',
+                        'description' => 'Missing the 6-month window after your Notice of Allowance causes automatic application abandonment.',
                     ],
 
                 ],
@@ -1819,13 +1705,13 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Proving Commercial Use for Federal Registration',
+                'extensionTitle' => 'Proving Commercial Use',
 
                 'extensionDescription' => 'Once the USPTO issues a Notice of Allowance for your "Intent-to-Use" application, you must provide verified proof of active commercial sales. Our team audits your commercial specimens, prepares your sworn declaration of use, and submits your SOU to lock in your federal registration certificate.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
-                'extensionInsight' => 'Improper or non-compliant specimens are the #1 cause of SOU rejection. Submitting clear, compliant proof—such as branded product packaging or live e-commerce checkout pages—ensures swift examiner approval.',
+                'extensionInsight' => 'Non-compliant specimens cause most SOU rejections. Submitting clear proof—like branded packaging or e-commerce pages—ensures swift approval.',
 
                 'extensionPrimaryButtonText' => 'Submit Statement of Use',
 
@@ -1841,12 +1727,12 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'Notice of Allowance Compliance',
+                        'title' => 'Allowance Compliance',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-shield-halved',
-                        'title' => 'Verified Specimen Review',
+                        'title' => 'Specimen Review',
                     ],
 
                     [
@@ -1861,82 +1747,54 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
-
                 /*
                 |--------------------------------------------------------------------------
                 | Authority
@@ -1949,13 +1807,9 @@ class FrontendController extends Controller
                 'authorityLeftTitle' => 'Statement of Use (SOU)',
 
                 'authorityLeftItems' => [
-
-                    'Filed AFTER the USPTO completes examination and issues a Notice of Allowance',
-
-                    'Must be filed within 6 months of the Notice of Allowance date (unless extended)',
-
-                    'Final requirement to convert an Intent-to-Use filing into an active registration',
-
+                    'Filed AFTER a Notice of Allowance is issued.',
+                    'Must be filed within 6 months (unless extended).',
+                    'Final step to secure active registration.',
                 ],
 
                 'authorityRightTitle' => 'Amendment to Allege Use (AAU)',
@@ -2094,15 +1948,17 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'Comprehensive Trademark Search',
 
-                'heroDescription' => 'Perform an exhaustive clearance search across federal, state, and common law databases to protect your application from costly USPTO refusals.',
+                'heroTitle' => 'Comprehensive Trademark Search',
+
+                'heroDescription' => 'Search federal, state, and common law registries to avoid costly USPTO refusals.',
 
                 'heroFeatures' => [
-                    'Multi-Tier Database Scans: Exhaustive checks across USPTO filings, state business registries, and live digital markets.',
-                    'Risk Assessment Report: Detailed evaluation highlighting potential phonetic, visual, and conceptual conflicts.',
-                    'Strategic Guidance: Actionable insights to refine your mark and maximize approval odds before you file.',
+                    'Multi-Tier Scans: Full checks across USPTO filings, state registries, and online markets.',
+                    'Risk Assessment: Detailed reports highlighting potential phonetic, visual, and name conflicts.',
+                    'Strategic Insights: Clear guidance to refine your mark and maximize approval odds.',
                 ],
 
-                'heroButtonText' => 'Perform Search Now',
+                'heroButtonText' => 'Search Now',
 
                 'heroButtonLink' => route('contact'),
 
@@ -2115,23 +1971,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Is Active Brand Monitoring Essential?',
 
-                'processDescription' => 'Millions of active marks exist nationwide. A thorough pre-filing clearance audit ensures your brand name or logo is legally available before investing in registration.',
+                'processDescription' => 'Millions of active marks exist nationwide. A clearance audit ensures your brand is legally available before investing in registration.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Why Is Active Brand Monitoring Essential?',
-                        'description' => 'USPTO application filing fees are strictly non-refundable whether your mark is approved or rejected. Searching upfront prevents wasting money on an unavailable name.',
+                        'title' => 'Protect Non-Refundable Fees',
+                        'description' => 'USPTO fees are non-refundable. Searching upfront avoids wasting money on unavailable names.',
                     ],
 
                     [
-                        'title' => 'Uncover Hidden Common Law Risks',
-                        'description' => 'Businesses using unregistered names still hold enforceable "common law" rights. Deep scans flag unregistered commercial uses that could lead to future legal disputes.',
+                        'title' => 'Uncover Common Law Risks',
+                        'description' => 'Unregistered brands hold legal rights. Deep scans flag commercial uses to prevent disputes.',
                     ],
 
                     [
                         'title' => 'Prevent Confusion Refusals',
-                        'description' => 'Examining attorneys reject applications that sound or look confusingly similar to pre-existing marks. Pre-filing search reports let you adapt your mark early to pass review smoothly.',
+                        'description' => 'The USPTO rejects marks that sound or look similar to existing ones. Searching early lets you adjust before filing.',
                     ],
 
                 ],
@@ -2141,13 +1997,13 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Uncovering Hidden Legal Conflicts Before You File',
+                'extensionTitle' => 'Uncover Hidden Legal Conflicts',
 
-                'extensionDescription' => "A basic search engine query isn't enough to guarantee your trademark is clear. Our comprehensive clearance audit delves deep into federal USPTO records, state corporate filings, domain databases, and common law commercial usage to uncover phonetic, visual, or conceptual overlaps that could derail your registration.",
+                'extensionDescription' => 'A standard search engine query is not enough to protect your brand. Our comprehensive clearance audit scans federal USPTO records, state business filings, domain registries, and common law commercial usage to identify phonetic, visual, or conceptual overlaps that could derail your application.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
-                'extensionInsight' => 'Over 80% of USPTO application refusals stem from "Likelihood of Confusion" with existing marks—conflicts that a professional clearance search identifies before you spend time and filing fees.',
+                'extensionInsight' => 'Over 80% of USPTO rejections stem from "Likelihood of Confusion"—a risk our clearance search catches before you spend money on filing fees.',
 
                 'extensionPrimaryButtonText' => 'Run Clearance Search',
 
@@ -2183,100 +2039,72 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
-
                 /*
                 |--------------------------------------------------------------------------
                 | Authority
                 |--------------------------------------------------------------------------
                 */
-                'authorityTitle' => 'Basic Federal Search vs. Comprehensive Clearance Search',
+                'authorityTitle' => 'Basic vs. Comprehensive Search',
 
                 'authorityLeftIcon' => 'fa-regular fa-file-lines',
 
-                'authorityLeftTitle' => 'Standard USPTO Direct Search',
+                'authorityLeftTitle' => 'Standard USPTO Search',
 
                 'authorityLeftItems' => [
 
-                    'Scans only active federal USPTO registrations and pending applications',
+                    'Only scans active federal filings & applications.',
 
-                    'Identifies exact name matches and basic spelling direct conflicts',
+                    'Finds exact matches & direct spelling conflicts.',
 
-                    'Misses state-level filings, common law commercial use, and digital brand presence',
+                    'Misses state filings, common law & web presence.',
 
                 ],
 
@@ -2406,12 +2234,12 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'Federal Copyright Registration',
 
-                'heroDescription' => 'Secure official public ownership and statutory protection for your original creative works, digital assets, software, and literary content.',
+                'heroDescription' => 'Secure official ownership and legal protection for your creative works, software, and content.',
 
                 'heroFeatures' => [
                     'Official Legal Record: Establish public proof of ownership with the U.S. Copyright Office.',
-                    'Litigation & Damages Access: Unlock federal lawsuit eligibility and potential statutory damages for infringement.',
-                    'Flawless Deposit Submission: Professional filing of application details, work descriptions, and deposit copies.',
+                    'Litigation Eligibility: Unlock federal lawsuit rights and statutory damages for infringement.',
+                    'Deposit Copy Filing: Professional submission of work descriptions and deposit copies.',
                 ],
 
                 'heroButtonText' => 'Register Copyright Now',
@@ -2427,23 +2255,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Secure Federal Copyright Registration?',
 
-                'processDescription' => 'Although copyright exists upon creation, official registration with the U.S. Copyright Office provides essential legal enforcement power.',
+                'processDescription' => 'While copyright exists upon creation, federal registration provides essential legal enforcement power.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Prerequisite for Federal Lawsuits',
-                        'description' => 'You cannot file an infringement lawsuit in U.S. federal court against unauthorized copiers without an official federal copyright registration.',
+                        'title' => 'Required for Federal Lawsuits',
+                        'description' => 'You cannot sue unauthorized copiers in U.S. federal court without an official copyright registration.',
                     ],
 
                     [
-                        'title' => 'Claim Up to $150,000 in Damages',
-                        'description' => 'Timely registration qualifies you for statutory damages up to $150,000 per willful infringement, plus attorney fee recovery, without proving actual monetary loss.',
+                        'title' => 'Claim Up to $150k in Damages',
+                        'description' => 'Timely registration qualifies you for statutory damages up to $150,000 per infringement plus legal fees.',
                     ],
 
                     [
-                        'title' => 'Customs & Global Import Protection',
-                        'description' => 'Registering allows you to record your copyright with U.S. Customs and Border Protection to seize counterfeit and infringing goods at the border.',
+                        'title' => 'Customs Import Protection',
+                        'description' => 'Record your copyright with U.S. Customs to seize counterfeit goods at the border.',
                     ],
 
                 ],
@@ -2453,15 +2281,15 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Protecting Original Works & Digital Assets',
+                'extensionTitle' => 'Protecting Original Works',
 
-                'extensionDescription' => 'From literary works, software code, and visual graphic designs to musical compositions and digital media, official copyright registration shields your creative output from unauthorized copying, distribution, and commercial exploitation.',
+                'extensionDescription' => 'From literary works, software code, and graphic designs to digital media, official copyright registration shields your creative output from unauthorized copying and distribution. It establishes an indisputable public record of ownership, deters potential infringers, and empowers you to legally enforce your rights and claim monetary damages.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
-                'extensionInsight' => 'Registering your creative work within 3 months of public publication—or prior to any infringement—entitles you to statutory damages up to $150,000 per violation plus full attorney fee recovery.',
+                'extensionInsight' => 'Registering within 3 months of publication entitles you to up to $150k in statutory damages plus legal fee recovery.',
 
-                'extensionPrimaryButtonText' => ' Protect Your Content',
+                'extensionPrimaryButtonText' => 'Protect Your Content',
 
                 'extensionPrimaryButtonLink' => route('contact'),
 
@@ -2475,17 +2303,17 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'U.S. Copyright Office Deposit',
+                        'title' => 'Copyright Office Deposit',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-shield-halved',
-                        'title' => 'Digital & Visual Asset Protection',
+                        'title' => 'Digital Asset Protection',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-scale-balanced',
-                        'title' => 'Statutory Enforcement Rights',
+                        'title' => 'Statutory Enforcement',
                     ],
 
                 ],
@@ -2495,88 +2323,60 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
-
                 /*
                 |--------------------------------------------------------------------------
                 | Authority
                 |--------------------------------------------------------------------------
                 */
-                'authorityTitle' => 'Unregistered Creation vs. Federal Copyright Registration',
+               'authorityTitle' => 'Unregistered Creation vs. Federal Copyright Registration',
 
                 'authorityLeftIcon' => 'fa-regular fa-file-lines',
 
@@ -2584,14 +2384,13 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Arises automatically when an original work is fixed in a tangible form',
+                    'Applies automatically upon creation.',
 
-                    'Does not permit filing an infringement lawsuit in U.S. federal court',
+                    'No federal lawsuit eligibility.',
 
-                    'Lacks official public proof and forfeits statutory damage claims',
+                    'Lacks public proof and forfeits statutory damages.',
 
                 ],
-
                 'authorityRightTitle' => 'Official Federal Registration',
 
                 'authorityRightDescription' => 'Formal registration with the U.S. Copyright Office creates a legally recognized public record of ownership. It unlocks full federal court enforcement, empowers U.S. Customs to halt imported knockoffs, and serves as a powerful legal deterrent against unauthorized commercial copiers.',
@@ -2747,9 +2546,9 @@ class FrontendController extends Controller
                 | Process
                 |--------------------------------------------------------------------------
                 */
-                'processTitle' => 'Why Start with a Direct Federal Search?',
+                'processTitle' => 'Why Direct Federal Search?',
 
-                'processDescription' => 'Before committing time and non-refundable government fees, a direct USPTO database scan acts as your essential first filter.',
+                'processDescription' => 'A direct USPTO database scan acts as your essential first filter before spending non-refundable fees.',
 
                 'processCards' => [
 
@@ -2760,7 +2559,7 @@ class FrontendController extends Controller
 
                     [
                         'title' => 'Protect Your Filing Budget',
-                        'description' => 'USPTO application fees are non-refundable. Screening beforehand prevents wasting money on names that are clearly unavailable.',
+                        'description' => 'USPTO fees are non-refundable. Screening beforehand avoids wasting money on unavailable names.',
                     ],
 
                     [
@@ -2777,7 +2576,7 @@ class FrontendController extends Controller
                 */
                 'extensionTitle' => 'Rapid Federal Clearance Screening',
 
-                'extensionDescription' => 'A Standard Direct Search performs a targeted sweep of official USPTO databases to catch direct name overlaps, identical wordmarks, and obvious phonetic matches. It provides a swift, high-level feasibility assessment so you know right away if your proposed trademark faces immediate hurdles.',
+                'extensionDescription' => 'A Standard Direct Search performs a comprehensive targeted sweep across all official USPTO databases to catch direct name overlaps, identical wordmarks, and obvious phonetic matches. This essential preliminary screening delivers a swift, high-level feasibility assessment so you immediately know if your proposed trademark faces potential conflicts or filing hurdles.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
@@ -2797,17 +2596,17 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'USPTO Direct Database Scan',
+                        'title' => 'USPTO Direct Scan',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-shield-halved',
-                        'title' => 'Phonetic & Visual Screening',
+                        'title' => 'Phonetic Screening',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-scale-balanced',
-                        'title' => 'Rapid Feasibility Results',
+                        'title' => 'Rapid Clearance',
                     ],
 
                 ],
@@ -2817,78 +2616,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -2906,11 +2678,11 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Checks active and pending federal USPTO registrations',
+                    'Checks active and pending USPTO records.',
 
-                    'Identifies identical terms, plural variations, and direct spelling overlaps',
+                    'Detects exact matches, plurals, and misspellings.',
 
-                    'Ideal for early-stage brand naming and quick preliminary checks',
+                    'Ideal for quick early-stage brand checks.',
 
                 ],
 
@@ -3051,12 +2823,12 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'Statement of Use & Extension Services',
 
-                'heroDescription' => 'Convert your "Intent-to-Use" application into a fully registered trademark or extend your filing timeline with the USPTO.',
+                'heroDescription' => 'Convert your "Intent-to-Use" application into a registered trademark or extend your USPTO timeline.',
 
                 'heroFeatures' => [
-                    'Statement of Use (SOU) Submission: Submit verified proof of commercial use to complete your registration.',
-                    'Flexible 6-Month Extensions: Request additional time to launch your brand without losing priority rights.',
-                    'Specimen Verification Audit: Ensure your commercial evidence meets strict federal standards.',
+                    'SOU Submission: File proof of commercial use to finish registration.',
+                    '6-Month Extensions: Gain extra time to launch without losing priority.',
+                    'Specimen Audits: Ensure proof of use meets USPTO standards.',
                 ],
 
                 'heroButtonText' => 'File SOU or Extension',
@@ -3072,23 +2844,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Are SOU Filings Essential?',
 
-                'processDescription' => 'Filing under an "Intent-to-Use" basis reserves your brand name upfront, but filing a Statement of Use or Extension is mandatory to secure registration.',
+                'processDescription' => 'An Intent-to-Use application reserves your brand name, but filing an SOU or Extension is mandatory for registration.',
 
                 'processCards' => [
 
                     [
                         'title' => 'Complete Your Registration',
-                        'description' => 'Transitioning your application from pending to registered status requires submitting verified specimens showing your mark is actively used in trade.',
+                        'description' => 'Transition from pending to registered status by submitting verified specimens showing your mark in active commercial use.',
                     ],
 
                     [
                         'title' => 'Safeguard Priority Date',
-                        'description' => 'Requesting timely extensions keeps your original priority filing date active while you finalize product development, branding, or official launch.',
+                        'description' => 'Timely extension requests keep your original filing date active while you finalize your brand launch.',
                     ],
 
                     [
-                        'title' => 'Prevent Application Abandonment',
-                        'description' => 'Failing to submit an SOU or Extension within 6 months of receiving your Notice of Allowance causes your application to automatically abandon.',
+                        'title' => 'Prevent Abandonment',
+                        'description' => 'Missing the 6-month window after your Notice of Allowance causes your application to automatically abandon.',
                     ],
 
                 ],
@@ -3098,7 +2870,7 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Converting Intent-to-Use into Active Registration',
+                'extensionTitle' => 'Intent-to-Use Conversion',
 
                 'extensionDescription' => 'Once the USPTO issues a Notice of Allowance for your "Intent-to-Use" application, you must demonstrate real-world commercial use. Submitting a Statement of Use with compliant specimens or requesting an official 6-month extension ensures your application stays active without forfeiting your brand rights.',
 
@@ -3120,17 +2892,17 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'Notice of Allowance Filing',
+                        'title' => 'Notice of Allowance',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-shield-halved',
-                        'title' => 'Compliant Specimen Verification',
+                        'title' => 'Specimen Verification',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-scale-balanced',
-                        'title' => '6-Month Timeline Extensions',
+                        'title' => '6-Month Extensions',
                     ],
 
                 ],
@@ -3140,78 +2912,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -3229,11 +2974,11 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Required when your goods or services are actively sold in commerce',
+                    'Required when sold in commerce.',
 
-                    'Must include a verified specimen (packaging, website screenshot, or product tags)',
+                    'Requires verified specimen proof.',
 
-                    'Final legal hurdle to convert a pending mark into an official registration',
+                    'Final legal step to secure official registration.',
 
                 ],
 
@@ -3373,12 +3118,12 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'Professional DMCA Takedown Service',
 
-                'heroDescription' => 'Swiftly remove stolen digital assets, pirated creative works, and unauthorized counterfeit product listings across the web.',
+                'heroDescription' => 'Swiftly remove stolen digital assets, pirated works, and counterfeit listings across the web.',
 
                 'heroFeatures' => [
-                    'Rapid Content Removal: Stop online piracy by enforcing legally compliant DMCA notices to website hosts and platforms.',
-                    'E-Commerce & Marketplace Cleanup: Eliminate stolen imagery and counterfeit listings on Amazon, eBay, Etsy, and social media.',
-                    'Search Engine De-Indexing: Remove infringing URL links from Google and Bing search results to protect your traffic and revenue.',
+                    'Rapid Content Removal: Stop piracy by enforcing DMCA notices to website hosts and platforms.',
+                    'Marketplace Cleanup: Eliminate stolen media and fake listings across major platforms.',
+                    'Search De-Indexing: Remove infringing Google and Bing URLs to protect traffic.',
                 ],
 
                 'heroButtonText' => 'Start DMCA Takedown',
@@ -3394,23 +3139,23 @@ class FrontendController extends Controller
                 */
                 'processTitle' => 'Why Is Fast DMCA Enforcement Critical?',
 
-                'processDescription' => 'Digital piracy and stolen content harm your brand reputation and divert revenue. Immediate enforcement stops infringers in their tracks.',
+                'processDescription' => 'Digital piracy harms your brand and steals revenue. Immediate enforcement stops infringers instantly.',
 
                 'processCards' => [
 
                     [
-                        'title' => 'Protect Your Brand & Revenue',
-                        'description' => 'Unauthorized copying of your visual designs, product photos, or written media steals sales and confuses loyal customers.',
+                        'title' => 'Protect Brand & Revenue',
+                        'description' => 'Unauthorized copying of your designs, photos, or media steals sales and confuses customers.',
                     ],
 
                     [
-                        'title' => 'Mandatory ISP & Host Compliance',
-                        'description' => 'Under federal law, internet service providers and web hosts must act quickly upon receiving a valid DMCA notice or risk legal liability.',
+                        'title' => 'Mandatory Host Compliance',
+                        'description' => 'Web hosts and ISPs must act quickly upon receiving a valid DMCA notice to avoid legal liability.',
                     ],
 
                     [
-                        'title' => 'Remove Counterfeits Off Search Engines',
-                        'description' => 'We enforce search engine removal requests to de-index pirated links, preventing unauthorized sites from ranking for your brand keywords.',
+                        'title' => 'De-Index Search Results',
+                        'description' => 'We enforce search engine removals to de-index pirated links and protect your brand rankings.',
                     ],
 
                 ],
@@ -3420,13 +3165,13 @@ class FrontendController extends Controller
                 | Extension
                 |--------------------------------------------------------------------------
                 */
-                'extensionTitle' => 'Enforcing Digital Property Rights Across the Web',
+                'extensionTitle' => 'Enforcing Digital Property Rights',
 
-                'extensionDescription' => 'Online content theft occurs in seconds, but leaving stolen assets online damages your search rankings, brand authority, and digital sales. Our managed DMCA Takedown Service identifies non-compliant hosts, prepares legally binding statutory notices, and enforces rapid removal of pirated content across websites, e-commerce platforms, and search engines.',
+                'extensionDescription' => 'Leaving stolen assets online damages your search rankings, brand authority, and sales. Our managed DMCA Takedown Service identifies non-compliant hosts, files legally binding notices, and enforces rapid removal of pirated content and counterfeit listings across websites, marketplaces, and search engines.',
 
                 'extensionInsightTitle' => 'KEY INSIGHT:',
 
-                'extensionInsight' => 'Under 17 U.S.C. § 512, online service providers and web hosts must act expeditiously to remove or disable access to infringing content upon receiving a valid DMCA notice to preserve their legal safe harbor protection.',
+                'extensionInsight' => 'Under 17 U.S.C. § 512, web hosts must act quickly to remove infringing content upon receiving a valid DMCA notice to maintain safe harbor protection.',
 
                 'extensionPrimaryButtonText' => 'Request Content Takedown',
 
@@ -3442,17 +3187,17 @@ class FrontendController extends Controller
 
                     [
                         'icon' => 'fa-solid fa-file-lines',
-                        'title' => 'ISP & Web Host Enforcement',
+                        'title' => 'Web Host Enforcement',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-shield-halved',
-                        'title' => 'E-Commerce Marketplace Cleanup',
+                        'title' => 'Marketplace Cleanup',
                     ],
 
                     [
                         'icon' => 'fa-solid fa-scale-balanced',
-                        'title' => 'Search Engine De-Indexing',
+                        'title' => 'Search De-Indexing',
                     ],
 
                 ],
@@ -3462,78 +3207,51 @@ class FrontendController extends Controller
                 | Pricing
                 |--------------------------------------------------------------------------
                 */
+
+                'pricingTitle' => 'Clear Packages, Complete Protection',
+
+                'pricingDescription' => 'Choose the level of legal support and filing expertise that matches your business goals.',
+
                 'pricingPackages' => [
 
                     [
                         'title' => 'Basic Package',
-
                         'price' => 49,
-
                         'description' => 'Straightforward filing tools to get your application officially submitted.',
-
                         'features' => [
-
                             'Federal Database Direct-Hit Search:
                             We scan the USPTO registry to check your mark’s availability and flag immediate conflicts.',
-
                             'Custom Legal Classification:
                             Our team reviews the USPTO ID manual to precisely categorize your goods and services for maximum protection.',
-
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Basic',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Basic'
                     ],
 
                     [
                         'title' => 'Standard Package',
-
                         'price' => 299,
-
                         'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
-
                         'features' => [
-
-                            '1-on-1 Attorney Consultation: Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-
-                            'Cease & Desist Safeguards: Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
-
+                            '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                            'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
                         ],
-
                         'active' => true,
-
                         'badge' => 'ENHANCED PROTECTION',
-
-                        'button' => 'Choose Standard',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Standard'
                     ],
 
                     [
                         'title' => 'Premium Package',
-
                         'price' => 539,
-
-                        'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
-
+                        'description' => 'Priority rush filing paired with continuous brand monitoring.',
                         'features' => [
-
-                            'Comprehensive Strategy Session: An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-
-                            '48-Hour Priority Rush Processing: Fast-track your application structure to lock in your official filing date as quickly as possible.',
-
-                            'Continuous Infringement Monitoring: Alerts to safeguard your registered mark from copycats (free trial included).',
-
+                            '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                            '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                            'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
                         ],
-
                         'active' => false,
-
-                        'button' => 'Choose Premium',
-
-                        'link' => route('contact'),
+                        'button' => 'Choose Premium'
                     ],
 
                 ],
@@ -3543,7 +3261,7 @@ class FrontendController extends Controller
                 | Authority
                 |--------------------------------------------------------------------------
                 */
-                'authorityTitle' => 'Informal Removal Requests vs. Formal DMCA Enforcement',
+                'authorityTitle' => 'Informal Requests vs. Formal DMCA Enforcement',
 
                 'authorityLeftIcon' => 'fa-regular fa-file-lines',
 
@@ -3551,12 +3269,12 @@ class FrontendController extends Controller
 
                 'authorityLeftItems' => [
 
-                    'Lacks formal legal weight under federal copyright safe harbor rules',
+                    'Lacks legal weight under federal safe harbor rules.',
 
-                    'Frequently ignored by web hosts, offshore servers, and marketplace sellers',
+                    'Frequently ignored by web hosts and sellers.',
 
-                    'Leaves your stolen digital media and product listings active indefinitely',
-
+                    'Leaves stolen media active indefinitely.',
+                    
                 ],
 
                 'authorityRightTitle' => 'Statutory Managed DMCA Takedown',

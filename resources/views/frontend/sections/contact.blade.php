@@ -18,36 +18,43 @@
 
             <div class="contact-info">
 
-                <h3>Why Choose USA Trademark Expert?</h3>
+                <h3>Why USA Trademark Expert?</h3>
 
                 <p>
-                    We eliminate the complexity and guesswork of dealing with the USPTO. From initial database searches to final government filing, we act as your dedicated brand protection partner.
+                    <!-- We eliminate the complexity and guesswork of dealing with the USPTO. From initial database searches to final government filing, we act as your dedicated brand protection partner. -->
+                    We simplify USPTO trademark registration. From initial search to final filing, we protect your brand every step of the way.
                 </p>
 
                 <ul>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Attorney-Assisted Precision: 
-                        Avoid costly structural mistakes with custom classification guidance tailored to your specific industry.
+                        <!-- Attorney-Assisted Precision:  -->
+                        Attorney-Guided Filings:
+                        <!-- Avoid costly structural mistakes with custom classification guidance tailored to your specific industry. -->
+                        Avoid costly errors with tailored classification and expert USPTO guidance.
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Proactive Dispute Avoidance: 
-                        We scan federal registries to flag phonetic similarities and conflicting marks before you spend money on government fees.
+                        <!-- Proactive Dispute Avoidance:  -->
+                        Proactive Risk Avoidance:
+                        <!-- We scan federal registries to flag phonetic similarities and conflicting marks before you spend money on government fees. -->
+                        We scan federal registries for conflicting marks to protect your investment.
                     </li>
 
                     <li>
                         <i class="fa-solid fa-check"></i>
-                        Transparent Lifecyle Management: 
-                        Enjoy total peace of mind with continuous tracking, updates, and maintenance solutions for your brand.
+                        <!-- Transparent Lifecyle Management: -->
+                        End-to-End Tracking:
+                        <!-- Enjoy total peace of mind with continuous tracking, updates, and maintenance solutions for your brand. -->
+                        Stay updated with continuous monitoring and complete lifecycle management.
                     </li>
 
                 </ul>
 
                 <a href="#" class="btn-outline">
-                    Learn More About Us
+                    About Us
                 </a>
 
             </div>

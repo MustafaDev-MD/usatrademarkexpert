@@ -142,6 +142,11 @@ ul li {
     margin-left: var(--space-20);
 }
 
+ul li::marker {
+    color: var(--primary);
+    font-size: var(--fs-16);
+}
+
 /*=========================================
                 LAYOUT
 =========================================*/
@@ -1251,13 +1256,13 @@ ul li {
 }
 
 .service-card p {
-    font-size: var(--fs-15);
+    font-size: var(--fs-16);
     line-height: 1.7;
     color: var(--text-light);
 }
 
 .service-insight {
-    margin-top: var(--space-25);
+    margin-top: var(--space-10);
     padding: var(--space-15);
     background: var(--badge-background);
     border-radius: var(--radius-md);
@@ -1273,6 +1278,8 @@ ul li {
 
 .service-insight p {
     margin: 0;
+    font-size: var(--fs-14);
+    /* font-weight: var(--fw-medium); */
 }
 
 .service-divider {
@@ -1404,7 +1411,7 @@ ul li {
 
 .contact-card h3,
 .contact-info h3 {
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-15);
     font-family: var(--font-heading);
     font-size: var(--fs-28);
     color: var(--heading);
@@ -1413,7 +1420,7 @@ ul li {
 .contact-card p,
 .contact-info p {
     color: var(--text-light);
-    font-size: var(--fs-15);
+    font-size: var(--fs-16);
     line-height: 1.6;
 }
 
@@ -1482,8 +1489,8 @@ ul li {
 .contact-info ul {
     display: flex;
     flex-direction: column;
-    gap: var(--space-25);
-    margin: var(--space-30) 0;
+    gap: var(--space-15);
+    margin: var(--space-20) 0;
 }
 
 .contact-info li {
@@ -1557,6 +1564,11 @@ ul li {
     font-size: var(--fs-16);
     line-height: 1.75;
     color: var(--text-light);
+}
+
+.footer-disclaimer a {
+    color: var(--primary-hover);
+    font-weight: var(--fw-medium);
 }
 
 .footer-contact {
@@ -1747,6 +1759,7 @@ ul li {
     font-size: var(--fs-32);
     font-weight: var(--fw-medium);
     color: var(--heading);
+    white-space: pre-line;
 }
 
 .service-hero-desc {
@@ -1860,7 +1873,7 @@ ul li {
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     padding: var(--space-25);
-    min-height: 305px;
+    /* min-height: 305px; */
     display: flex;
     flex-direction: column;
 }

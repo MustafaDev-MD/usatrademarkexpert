@@ -1,4 +1,4 @@
-<section class="services {{ request()->routeIs('home') ? 'services-home' : '' }}">
+<!-- <section class="services {{ request()->routeIs('home') ? 'services-home' : '' }}">
 
     <div class="container">
 
@@ -125,6 +125,150 @@
                             <li>
                                 <i class="fa-solid fa-circle"></i>
                                 Continuous Infringement Alert Monitoring
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Section 8 & 9 Trademark Renewals
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <a href="#" class="service-link">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+<section class="services {{ request()->routeIs('home') ? 'services-home' : '' }}">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Pillars of Complete Brand Protection</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            {{-- Card 1 --}}
+
+            <div class="service-card card-1">
+
+                <div class="service-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+
+                <h3>Commercial Use & Specimen Verification</h3>
+
+                <p>
+                    Federal registration requires commercial use proof. We prepare and submit USPTO-compliant specimens—such as digital storefronts, product packaging, and marketing materials—for full compliance.
+                </p>
+
+                <div class="service-insight">
+
+                    <span>REGISTRATION TIP:</span>
+
+                    <p>
+                        Not launched yet? Reserve your brand early with an Intent-to-Use (ITU) filing.
+                    </p>
+
+                </div>
+
+            </div>
+
+            {{-- Card 2 --}}
+
+            <div class="service-card card-2">
+
+                <div class="service-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+
+                <h3>Comprehensive Trademark Search</h3>
+
+                <p>
+                    Avoid application rejection and lost fees. We conduct comprehensive trademark searches analyzing exact matches, phonetic similarities, and industry overlaps to ensure your mark is safe to register.
+                </p>
+
+            </div>
+
+            {{-- Card 3 --}}
+
+            <div class="service-card card-3">
+
+                <div class="service-icon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+
+                <h3>Trademark Classification</h3>
+
+                <p>
+                    We classify your offerings across official international trademark classes to protect current products and fuel future growth.
+                </p>
+
+            </div>
+
+            {{-- Card 4 --}}
+
+            <div class="service-card card-4">
+
+                <h3>Full Intellectual Property Solutions</h3>
+
+                <div class="service-divider"></div>
+
+                <div class="service-content">
+
+                    <div class="service-column">
+
+                        <h4>Core Filing Services</h4>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Federal USPTO Application Filing
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Intent-to-Use (ITU) Filings
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Statement of Use (SOU) Submissions
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="service-column">
+
+                        <h4>Brand Protection & Maintenance</h4>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Office Action Responses
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                Trademark Monitoring & Defense
                             </li>
 
                             <li>

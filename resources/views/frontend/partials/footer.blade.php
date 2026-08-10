@@ -22,15 +22,16 @@
                         Disclaimer
                     </h4>
 
+                    <!-- <p>The goal of USA Trademark Expert is to offer companies the most dependable,
+                    efficient, and reasonably priced trademark protection services possible.
+                    Our first priority is quality. Copyright 2025 USP of Trademarks, LLC.
+                    Only software and information are offered by USA Trademark Expert.
+                    USA Trademark Expert does not offer legal advice or take involved in any kind
+                    of legal representation; it is not a "lawyer referral service".
+                    Please refer to our Terms of Service and Privacy Policy before using
+                    USA Trademark Expert. </p>-->
                     <p>
-                        The goal of Trademark USP is to offer companies the most dependable,
-                        efficient, and reasonably priced trademark protection services possible.
-                        Our first priority is quality. Copyright 2025 USP of Trademarks, LLC.
-                        Only software and information are offered by Trademark USP.
-                        Trademark USP does not offer legal advice or take involved in any kind
-                        of legal representation; it is not a "lawyer referral service".
-                        Please refer to our Terms of Service and Privacy Policy before using
-                        Trademark USP.
+                        USA Trademark Expert is dedicated to providing businesses with dependable, efficient, and affordable trademark protection services where quality is our top priority. Please note that USA Trademark Expert offers software and informational tools only—we do not provide legal advice, engage in legal representation, or operate as a "lawyer referral service." Please review our <a href="{{ route('privacy-policy') }}?tab=terms-of-service" class="hover-link" wire:navigate>Terms of Service</a> and <a href="{{ route('privacy-policy') }}?tab=privacy-policy" class="hover-link" wire:navigate>Privacy Policy</a> before using our platform.
                     </p>
 
                 </div>
@@ -65,8 +66,8 @@
 
                         <p>
 
-                            <a href="mailto:legal@trademarkusp.com" class="hover-link">
-                                legal@trademarkusp.com
+                            <a href="mailto:legal@usatrademarkexpert.com" class="hover-link">
+                                legal@usatrademarkexpert.com
                             </a>
 
                         </p>

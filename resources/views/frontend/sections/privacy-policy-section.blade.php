@@ -5,22 +5,22 @@
         {{-- Tabs --}}
         <div class="privacy-tabs">
 
-            <button class="privacy-tab active" data-tab="guarantee">
+            <button class="privacy-tab active" data-tab="our-guarantee">
                 Our Guarantee
             </button>
 
-            <button class="privacy-tab hover-link" data-tab="privacy">
+            <button class="privacy-tab hover-link" data-tab="privacy-policy">
                 Privacy Policy
             </button>
 
-            <button class="privacy-tab hover-link" data-tab="terms">
+            <button class="privacy-tab hover-link" data-tab="terms-of-service">
                 Terms of Service
             </button>
 
         </div>
 
         {{-- Our Guarantee --}}
-        <div class="privacy-content active" id="guarantee">
+        <div class="privacy-content active" id="our-guarantee">
 
             <div class="privacy-content-wrapper">
 
@@ -52,7 +52,7 @@
         </div>
 
         {{-- Privacy Policy --}}
-        <div class="privacy-content" id="privacy">
+        <div class="privacy-content" id="privacy-policy">
 
             <div class="privacy-content-wrapper">
 
@@ -84,7 +84,7 @@
         </div>
 
         {{-- Terms --}}
-        <div class="privacy-content" id="terms">
+        <div class="privacy-content" id="terms-of-service">
 
             <div class="privacy-content-wrapper">
 

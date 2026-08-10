@@ -36,10 +36,8 @@
             'price' => 299,
             'description' => 'Step up to dedicated legal guidance and brand enforcement tools.',
             'features' => [
-                '1-on-1 Attorney Consultation:
-                 Speak directly with a trademark lawyer during a focused 15-minute session to address your specific brand questions.',
-                'Cease & Desist Safeguards:
-                 Receive formal documentation to take immediate action if another business attempts to infringe on your name.',
+                '1-on-1 Attorney Consultation: Speak directly with a licensed trademark lawyer in a focused 15-minute session to resolve specific questions and outline your filing strategy.',
+                'Cease & Desist Safeguards: Enforceable legal documents to act quickly against brand infringement.',
             ],
             'active' => true,
             'badge' => 'ENHANCED PROTECTION',
@@ -49,14 +47,11 @@
         [
             'title' => 'Premium Package',
             'price' => 539,
-            'description' => 'The gold standard for rapid filing and long-term brand monitoring.',
+            'description' => 'Priority rush filing paired with continuous brand monitoring.',
             'features' => [
-                'Comprehensive Strategy Session:
-                 An extended 1-hour consultation with a trademark attorney for deep-dive legal planning.',
-                '48-Hour Priority Rush Processing:
-                 Fast-track your application structure to lock in your official filing date as quickly as possible.',
-                'Continuous Infringement Monitoring:
-                 alerts to safeguard your registered mark from copycats (free trial included).',
+                '1-Hour Attorney Session: In-depth legal planning with a trademark lawyer.',
+                '48-Hour Priority Processing: Fast-track filing to secure your official USPTO date immediately.',
+                'Infringement Alerts: Ongoing monitoring to protect your registered mark from copycats.',
             ],
             'active' => false,
             'button' => 'Choose Premium'
