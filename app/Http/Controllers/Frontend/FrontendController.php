@@ -1948,8 +1948,6 @@ class FrontendController extends Controller
 
                 'heroTitle' => 'Comprehensive Trademark Search',
 
-                'heroTitle' => 'Comprehensive Trademark Search',
-
                 'heroDescription' => 'Search federal, state, and common law registries to avoid costly USPTO refusals.',
 
                 'heroFeatures' => [
