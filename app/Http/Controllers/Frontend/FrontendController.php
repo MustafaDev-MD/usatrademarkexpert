@@ -1956,7 +1956,7 @@ class FrontendController extends Controller
                     'Strategic Insights: Clear guidance to refine your mark and maximize approval odds.',
                 ],
 
-                'heroButtonText' => 'Search Now',
+                'heroButtonText' => 'Search Now', 
 
                 'heroButtonLink' => route('contact'),
 
